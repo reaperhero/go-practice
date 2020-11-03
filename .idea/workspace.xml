@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go1.13" />
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1jmCgVWHfs6ioe75G0IhZDzBcuv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/consul/server" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build go-example-demo/consul/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/consul/client/main.go" />
+      <package value="go-example-demo/consul/client" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build go-example-demo/consul/client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="760" y="427" key="#Go_Modules" timestamp="1604400477411">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state x="760" y="427" key="#Go_Modules/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604400477411" />
+    <state x="801" y="491" width="317" height="264" key="Github.ShareDialog" timestamp="1604405493046">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state x="801" y="491" width="317" height="264" key="Github.ShareDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405493046" />
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1604405571492">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571492" />
+    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1604405571491">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571491" />
+    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1604405571491">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571491" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1604405571492">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571492" />
+    <state x="625" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1604405443211">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state x="625" y="276" width="670" height="676" key="search.everywhere.popup/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405443211" />
+  </component>
+</project>
