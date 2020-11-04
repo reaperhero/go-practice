@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="" />
+    <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +19,9 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go1.13" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
@@ -22,6 +29,9 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1jmCgVWHfs6ioe75G0IhZDzBcuv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,7 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -41,7 +51,7 @@
       <recent name="$PROJECT_DIR$/consul/server" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.Test_excel_01 in go-example-demo/excel">
     <configuration name="go build go-example-demo/consul/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -51,8 +61,44 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_excel_01 in go-example-demo/excel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/excel" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/excel" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_excel_01\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_excel_02 in go-example-demo/excel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/excel" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/excel" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_excel_02\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_uuid_01 in go-example-demo/uuid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/uuid" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/uuid" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_uuid_01\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_excel_01 in go-example-demo/excel" />
+        <item itemvalue="Go Test.Test_excel_02 in go-example-demo/excel" />
+        <item itemvalue="Go Test.Test_uuid_01 in go-example-demo/uuid" />
         <item itemvalue="Go Build.go build go-example-demo/consul/client" />
       </list>
     </recent_temporary>
@@ -60,6 +106,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -73,22 +122,38 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="801" y="491" width="317" height="264" key="Github.ShareDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405493046" />
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1604405571492">
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1604467053327">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571492" />
-    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1604405571491">
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604467053327" />
+    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1604467053326">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571491" />
-    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1604405571491">
+    <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604467053326" />
+    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1604467053325">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571491" />
-    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1604405571492">
+    <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604467053325" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1604467053326">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405571492" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604467053326" />
+    <state width="1878" height="386" key="GridCell.Tab.1.bottom" timestamp="1604466247810">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="386" key="GridCell.Tab.1.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604466247810" />
+    <state width="1878" height="386" key="GridCell.Tab.1.center" timestamp="1604466247810">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="386" key="GridCell.Tab.1.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604466247810" />
+    <state width="1878" height="386" key="GridCell.Tab.1.left" timestamp="1604466247809">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="386" key="GridCell.Tab.1.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604466247809" />
+    <state width="1878" height="386" key="GridCell.Tab.1.right" timestamp="1604466247810">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state width="1878" height="386" key="GridCell.Tab.1.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604466247810" />
     <state x="625" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1604405443211">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
