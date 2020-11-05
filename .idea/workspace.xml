@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/excel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/excel/excel_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +53,7 @@
       <recent name="$PROJECT_DIR$/consul/server" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_excel_01 in go-example-demo/excel">
-    <configuration name="go build go-example-demo/consul/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/consul/client/main.go" />
-      <package value="go-example-demo/consul/client" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.Test_receive_01 in go-example-demo/nsq/consumer">
     <configuration name="Test_excel_01 in go-example-demo/excel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/excel" />
@@ -81,6 +76,28 @@
       <pattern value="^\QTest_excel_02\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_receive_01 in go-example-demo/nsq/consumer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/nsq/consumer" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/nsq/consumer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_receive_01\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_send_01 in go-example-demo/nsq/producer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/nsq/producer" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/nsq/producer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_send_01\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_uuid_01 in go-example-demo/uuid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/uuid" />
@@ -94,10 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_receive_01 in go-example-demo/nsq/consumer" />
+        <item itemvalue="Go Test.Test_send_01 in go-example-demo/nsq/producer" />
         <item itemvalue="Go Test.Test_excel_01 in go-example-demo/excel" />
         <item itemvalue="Go Test.Test_excel_02 in go-example-demo/excel" />
         <item itemvalue="Go Test.Test_uuid_01 in go-example-demo/uuid" />
-        <item itemvalue="Go Build.go build go-example-demo/consul/client" />
       </list>
     </recent_temporary>
   </component>
@@ -120,22 +138,22 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="801" y="491" width="317" height="264" key="Github.ShareDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405493046" />
-    <state width="1878" height="386" key="GridCell.Tab.0.bottom" timestamp="1604468033332">
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1604553806174">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="386" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604468033332" />
-    <state width="1878" height="386" key="GridCell.Tab.0.center" timestamp="1604468033332">
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604553806174" />
+    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1604553806174">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="386" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604468033332" />
-    <state width="1878" height="386" key="GridCell.Tab.0.left" timestamp="1604468033331">
+    <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604553806174" />
+    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1604553806173">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="386" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604468033331" />
-    <state width="1878" height="386" key="GridCell.Tab.0.right" timestamp="1604468033332">
+    <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604553806173" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1604553806174">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state width="1878" height="386" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604468033332" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604553806174" />
     <state width="1878" height="386" key="GridCell.Tab.1.bottom" timestamp="1604468033333">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
