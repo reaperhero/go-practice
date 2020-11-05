@@ -22,6 +22,13 @@ append(key, value)：名称为key的string的值附加value
 substr(key, start, end)：返回名称为key的string的value的子串
 ```
 - 使用场景
+
+```
+redis 127.0.0.1:6379> SET runoob "菜鸟教程"
+OK
+redis 127.0.0.1:6379> GET runoob
+ "菜鸟教程"
+```
 一般的缓存，统计网站访问数量、当前在线人数、微博数、粉丝数等，全局递增ID
 
 ### hash
@@ -40,6 +47,10 @@ hgetall(key)：返回名称为key的hash中所有的键（field）及其对应�
 ```
 
 - 使用场景
+```
+redis 127.0.0.1:6379> HMSET runoob field1 "Hello" field2 "World"
+redis 127.0.0.1:6379> HGET runoob field1
+"Hello"
 保存用户的详细信息。用ID作为key，value则用一组field-value的形式保存
 
 ### list
@@ -80,12 +91,42 @@ smembers(key) ：返回名称为key的set的所有元素
 srandmember(key) ：随机返回名称为key的set的一个元素
 ```
 - 使用场景
+```
+redis 127.0.0.1:6379> sadd runoob redis
+redis 127.0.0.1:6379> sadd runoob mongodb
+redis 127.0.0.1:6379> sadd runoob rabitmq
+redis 127.0.0.1:6379> sadd runoob rabitmq
+redis 127.0.0.1:6379> smembers runoob
+1) "redis"
+2) "rabitmq"
+3) "mongodb"
+```
 唯一性,集合操作
 
 
 ### sort zet
 
 - 使用场景
+```
+redis 127.0.0.1:6379> ZADD runoobkey 1 redis
+(integer) 1
+redis 127.0.0.1:6379> ZADD runoobkey 2 mongodb
+(integer) 1
+redis 127.0.0.1:6379> ZADD runoobkey 3 mysql
+(integer) 1
+redis 127.0.0.1:6379> ZADD runoobkey 3 mysql
+(integer) 0
+redis 127.0.0.1:6379> ZADD runoobkey 4 mysql
+(integer) 0
+redis 127.0.0.1:6379> ZRANGE runoobkey 0 10 WITHSCORES
+
+1) "redis"
+2) "1"
+3) "mongodb"
+4) "2"
+5) "mysql"
+6) "4"
+```
 销量排名，积分排名，时间线等
 
 
