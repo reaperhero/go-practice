@@ -23,3 +23,5 @@ func Test_set_01(t *testing.T)  {
 	setFirst, _ := rdb.SPop(setKey).Result()
 	fmt.Println("setFirst", setFirst)
 }
+
+
