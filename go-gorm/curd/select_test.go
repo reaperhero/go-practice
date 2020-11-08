@@ -1,4 +1,4 @@
-package go_gorm
+package curd
 
 import (
 	"testing"

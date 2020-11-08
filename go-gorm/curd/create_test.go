@@ -1,9 +1,13 @@
-package go_gorm
+package curd
 
 import (
 	"testing"
 	"time"
 )
+
+
+
+
 
 func Test_create_record(t *testing.T)  {
 	var age int = 18

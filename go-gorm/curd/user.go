@@ -1,4 +1,4 @@
-package go_gorm
+package curd
 
 import (
 	_ "github.com/go-sql-driver/mysql"
@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-var db *gorm.DB
+
 
 type User struct {
 	gorm.Model
@@ -15,7 +15,7 @@ type User struct {
 	Age      *int
 	Birthday time.Time
 	//Email        string  `gorm:"type:varchar(100);unique_index"`
-	Role         string  `gorm:"size:255"`        //设置字段的大小为255个字节
+	Role string `gorm:"size:255"` //设置字段的大小为255个字节
 	//MemberNumber string `gorm:"unique;not null"` // 设置 memberNumber 字段唯一且不为空
 	//Num          int     `gorm:"AUTO_INCREMENT"`  // 设置 Num字段自增
 	//Address      string  `gorm:"index:addr"`      // 给Address 创建一个名字是  `addr`的索引
@@ -32,8 +32,8 @@ func (user *User) BeforeCreate(scope *gorm.Scope) error {
 	return nil
 }
 
-func init() {
-	db, _ = gorm.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/dbuser?charset=utf8&parseTime=True&loc=Local")
-	db.AutoMigrate(&User{})
-	db.SingularTable(true) // 禁用表名复数形式
+
+type Email struct {
+	gorm.Model
+	Name string
 }

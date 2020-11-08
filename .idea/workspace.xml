@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go-gorm/curd/delete_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-gorm/curd/update_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-gorm/create_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/create_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-gorm/insert_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-gorm/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/create_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/create_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/delete_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/order.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/select_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/select_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/update_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +62,12 @@
       <recent name="$PROJECT_DIR$/pkg/routinePool" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/go-gorm/curd" />
       <recent name="$PROJECT_DIR$/pkg" />
       <recent name="$PROJECT_DIR$/consul/server" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_extra_01 in go-example-demo/go-gorm">
+  <component name="RunManager" selected="Go Test.Test_fmt_01 in go-example-demo/pkg/goroot/fmt">
     <configuration name="Test_extra_01 in go-example-demo/go-gorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/go-gorm" />
@@ -72,6 +79,17 @@
       <pattern value="^\QTest_extra_01\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_fmt_01 in go-example-demo/pkg/goroot/fmt" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/fmt" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/goroot/fmt" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_fmt_01\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_or_01 in go-example-demo/go-gorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/go-gorm" />
@@ -81,17 +99,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTest_or_01\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_select_01 in go-example-demo/go-gorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/go-gorm" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/go-gorm" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_select_01\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_type_01 in go-example-demo/go-gorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -118,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_fmt_01 in go-example-demo/pkg/goroot/fmt" />
         <item itemvalue="Go Test.Test_extra_01 in go-example-demo/go-gorm" />
         <item itemvalue="Go Test.Test_or_01 in go-example-demo/go-gorm" />
         <item itemvalue="Go Test.Test_type_01 in go-example-demo/go-gorm" />
         <item itemvalue="Go Test.Test_where_01 in go-example-demo/go-gorm" />
-        <item itemvalue="Go Test.Test_select_01 in go-example-demo/go-gorm" />
       </list>
     </recent_temporary>
   </component>
@@ -145,34 +152,34 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="801" y="491" width="317" height="264" key="Github.ShareDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405493046" />
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1604842533971">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1604848476116">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409462" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800388" />
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1604842533971" />
-    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1604842533970">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1604848476116" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1604848476115">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409461" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800387" />
-    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1604842533970" />
-    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1604842533970">
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1604848476115" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1604848476115">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409460" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800387" />
-    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1604842533970" />
-    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1604842533971">
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1604848476115" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1604848476115">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409462" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800388" />
-    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1604842533971" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1604848476115" />
     <state width="1878" height="386" key="GridCell.Tab.1.bottom" timestamp="1604468033333">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
@@ -197,6 +204,10 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="720" y="456" key="com.goide.refactor.move.GoMoveDeclarationDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604557444017" />
+    <state x="541" y="241" width="598" height="548" key="find.popup" timestamp="1604848172137">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state x="541" y="241" width="598" height="548" key="find.popup/0.23.1680.984@0.23.1680.984" timestamp="1604848172137" />
     <state x="625" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1604405443211">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
