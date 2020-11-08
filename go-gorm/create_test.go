@@ -6,7 +6,8 @@ import (
 )
 
 func Test_create_record(t *testing.T)  {
-	user := User{Name: "Jinzhu", Age: 18, Birthday: time.Now()}
+	var age int = 18
+	user := User{Name: "Jinzhu", Age: &age, Birthday: time.Now()}
 
 	db.NewRecord(user) // => 返回 `true` ，因为主键为空
 
