@@ -4,6 +4,7 @@ go 1.13
 
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
+	github.com/Shopify/sarama v1.27.2 // indirect
 	github.com/aceld/zinx v0.0.0-20201027092702-5e524639b228 // indirect
 	github.com/bitly/go-simplejson v0.5.0 // indirect
 	github.com/coreos/etcd v3.3.25+incompatible
@@ -16,8 +17,10 @@ require (
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/hashicorp/consul/api v1.7.0
 	github.com/hashicorp/golang-lru v0.5.0
+	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/nsqio/go-nsq v1.0.8
+	github.com/olivere/elastic/v7 v7.0.4
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.3 // indirect
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
