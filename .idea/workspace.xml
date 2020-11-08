@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,82 +42,79 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pkg/routinePool" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/simplejson" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/simplejson" />
+      <recent name="$PROJECT_DIR$/pkg/routinePool" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pkg" />
       <recent name="$PROJECT_DIR$/consul/server" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pkg/routinePool" />
-    </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_cmd_01 in go-example-demo/pkg/unknowcom">
-    <configuration name="TestNewCachedRoutinePool in go-example-demo/pkg/routinePool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build go-example-demo/zookeeper/distributed/client">
+    <configuration name="go build go-example-demo/zookeeper/distributed/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/routinePool" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/routinePool" />
+      <filePath value="$PROJECT_DIR$/zookeeper/distributed/client/client.go" />
+      <package value="go-example-demo/zookeeper/distributed/client" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewCachedRoutinePool\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNewFixedRoutinePoolExecute in go-example-demo/pkg/routinePool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build go-example-demo/zookeeper/distributed/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/routinePool" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/routinePool" />
+      <filePath value="$PROJECT_DIR$/zookeeper/distributed/server/server.go" />
+      <package value="go-example-demo/zookeeper/distributed/server" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewFixedRoutinePoolExecute\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNewFixedRoutinePoolFunc in go-example-demo/pkg/routinePool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_create_node in go-example-demo/zookeeper" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/routinePool" />
+      <working_directory value="$PROJECT_DIR$/zookeeper" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/routinePool" />
+      <package value="go-example-demo/zookeeper" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewFixedRoutinePoolFunc\E$" />
+      <pattern value="^\QTest_create_node\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_cmd_01 in go-example-demo/pkg/unknowcom" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_get_node in go-example-demo/zookeeper" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/unknowcom" />
+      <working_directory value="$PROJECT_DIR$/zookeeper" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/unknowcom" />
+      <package value="go-example-demo/zookeeper" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_cmd_01\E$" />
+      <pattern value="^\QTest_get_node\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_zset_01 in go-example-demo/redis" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_list_node in go-example-demo/zookeeper" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/redis" />
+      <working_directory value="$PROJECT_DIR$/zookeeper" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/redis" />
+      <package value="go-example-demo/zookeeper" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_zset_01\E$" />
+      <pattern value="^\QTest_list_node\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_cmd_01 in go-example-demo/pkg/unknowcom" />
-        <item itemvalue="Go Test.TestNewFixedRoutinePoolExecute in go-example-demo/pkg/routinePool" />
-        <item itemvalue="Go Test.TestNewCachedRoutinePool in go-example-demo/pkg/routinePool" />
-        <item itemvalue="Go Test.TestNewFixedRoutinePoolFunc in go-example-demo/pkg/routinePool" />
-        <item itemvalue="Go Test.Test_zset_01 in go-example-demo/redis" />
+        <item itemvalue="Go Build.go build go-example-demo/zookeeper/distributed/client" />
+        <item itemvalue="Go Build.go build go-example-demo/zookeeper/distributed/server" />
+        <item itemvalue="Go Test.Test_get_node in go-example-demo/zookeeper" />
+        <item itemvalue="Go Test.Test_list_node in go-example-demo/zookeeper" />
+        <item itemvalue="Go Test.Test_create_node in go-example-demo/zookeeper" />
       </list>
     </recent_temporary>
   </component>
@@ -139,34 +137,34 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="801" y="491" width="317" height="264" key="Github.ShareDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405493046" />
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1604732631751">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1604826246248">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409462" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800388" />
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1604732631751" />
-    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1604732631751">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1604826246248" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1604826246247">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409461" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800387" />
-    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1604732631751" />
-    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1604732631750">
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1604826246247" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1604826246247">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409460" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800387" />
-    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1604732631750" />
-    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1604732631751">
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1604826246247" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1604826246247">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409462" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1604659265063" />
     <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1604645800388" />
-    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1604732631751" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1604826246247" />
     <state width="1878" height="386" key="GridCell.Tab.1.bottom" timestamp="1604468033333">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
