@@ -71,13 +71,16 @@ func Test_print01(t *testing.T) {
 
 }
 
-// Scan
+// Scanln
 func Test_scan_01(t *testing.T) {
 	var (
 		name    string
 		age     int
 		married bool
 	)
-	fmt.Scan(&name, &age, &married)
+	fmt.Scanln(&name, &age, &married)
 	fmt.Printf("扫描结果 name:%s age:%d married:%t \n", name, age, married)
+	//$ ./scan_demo
+	//枯藤 18 false
+	//扫描结果 name:枯藤 age:18 married:false
 }
