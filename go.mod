@@ -22,6 +22,8 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jordan-wright/email v4.0.1-0.20200917010138-e1c00e156980+incompatible // indirect
+	github.com/nats-io/nats-server/v2 v2.1.9 // indirect
+	github.com/nats-io/nats.go v1.10.0
 	github.com/nsqio/go-nsq v1.0.8
 	github.com/olivere/elastic/v7 v7.0.4
 	github.com/onsi/ginkgo v1.14.2 // indirect
