@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/nats-io/nats.go"
 	"testing"
+	"time"
 )
 
 var (
@@ -11,7 +12,12 @@ var (
 )
 
 func Test_nat_sub_01(t *testing.T) {
-	natsConn, err := nats.Connect("nats://127.0.0.1:4222")
+	opts := []nats.Option{
+		nats.Name("NATS Sample Publisher"),
+		nats.ReconnectWait(time.Second),
+		nats.MaxReconnects(1000),
+	}
+	natsConn, err := nats.Connect("nats://127.0.0.1:4222", opts...)
 	if err != nil {
 		fmt.Println(err)
 		return

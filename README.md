@@ -6,6 +6,7 @@
 - [awesome-go](https://github.com/avelino/awesome-go#utilities)
 - [数据结构](http://topgoer.com/%E5%BC%80%E6%BA%90/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.html)
 - [ants-goroutine](https://github.com/panjf2000/ants)
+- [小米sql优化器](https://github.com/XiaoMi/soar)
 
 #### 优秀第三方库
 
@@ -30,3 +31,10 @@ office
 - [二维码](github.com/skip2/go-qrcode)
 - [yaml配置](http://topgoer.com/%E5%85%B6%E4%BB%96/Yaml%E7%BC%96%E7%A0%81%E5%92%8C%E8%A7%A3%E7%A0%81.html)
 - [go-git](https://github.com/go-git/go-git)
+
+
+
+#### 必读git仓库
+
+- [gosync](https://github.com/smallnest/dive-to-gosync-workshop)
+- [1m-go-tcp-server](https://github.com/smallnest/1m-go-tcp-server)
