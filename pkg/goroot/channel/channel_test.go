@@ -3,6 +3,7 @@ package channel
 import (
 	"fmt"
 	"testing"
+	"time"
 )
 
 func Test_channel_01(t *testing.T) {
@@ -77,4 +78,25 @@ func Test_channel_03(t *testing.T) {
 	for i := range ch2 { // 通道关闭后会退出for range循环
 		fmt.Println(i)
 	}
+}
+
+// 已关闭的 channel 接收数据是安全的
+func Test_channel_04(t *testing.T) {
+	ch := make(chan int)
+	done := make(chan struct{})
+
+	for i := 0; i < 3; i++ {
+		go func(idx int) {
+			select {
+			case ch <- (idx + 1) * 2:
+				fmt.Println(idx, "Send result")
+			case <-done: // 关闭后会立即返回
+				fmt.Println(idx, "Exiting")
+			}
+		}(i)
+	}
+
+	fmt.Println("Result: ", <-ch)
+	close(done)
+	time.Sleep(3 * time.Second)
 }
