@@ -7,6 +7,7 @@
 - [数据结构](http://topgoer.com/%E5%BC%80%E6%BA%90/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.html)
 - [ants-goroutine](https://github.com/panjf2000/ants)
 - [小米sql优化器](https://github.com/XiaoMi/soar)
+- [go-chart](https://github.com/wcharczuk/go-chart)
 
 #### 优秀第三方库
 
