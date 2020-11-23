@@ -17,11 +17,7 @@ func slowFunc(){
 func main() {
 
 	// 创建输出文件
-	f, err := os.Create("cpu.prof")
-	if err != nil {
-		fmt.Println("create cpu.prof err :", err)
-		return
-	}
+	f, _ := os.Create("cpu.prof")
 	// 获取系统信息
 	if err := pprof.StartCPUProfile(f); err != nil {
 		fmt.Println("start cpu.prof err :", err)
@@ -33,12 +29,8 @@ func main() {
 	slowFunc()
 
 	// 获取内存相关信息
-	f1, err := os.Create("mem.prof")
+	f1, _ := os.Create("mem.prof")
 	defer f1.Close()
-	if err != nil {
-		fmt.Println("create mem.prof err :", err)
-		return
-	}
 	// runtime.GC()			// 是否获取最新的数据信息
 	if err := pprof.WriteHeapProfile(f1); err != nil {
 		fmt.Println("write cpu.prof err :", err)
@@ -47,14 +39,10 @@ func main() {
 
 
 	// 获取协程相关信息
-	f2, err := os.Create("goroutine.prof")
+	f2, _ := os.Create("goroutine.prof")
 	defer f2.Close()
-	if err != nil {
-		fmt.Println("create goroutine.prof err :", err)
-		return
-	}
 	if gProf := pprof.Lookup("goroutine"); gProf != nil {
-		fmt.Println("write goroutine.prof err :", err)
+		fmt.Println("write goroutine.prof err :", gProf)
 		return
 	} else {
 		gProf.WriteTo(f2, 0)

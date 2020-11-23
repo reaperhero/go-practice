@@ -32,6 +32,8 @@ office
 - [二维码](github.com/skip2/go-qrcode)
 - [yaml配置](http://topgoer.com/%E5%85%B6%E4%BB%96/Yaml%E7%BC%96%E7%A0%81%E5%92%8C%E8%A7%A3%E7%A0%81.html)
 - [go-git](https://github.com/go-git/go-git)
+- [go-github](https://github.com/google/go-github/)
+- [go-jira](https://github.com/andygrunwald/go-jira)
 
 
 
