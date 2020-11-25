@@ -24,6 +24,9 @@ office
 - [Office](https://github.com/unidoc/unioffice)
 - [email](https://github.com/jordan-wright/email)
 
+weixin
+- [微信](http://wen.topgoer.com/docs/gowechat/gowechat-1cb49i4ees248)
+
 
 #### 运维工具库
 - [tail -f](https://github.com/hpcloud/tail)
@@ -41,3 +44,4 @@ office
 
 - [gosync](https://github.com/smallnest/dive-to-gosync-workshop)
 - [1m-go-tcp-server](https://github.com/smallnest/1m-go-tcp-server)
+
