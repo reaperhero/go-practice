@@ -6,7 +6,7 @@ import (
 	"runtime/pprof"
 )
 
-func slowFunc(){
+func slowFunc() {
 
 	str := "hello world "
 	for i := 0; i < 5; i++ {
@@ -37,7 +37,6 @@ func main() {
 		return
 	}
 
-
 	// 获取协程相关信息
 	f2, _ := os.Create("goroutine.prof")
 	defer f2.Close()
@@ -50,8 +49,6 @@ func main() {
 
 	return
 }
-
-
 
 // go run main.go
 // go tool pprof program cpu.prof

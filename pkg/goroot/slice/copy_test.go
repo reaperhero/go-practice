@@ -13,4 +13,3 @@ func Test_copy_01(t *testing.T) {
 	copy(res, raw[:3])
 	fmt.Println(len(res), cap(res), &res[0]) // 3 3 0xc4200160b8
 }
-

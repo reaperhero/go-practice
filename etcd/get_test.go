@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func Test_get_01(t *testing.T)  {
+func Test_get_01(t *testing.T) {
 	// get
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cli.Close()

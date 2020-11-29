@@ -4,7 +4,7 @@ import (
 	"sort"
 )
 
-func main()  {
+func main() {
 
 	// heap包提供了堆相关的操作，并不想list和ring一样提供New()的创建方法
 	// heap包中定义了一个Interface接口，只要实现了这个接口的struct都可以当作是堆

@@ -2,10 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/go-example-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go-example-demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/01.go记忆.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/01.go记忆.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/04-go包管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/04-go包管理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/08-defer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/08-defer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cobra/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cobra/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consul/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/consul/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consul/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/consul/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch/curd_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/elasticsearch/curd_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etcd/get_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcd/get_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etcd/lease_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcd/lease_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etcd/lock_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcd/lock_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etcd/put_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcd/put_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/excel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/excel/excel_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/curd/create_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/create_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/curd/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/order.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-gorm/curd/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-gorm/curd/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/golang-lru/lru_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/golang-lru/lru_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/consumer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/consumer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsq/producer/send_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/nsq/producer/send_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/bench/benchmark_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/bench/benchmark_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/container/heap/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/container/heap/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/container/ring/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/container/ring/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/context/context_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/context/context_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/atomic/atomic_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/atomic/atomic_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/fmt/bufio_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/fmt/bufio_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/os/env.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/os/env.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/rand/rand_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/rand/rand_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/slice/copy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/slice/copy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/time/operation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/time/operation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/json/json_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/json/json_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/pprof/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/pprof/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/reflect/anonymous.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/reflect/anonymous.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/routinePool/routinepool.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/routinePool/routinepool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/strconv/strconv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/strconv/strconv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis_hash_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis_hash_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis_list_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis_set_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis_set_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis_sortset_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis_sortset_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/redis_string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redis/redis_string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlx/delete_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx/delete_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlx/insert_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx/insert_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlx/tx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx/tx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlx/update_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx/update_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uuid/uuid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zinx/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/zinx/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/distributed/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/distributed/client/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
@@ -35,15 +78,17 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
@@ -64,67 +109,69 @@
       <recent name="$PROJECT_DIR$/go-gorm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_builder in go-example-demo/pkg/goroot/string">
-    <configuration name="go build go-example-demo/pkg/container/ring" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.Test_range_02 in go-example-demo/template/http">
+    <configuration name="Test_Struct_01 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/pkg/container/ring/main.go" />
-      <package value="go-example-demo/pkg/container/ring" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_builder in go-example-demo/pkg/goroot/string" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/string" />
+      <working_directory value="$PROJECT_DIR$/template/http" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/string" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_builder\E$" />
+      <package value="go-example-demo/template/http" />
+      <directory value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <filePath value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <pattern value="^\QTest_Struct_01\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_copy_01 in go-example-demo/pkg/goroot/slice" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Struct_02 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/slice" />
+      <working_directory value="$PROJECT_DIR$/template/http" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/slice" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_copy_01\E$" />
+      <package value="go-example-demo/template/http" />
+      <directory value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <filePath value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <pattern value="^\QTest_Struct_02\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_copy_02 in go-example-demo/pkg/goroot/slice" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Struct_03 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/slice" />
+      <working_directory value="$PROJECT_DIR$/template/http" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/slice" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_copy_02\E$" />
+      <package value="go-example-demo/template/http" />
+      <directory value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <filePath value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <pattern value="^\QTest_Struct_03\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_map_01 in go-example-demo/pkg/goroot/map" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_range_02 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/map" />
+      <working_directory value="$PROJECT_DIR$/template/http" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/map" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_map_01\E$" />
+      <package value="go-example-demo/template/http" />
+      <directory value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <filePath value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <pattern value="^\QTest_range_02\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_var_01 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/template/http" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/template/http" />
+      <directory value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <filePath value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
+      <pattern value="^\QTest_var_01\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_builder in go-example-demo/pkg/goroot/string" />
-        <item itemvalue="Go Build.go build go-example-demo/pkg/container/ring" />
-        <item itemvalue="Go Test.Test_map_01 in go-example-demo/pkg/goroot/map" />
-        <item itemvalue="Go Test.Test_copy_02 in go-example-demo/pkg/goroot/slice" />
-        <item itemvalue="Go Test.Test_copy_01 in go-example-demo/pkg/goroot/slice" />
+        <item itemvalue="Go Test.Test_range_02 in go-example-demo/template/http" />
+        <item itemvalue="Go Test.Test_var_01 in go-example-demo/template/http" />
+        <item itemvalue="Go Test.Test_Struct_03 in go-example-demo/template/http" />
+        <item itemvalue="Go Test.Test_Struct_02 in go-example-demo/template/http" />
+        <item itemvalue="Go Test.Test_Struct_01 in go-example-demo/template/http" />
       </list>
     </recent_temporary>
   </component>
@@ -151,33 +198,41 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="801" y="491" width="317" height="264" key="Github.ShareDialog/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604405493046" />
-    <state width="1878" height="263" key="GridCell.Tab.0.bottom" timestamp="1606114517571">
-      <screen x="-526" y="-1057" width="1920" height="1057" />
+    <state width="1638" height="236" key="GridCell.Tab.0.bottom" timestamp="1606669032321">
+      <screen x="0" y="23" width="1680" height="975" />
     </state>
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1125@0.23.1920.1125" timestamp="1606387946700" />
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409462" />
     <state width="1878" height="263" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1606114517571" />
     <state width="1878" height="312" key="GridCell.Tab.0.bottom/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1605198651759" />
+    <state width="1638" height="236" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1606669032321" />
     <state width="1638" height="263" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1605880997616" />
-    <state width="1878" height="263" key="GridCell.Tab.0.center" timestamp="1606114517570">
-      <screen x="-526" y="-1057" width="1920" height="1057" />
+    <state width="1638" height="236" key="GridCell.Tab.0.center" timestamp="1606669032320">
+      <screen x="0" y="23" width="1680" height="975" />
     </state>
+    <state width="1878" height="282" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1125@0.23.1920.1125" timestamp="1606387946699" />
     <state width="1878" height="313" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409461" />
     <state width="1878" height="263" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1606114517570" />
     <state width="1878" height="312" key="GridCell.Tab.0.center/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1605198651757" />
+    <state width="1638" height="236" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1606669032320" />
     <state width="1638" height="263" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1605880997615" />
-    <state width="1878" height="263" key="GridCell.Tab.0.left" timestamp="1606114517570">
-      <screen x="-526" y="-1057" width="1920" height="1057" />
+    <state width="1638" height="236" key="GridCell.Tab.0.left" timestamp="1606669032320">
+      <screen x="0" y="23" width="1680" height="975" />
     </state>
+    <state width="1878" height="282" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1125@0.23.1920.1125" timestamp="1606387946699" />
     <state width="1878" height="313" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409460" />
     <state width="1878" height="263" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1606114517570" />
     <state width="1878" height="312" key="GridCell.Tab.0.left/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1605198651719" />
+    <state width="1638" height="236" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1606669032320" />
     <state width="1638" height="263" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1605880997615" />
-    <state width="1878" height="263" key="GridCell.Tab.0.right" timestamp="1606114517570">
-      <screen x="-526" y="-1057" width="1920" height="1057" />
+    <state width="1638" height="236" key="GridCell.Tab.0.right" timestamp="1606669032321">
+      <screen x="0" y="23" width="1680" height="975" />
     </state>
+    <state width="1878" height="282" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1125@0.23.1920.1125" timestamp="1606387946699" />
     <state width="1878" height="313" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1128@0.23.1920.1128" timestamp="1604574409462" />
     <state width="1878" height="263" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1134@-526.-1057.1920.1057" timestamp="1606114517570" />
     <state width="1878" height="312" key="GridCell.Tab.0.right/-526.-1057.1920.1057/0.23.1920.1134@0.23.1920.1134" timestamp="1605198651758" />
+    <state width="1638" height="236" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1606669032321" />
     <state width="1638" height="263" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1605880997615" />
     <state width="1878" height="386" key="GridCell.Tab.1.bottom" timestamp="1604468033333">
       <screen x="0" y="23" width="1920" height="1128" />

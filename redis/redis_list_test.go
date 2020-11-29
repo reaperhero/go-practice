@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func Test_list_01(t *testing.T)  {
+func Test_list_01(t *testing.T) {
 	listKey := "go2list"
 	rdb.RPush(listKey, "str1", 10, "str2", 15, "str3", 20).Err()
 

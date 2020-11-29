@@ -18,6 +18,6 @@ func Test_time_ops_01(t *testing.T) {
 func Test_ticker_01(t *testing.T) {
 	ticker := time.Tick(time.Second) //定义一个1秒间隔的定时器
 	for i := range ticker {
-		fmt.Println(i)               //每秒都会执行的任务
+		fmt.Println(i) //每秒都会执行的任务
 	}
 }

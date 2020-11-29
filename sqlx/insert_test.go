@@ -6,8 +6,6 @@ import (
 	"testing"
 )
 
-
-
 func Test_insert_01(t *testing.T) {
 	r, err := Db.Exec("insert into person(username, sex, email)values(?, ?, ?)", "stu001", "man", "stu01@qq.com")
 	defer Db.Close()

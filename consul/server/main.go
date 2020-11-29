@@ -77,7 +77,6 @@ func ConsulKVTest() {
 	fmt.Println(keys)
 }
 
-
 func main() {
 	consulRegister()
 	//定义一个http接口

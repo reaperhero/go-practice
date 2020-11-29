@@ -101,20 +101,20 @@ func Test_lease_03(t *testing.T) {
 
 	// 自动续租 返回值是个只读的chan，因为写入只能是etcd实现
 	// context.TODO()也可以设置成context.WithTimeout(context.TODO(), 5 * time.Second)，（5 + 10)s后自动会过期
-	keepChan, err := lease.KeepAlive(context.TODO(), leaseR.ID )
+	keepChan, err := lease.KeepAlive(context.TODO(), leaseR.ID)
 	if err != nil {
 		fmt.Println("keep err:", err)
 		return
 	}
 	// 启动一个协程去消费chan的应答
-	go func(){
+	go func() {
 		for {
 			select {
-			case keepR := <- keepChan:
-				if keepChan == nil {		// 此时系统异常或者主动取消context
+			case keepR := <-keepChan:
+				if keepChan == nil { // 此时系统异常或者主动取消context
 					fmt.Println("租约失效")
 					goto END
-				} else {		// 每秒续租一次
+				} else { // 每秒续租一次
 					fmt.Println("收到自动续租应答：", keepR.ID)
 				}
 			}

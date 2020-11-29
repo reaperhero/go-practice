@@ -35,9 +35,8 @@ func queryByserviceId() {
 	}
 }
 
-
 // 查询指定服务的健康状态
-func ConsulCheckHeath()  {
+func ConsulCheckHeath() {
 	// 创建连接consul服务配置
 	config.Address = consulAgentAddress
 	client, err := consulapi.NewClient(config)

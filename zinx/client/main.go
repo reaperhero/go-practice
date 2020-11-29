@@ -1,12 +1,11 @@
 package main
 
-
 import (
 	"fmt"
+	"github.com/aceld/zinx/znet"
 	"io"
 	"net"
 	"time"
-	"github.com/aceld/zinx/znet"
 )
 
 /*
@@ -18,7 +17,7 @@ func main() {
 	//3秒之后发起测试请求，给服务端开启服务的机会
 	time.Sleep(3 * time.Second)
 
-	conn,err := net.Dial("tcp", "127.0.0.1:8999")
+	conn, err := net.Dial("tcp", "127.0.0.1:8999")
 	if err != nil {
 		fmt.Println("client start err, exit!")
 		return
@@ -27,9 +26,9 @@ func main() {
 	for n := 3; n >= 0; n-- {
 		//发封包message消息
 		dp := znet.NewDataPack()
-		msg, _ := dp.Pack(znet.NewMsgPackage(0,[]byte("Zinx Client Test Message")))
+		msg, _ := dp.Pack(znet.NewMsgPackage(0, []byte("Zinx Client Test Message")))
 		_, err := conn.Write(msg)
-		if err !=nil {
+		if err != nil {
 			fmt.Println("write error err ", err)
 			return
 		}
@@ -63,6 +62,6 @@ func main() {
 			fmt.Println("==> Recv Msg: ID=", msg.Id, ", len=", msg.DataLen, ", data=", string(msg.Data))
 		}
 
-		time.Sleep(1*time.Second)
+		time.Sleep(1 * time.Second)
 	}
 }

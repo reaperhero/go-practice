@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	//redis "gopkg.in/redis.v4"
-	"testing"
 	"github.com/go-redis/redis"
+	"testing"
 	"time"
 )
 

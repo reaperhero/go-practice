@@ -5,11 +5,7 @@ import (
 	"time"
 )
 
-
-
-
-
-func Test_create_record(t *testing.T)  {
+func Test_create_record(t *testing.T) {
 	var age int = 18
 	user := User{Name: "Jinzhu", Age: &age, Birthday: time.Now()}
 

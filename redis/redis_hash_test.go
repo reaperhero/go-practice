@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_hash_01(t *testing.T)  {
+func Test_hash_01(t *testing.T) {
 	//hash-------------------------------------------
 	hashKey := "userkey_1"
 	rdb.HSet(hashKey, "name", "叶子")

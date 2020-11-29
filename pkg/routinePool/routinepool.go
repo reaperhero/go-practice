@@ -24,20 +24,20 @@ type RoutinePool struct {
 }
 
 //create a fixed routine pool
-func NewFixedRoutinePool(taskQueueSize int64, waitInterval time.Duration,normalWorkerSize int64) (rp *RoutinePool) {
+func NewFixedRoutinePool(taskQueueSize int64, waitInterval time.Duration, normalWorkerSize int64) (rp *RoutinePool) {
 	rp = newRoutinePool(taskQueueSize, waitInterval, normalWorkerSize, normalWorkerSize)
 	return
 }
 
 //create a cached routine pool
-func NewCachedRoutinePool(taskQueueSize int64, waitInterval time.Duration,	normalWorkerSize int64, maxWorkerSize int64) (rp *RoutinePool) {
+func NewCachedRoutinePool(taskQueueSize int64, waitInterval time.Duration, normalWorkerSize int64, maxWorkerSize int64) (rp *RoutinePool) {
 
 	rp = newRoutinePool(taskQueueSize, waitInterval, normalWorkerSize, maxWorkerSize)
 	return
 }
 
 //create a new routine pool
-func newRoutinePool(taskQueueSize int64, waitInterval time.Duration, normalWorkerSize int64,	maxWorkerSize int64) (rp *RoutinePool) {
+func newRoutinePool(taskQueueSize int64, waitInterval time.Duration, normalWorkerSize int64, maxWorkerSize int64) (rp *RoutinePool) {
 	rp = &RoutinePool{
 		TaskQueueSize:    taskQueueSize,
 		WaitInterval:     waitInterval,

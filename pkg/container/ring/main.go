@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-func main()  {
+func main() {
 	// 初始化环需要指定环的大小，一旦创建，长度是不可变的
 	// 初始化一个大小为3的环
 	r := ring.New(3)
@@ -33,7 +33,6 @@ func main()  {
 		sum += v.(int)
 	})
 	log.Print(sum)
-
 
 	// Link能将2个环连接在一起,
 	r2 := ring.New(3)

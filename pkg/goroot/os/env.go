@@ -10,4 +10,3 @@ func GetEnvWithDefault(key, defaultValue string) string {
 	}
 	return val
 }
-

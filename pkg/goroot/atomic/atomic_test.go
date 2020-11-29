@@ -10,7 +10,6 @@ import (
 
 //代码中的加锁操作因为涉及内核态的上下文切换会比较耗时、代价比较高。针对基本数据类型我们还可以使用原子操作来保证并发安全，因为原子操作是Go语言提供的方法它在用户态就可以完成，因此性能比加锁操作更好
 
-
 //读取操作
 //func LoadInt32(addr int32) (val int32)
 //func LoadInt64(addr `int64) (val int64)
@@ -45,7 +44,6 @@ import (
 //func CompareAndSwapUint64(addr *uint64, old, new uint64) (swapped bool)
 //func CompareAndSwapUintptr(addr *uintptr, old, new uintptr) (swapped bool)
 //func CompareAndSwapPointer(addr *unsafe.Pointer, old, new unsafe.Pointer) (swapped bool)
-
 
 var x int64
 var l sync.Mutex

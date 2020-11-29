@@ -93,7 +93,7 @@ func Test_WithValue(t *testing.T) {
 	k := favContextKey("language")
 	ctx := context.WithValue(context.Background(), k, "Go") // 键值对
 
-	f(ctx, k) // found value: Go
+	f(ctx, k)                      // found value: Go
 	f(ctx, favContextKey("color")) // key not found: color
 
 }

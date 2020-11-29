@@ -23,7 +23,6 @@ func Test_map_01(t *testing.T) {
 	fmt.Println(m) // map[x:{Jerry}]
 }
 
-
 // 方法二：使用指向元素的 map 指针
 // 使用指向元素的 map 指针
 func Test_map_02(t *testing.T) {

@@ -1,6 +1,5 @@
 package golang_lru
 
-
 import (
 	"fmt"
 	"github.com/hashicorp/golang-lru"
@@ -8,7 +7,7 @@ import (
 )
 
 //  thread safe lru队列
-func Test_lRu_01(t *testing.T)  {
+func Test_lRu_01(t *testing.T) {
 	l, _ := lru.New(128)
 	for i := 0; i < 256; i++ {
 		l.Add(i, nil)

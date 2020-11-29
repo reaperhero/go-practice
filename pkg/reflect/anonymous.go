@@ -21,9 +21,6 @@ type Boy struct {
 //	fmt.Printf("%#v\n", reflect.ValueOf(m).Field(0)) //main.User{Id:1, Name:"zs", Age:20}
 //}
 
-
-
-
 type Student struct {
 	Name string `json:"name1" db:"name2"`
 }

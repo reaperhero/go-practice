@@ -7,8 +7,6 @@ import (
 	"time"
 )
 
-
-
 type User struct {
 	gorm.Model
 	Name     string
@@ -31,7 +29,6 @@ func (user *User) BeforeCreate(scope *gorm.Scope) error {
 	scope.SetColumn("id", uuid.New())
 	return nil
 }
-
 
 type Email struct {
 	gorm.Model

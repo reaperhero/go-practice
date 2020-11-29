@@ -6,7 +6,6 @@ import (
 	"testing"
 )
 
-
 // write
 func Test_excel_01(t *testing.T) {
 	categories := map[string]string{"A2": "Small", "A3": "Normal", "A4": "Large", "B1": "Apple", "C1": "Orange", "D1": "Pear"}
@@ -22,12 +21,11 @@ func Test_excel_01(t *testing.T) {
 		fmt.Println(err)
 	}
 }
+
 //	     Apple Orange Pear
 //Small	 2	   3	3
 //Normal 5	   2	4
 //Large	 6     7	8
-
-
 
 // read
 func Test_excel_02(t *testing.T) {
@@ -47,4 +45,3 @@ func Test_excel_02(t *testing.T) {
 		fmt.Println()
 	}
 }
-

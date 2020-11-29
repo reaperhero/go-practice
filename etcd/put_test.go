@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func Test_put_01(t *testing.T)  {
+func Test_put_01(t *testing.T) {
 	defer cli.Close()
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	_, err := cli.Put(ctx, "lmh", "lmh")

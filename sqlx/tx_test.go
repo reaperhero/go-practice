@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_sqlx_tx_01(t *testing.T)  {
+func Test_sqlx_tx_01(t *testing.T) {
 	conn, err := Db.Begin()
 	if err != nil {
 		fmt.Println("begin failed :", err)

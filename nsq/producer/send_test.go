@@ -33,4 +33,3 @@ func Test_send_01(t *testing.T) {
 
 	w.Stop()
 }
-
