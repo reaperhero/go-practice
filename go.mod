@@ -12,6 +12,8 @@ require (
 	github.com/coreos/etcd v3.3.25+incompatible
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf // indirect
 	github.com/dustin/go-humanize v1.0.0
+	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a // indirect
+	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gogo/protobuf v1.3.1 // indirect
@@ -20,9 +22,13 @@ require (
 	github.com/google/uuid v1.1.2
 	github.com/hashicorp/consul/api v1.7.0
 	github.com/hashicorp/golang-lru v0.5.1
+	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869 // indirect
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jordan-wright/email v4.0.1-0.20200917010138-e1c00e156980+incompatible
+	github.com/lestrrat-go/apache-logformat v2.0.4+incompatible
+	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
+	github.com/lestrrat-go/strftime v1.0.3 // indirect
 	github.com/nats-io/nats-server/v2 v2.1.9 // indirect
 	github.com/nats-io/nats.go v1.10.0
 	github.com/nsqio/go-nsq v1.0.8
@@ -35,6 +41,7 @@ require (
 	github.com/sirupsen/logrus v1.7.0
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/pflag v1.0.5
+	github.com/tebeka/strftime v0.1.5 // indirect
 	github.com/unknwon/com v1.0.1
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	github.com/xanzy/go-gitlab v0.40.1
