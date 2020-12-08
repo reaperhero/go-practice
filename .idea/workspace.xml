@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotatelogs/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/rotatelogs/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +67,14 @@
       <recent name="$PROJECT_DIR$/go-gorm/curd" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_var_01 in go-example-demo/pflag">
-    <configuration name="Test_Struct_02 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build go-example-demo/sockjs">
+    <configuration name="go build go-example-demo/sockjs" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/template/http" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/template/http" />
-      <directory value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
-      <filePath value="$USER_HOME$/Documents/GitHub/go-gin-chat" />
-      <pattern value="^\QTest_Struct_02\E$" />
+      <filePath value="$PROJECT_DIR$/sockjs/main.go" />
+      <package value="go-example-demo/sockjs" />
+      <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_Struct_03 in go-example-demo/template/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -124,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-example-demo/sockjs" />
         <item itemvalue="Go Test.Test_var_01 in go-example-demo/pflag" />
         <item itemvalue="Go Test.Test_range_02 in go-example-demo/template/http" />
         <item itemvalue="Go Test.Test_var_01 in go-example-demo/template/http" />
         <item itemvalue="Go Test.Test_Struct_03 in go-example-demo/template/http" />
-        <item itemvalue="Go Test.Test_Struct_02 in go-example-demo/template/http" />
       </list>
     </recent_temporary>
   </component>

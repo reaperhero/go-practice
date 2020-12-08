@@ -12,6 +12,8 @@ func main() {
 		rotatelogs.WithLinkName("/data/access.log"),
 		rotatelogs.WithMaxAge(24*time.Hour),
 		rotatelogs.WithRotationTime(time.Hour),
+		rotatelogs.WithMaxAge(-1),
+		rotatelogs.WithRotationCount(7),
 	)
 
 	log.SetOutput(rl)

@@ -22,11 +22,12 @@ require (
 	github.com/google/uuid v1.1.2
 	github.com/hashicorp/consul/api v1.7.0
 	github.com/hashicorp/golang-lru v0.5.1
+	github.com/igm/sockjs-go/v3 v3.0.0
 	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869 // indirect
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jordan-wright/email v4.0.1-0.20200917010138-e1c00e156980+incompatible
-	github.com/lestrrat-go/apache-logformat v2.0.4+incompatible
+	github.com/lestrrat-go/apache-logformat v2.0.4+incompatible // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.3 // indirect
 	github.com/nats-io/nats-server/v2 v2.1.9 // indirect
