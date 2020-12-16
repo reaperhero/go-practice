@@ -12,6 +12,7 @@ require (
 	github.com/c-bata/go-prompt v0.2.5
 	github.com/coreos/etcd v3.3.25+incompatible
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf // indirect
+	github.com/creack/pty v1.1.9
 	github.com/dustin/go-humanize v1.0.0
 	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a // indirect
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
@@ -54,7 +55,10 @@ require (
 	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
 	golang.org/x/net v0.0.0-20201006153459-a7d1128ccaa0
+	golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf
 	google.golang.org/grpc v1.33.2 // indirect
+	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
+	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
 
