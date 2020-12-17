@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"github.com/go-resty/resty/v2"
 	"io/ioutil"
+	"testing"
 )
 
-func () {
+func Test_multipart(t *testing.T) {
 	profileImgBytes, _ := ioutil.ReadFile("/Users/jeeva/test-img.png")
 	notesBytes, _ := ioutil.ReadFile("/Users/jeeva/text-file.txt")
 
