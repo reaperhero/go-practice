@@ -90,23 +90,23 @@ func Test_Get(t *testing.T) {
 		}).
 		SetHeader("Accept", "application/json").
 		SetAuthToken("BC594900518B4F7EAC75BD37F019E08FBC594900518B4F7EAC75BD37F019E08F").
-		Get("/search_result")
-	fmt.Println(resp,err)
+		Get("https://httpbin.org/search_result")
+	fmt.Println(resp.String(),err)
 
 	// Sample of using Request.SetQueryString method
 	resp, err = client.R().
 		SetQueryString("productId=232&template=fresh-sample&cat=resty&source=google&kw=buy a lot more").
 		SetHeader("Accept", "application/json").
 		SetAuthToken("BC594900518B4F7EAC75BD37F019E08FBC594900518B4F7EAC75BD37F019E08F").
-		Get("/show_product")
-	fmt.Println(resp,err)
+		Get("https://httpbin.org/show_product")
+	fmt.Println(resp.String(),err)
 
 	// If necessary, you can force response content type to tell Resty to parse a JSON response into your struct
-	var result interface{}
+	var result interface{} = nil
 	resp, err = client.R().
-		SetResult(result).
+		SetResult(&result).
 		ForceContentType("application/json").
-		Get("v2/alpine/manifests/latest")
-	fmt.Println(resp,err)
+		Get("https://httpbin.org/v2/alpine/manifests/latest")
+	fmt.Println(resp.String(),err)
 	fmt.Println(result)
 }
