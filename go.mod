@@ -45,9 +45,11 @@ require (
 	github.com/onsi/gomega v1.10.3 // indirect
 	github.com/pkg/term v1.1.0
 	github.com/robfig/cron v1.2.0
+	github.com/russross/blackfriday v1.6.0
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.7.0
+	github.com/spf13/afero v1.1.2
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/pflag v1.0.5
 	github.com/streadway/amqp v1.0.0
