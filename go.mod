@@ -17,6 +17,7 @@ require (
 	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a // indirect
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
 	github.com/fatih/color v1.9.0
+	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-echarts/go-echarts/v2 v2.2.3
 	github.com/go-redis/redis v6.15.9+incompatible
