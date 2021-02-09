@@ -68,7 +68,9 @@ heap
 
 - 火焰图
 
-可以查看所有信息
+go>=1.11集成pprof
 ```
 go tool pprof -http=127.0.0.1:8999 http://127.0.0.1/debug/pprof/profile
+http://127.0.0.1:8999/ui/   # 访问
 ```
+
