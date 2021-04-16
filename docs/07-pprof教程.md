@@ -49,11 +49,19 @@ cpu
          0.01s 0.038% 97.59%      0.19s  0.72%  runtime.mallocgc
          0.01s 0.038% 97.63%     23.30s 87.76%  syscall.Write
 
-     flat：给定函数上运行耗时
-     flat%：同上的 CPU 运行耗时总比例
-     sum%：给定函数累积使用 CPU 总比例
-     cum：当前函数加上它之上的调用运行总耗时
-     cum%：同上的 CPU 运行耗时总比例
+    flat：给定函数上运行耗时
+    flat%：同上的 CPU 运行耗时总比例
+    sum%：给定函数累积使用 CPU 总比例
+    cum：当前函数加上它之上的调用运行总耗时
+    cum%：同上的 CPU 运行耗时总比例
+    eg:
+    func b() {
+        c() // takes 1s
+        do something directly // takes 3s
+        d() // takes 2s
+    }
+    函数b由三部分组成：调用函数c、自己直接处理一些事情、调用函数d，其中调用函数c耗时1秒，自己直接处理事情耗时3秒，调用函数d耗时2秒，那么函数b的flat耗时就是3秒，cum耗时就是6秒 
+     
 
 heap
     (pprof) top
