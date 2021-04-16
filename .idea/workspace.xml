@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/etcd/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcd/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,23 +64,27 @@
       <recent name="$PROJECT_DIR$/go-gorm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_json2struct in go-example-demo/pkg/json">
-    <configuration name="go build go-example-demo/fatih-structs " type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.Test_continue02 in go-example-demo/pkg/goroot/recycle">
+    <configuration name="TestName in go-example-demo/pkg/goroot/recycle" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/recycle" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/fatih-structs /struct-map.go" />
-      <package value="go-example-demo/fatih-structs " />
+      <package value="go-example-demo/pkg/goroot/recycle" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestName\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build go-example-demo/go-echarts" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_continue02 in go-example-demo/pkg/goroot/recycle" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/recycle" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/go-echarts/main.go" />
-      <package value="go-example-demo/go-echarts" />
+      <package value="go-example-demo/pkg/goroot/recycle" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_continue02\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_json2struct in go-example-demo/pkg/json" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -118,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_continue02 in go-example-demo/pkg/goroot/recycle" />
+        <item itemvalue="Go Test.TestName in go-example-demo/pkg/goroot/recycle" />
         <item itemvalue="Go Test.Test_json2struct in go-example-demo/pkg/json" />
         <item itemvalue="Go Test.Test_regexp_html in go-example-demo/pkg/goroot/regexp" />
         <item itemvalue="Go Test.Test_regexp_string in go-example-demo/pkg/goroot/regexp" />
-        <item itemvalue="Go Build.go build go-example-demo/fatih-structs " />
-        <item itemvalue="Go Build.go build go-example-demo/go-echarts" />
       </list>
     </recent_temporary>
   </component>
@@ -142,29 +146,33 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618473702337">
+    <state x="585" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618555449565">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state x="585" y="314" key="#com.intellij.fileTypes.FileTypeChooser/36.25.1644.1025@36.25.1644.1025" timestamp="1618473702337" />
-    <state width="1602" height="231" key="GridCell.Tab.0.bottom" timestamp="1618477825483">
+    <state x="585" y="314" key="#com.intellij.fileTypes.FileTypeChooser/36.25.1644.1025@36.25.1644.1025" timestamp="1618555449565" />
+    <state width="1602" height="431" key="GridCell.Tab.0.bottom" timestamp="1618557864952">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
     <state width="1638" height="318" key="GridCell.Tab.0.bottom/0.25.1680.967@0.25.1680.967" timestamp="1612882201875" />
-    <state width="1602" height="231" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1618477825483" />
-    <state width="1602" height="231" key="GridCell.Tab.0.center" timestamp="1618477825482">
+    <state width="1602" height="431" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1618557864952" />
+    <state width="1602" height="431" key="GridCell.Tab.0.center" timestamp="1618557864951">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
     <state width="1638" height="318" key="GridCell.Tab.0.center/0.25.1680.967@0.25.1680.967" timestamp="1612882201875" />
-    <state width="1602" height="231" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1618477825482" />
-    <state width="1602" height="231" key="GridCell.Tab.0.left" timestamp="1618477825482">
+    <state width="1602" height="431" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1618557864951" />
+    <state width="1602" height="431" key="GridCell.Tab.0.left" timestamp="1618557864950">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
     <state width="1638" height="318" key="GridCell.Tab.0.left/0.25.1680.967@0.25.1680.967" timestamp="1612882201874" />
-    <state width="1602" height="231" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1618477825482" />
-    <state width="1602" height="231" key="GridCell.Tab.0.right" timestamp="1618477825483">
+    <state width="1602" height="431" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1618557864950" />
+    <state width="1602" height="431" key="GridCell.Tab.0.right" timestamp="1618557864951">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
     <state width="1638" height="318" key="GridCell.Tab.0.right/0.25.1680.967@0.25.1680.967" timestamp="1612882201875" />
-    <state width="1602" height="231" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1618477825483" />
+    <state width="1602" height="431" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1618557864951" />
+    <state x="523" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1618558672262">
+      <screen x="36" y="25" width="1644" height="1025" />
+    </state>
+    <state x="523" y="237" width="670" height="676" key="search.everywhere.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1618558672262" />
   </component>
 </project>
