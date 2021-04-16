@@ -12,7 +12,7 @@ var (
 
 func init() {
 	cli, _ = clientv3.New(clientv3.Config{
-		Endpoints:   []string{"122.112.218.250:32328"},
+		Endpoints:   []string{"127.0.0.1:2379"},
 		DialTimeout: 5 * time.Second,
 	})
 	fmt.Println("connect to etcd success")
