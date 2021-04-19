@@ -52,3 +52,4 @@ func main() {
 
 // go run main.go
 // go tool pprof program cpu.prof
+// go tool pprof -text cpu.pprof  # 将结果以文本形式打印出来

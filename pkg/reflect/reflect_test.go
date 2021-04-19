@@ -70,11 +70,11 @@ func Test_updateValue_01(t *testing.T) {
 	fmt.Println("main:", x)
 }
 
-type User struct {
-	Id   int
-	Name string
-	Age  int
-}
+//type User struct {
+//	Id   int
+//	Name string
+//	Age  int
+//}
 
 // 绑方法
 func (u User) Hello() {
