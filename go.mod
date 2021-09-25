@@ -24,6 +24,7 @@ require (
 	github.com/go-resty/resty/v2 v2.3.0
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gogo/protobuf v1.3.1 // indirect
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/uuid v1.1.2
@@ -52,6 +53,7 @@ require (
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.7.0
+	github.com/smartystreets/goconvey v1.6.4
 	github.com/speps/go-hashids v2.0.0+incompatible
 	github.com/spf13/afero v1.1.2
 	github.com/spf13/cobra v1.1.1

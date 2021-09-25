@@ -4,7 +4,6 @@
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,17 +65,19 @@
       <recent name="$PROJECT_DIR$/go-gorm/curd" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestEncodeRedPacketID in go-example-demo/gohashid">
-    <configuration name="go build go-example-demo/groupcache" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestSnowId in go-example-demo/snowflake">
+    <configuration name="Test in go-example-demo/snowflake" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/snowflake" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/groupcache/groupcache.go" />
-      <package value="go-example-demo/groupcache" />
+      <package value="go-example-demo/snowflake" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestEncodeRedPacketID in go-example-demo/gohashid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEncodeHashID in go-example-demo/gohashid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/gohashid" />
       <framework value="gotest" />
@@ -84,49 +85,49 @@
       <package value="go-example-demo/gohashid" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestEncodeRedPacketID\E$" />
+      <pattern value="^\QTestEncodeHashID\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestName in go-example-demo/pkg/goroot/recycle" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSnowId in go-example-demo/snowflake" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/recycle" />
+      <working_directory value="$PROJECT_DIR$/snowflake" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/recycle" />
+      <package value="go-example-demo/snowflake" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestName\E$" />
+      <pattern value="^\QTestSnowId\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_continue02 in go-example-demo/pkg/goroot/recycle" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_CheckPassword in go-example-demo/password" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/recycle" />
+      <working_directory value="$PROJECT_DIR$/password" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/recycle" />
+      <package value="go-example-demo/password" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_continue02\E$" />
+      <pattern value="^\QTest_CheckPassword\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_refectEnv in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_GeneratePassword in go-example-demo/password" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
+      <working_directory value="$PROJECT_DIR$/password" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/reflect" />
+      <package value="go-example-demo/password" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_refectEnv\E$" />
+      <pattern value="^\QTest_GeneratePassword\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestEncodeRedPacketID in go-example-demo/gohashid" />
-        <item itemvalue="Go Test.Test_refectEnv in go-example-demo/pkg/reflect" />
-        <item itemvalue="Go Build.go build go-example-demo/groupcache" />
-        <item itemvalue="Go Test.Test_continue02 in go-example-demo/pkg/goroot/recycle" />
-        <item itemvalue="Go Test.TestName in go-example-demo/pkg/goroot/recycle" />
+        <item itemvalue="Go Test.TestSnowId in go-example-demo/snowflake" />
+        <item itemvalue="Go Test.Test in go-example-demo/snowflake" />
+        <item itemvalue="Go Test.Test_CheckPassword in go-example-demo/password" />
+        <item itemvalue="Go Test.Test_GeneratePassword in go-example-demo/password" />
+        <item itemvalue="Go Test.TestEncodeHashID in go-example-demo/gohashid" />
       </list>
     </recent_temporary>
   </component>
@@ -146,33 +147,25 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618555449565">
+    <state width="1602" height="414" key="GridCell.Tab.0.bottom" timestamp="1632547818296">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state x="585" y="314" key="#com.intellij.fileTypes.FileTypeChooser/36.25.1644.1025@36.25.1644.1025" timestamp="1618555449565" />
-    <state width="1602" height="227" key="GridCell.Tab.0.bottom" timestamp="1618850885115">
+    <state width="1602" height="414" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818296" />
+    <state width="1602" height="414" key="GridCell.Tab.0.center" timestamp="1632547818295">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1638" height="318" key="GridCell.Tab.0.bottom/0.25.1680.967@0.25.1680.967" timestamp="1612882201875" />
-    <state width="1602" height="227" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1618850885115" />
-    <state width="1602" height="227" key="GridCell.Tab.0.center" timestamp="1618850885115">
+    <state width="1602" height="414" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818295" />
+    <state width="1602" height="414" key="GridCell.Tab.0.left" timestamp="1632547818295">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1638" height="318" key="GridCell.Tab.0.center/0.25.1680.967@0.25.1680.967" timestamp="1612882201875" />
-    <state width="1602" height="227" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1618850885115" />
-    <state width="1602" height="227" key="GridCell.Tab.0.left" timestamp="1618850885114">
+    <state width="1602" height="414" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818295" />
+    <state width="1602" height="414" key="GridCell.Tab.0.right" timestamp="1632547818296">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1638" height="318" key="GridCell.Tab.0.left/0.25.1680.967@0.25.1680.967" timestamp="1612882201874" />
-    <state width="1602" height="227" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1618850885114" />
-    <state width="1602" height="227" key="GridCell.Tab.0.right" timestamp="1618850885115">
+    <state width="1602" height="414" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818296" />
+    <state x="559" y="263" width="597" height="490" key="find.popup" timestamp="1632540747417">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1638" height="318" key="GridCell.Tab.0.right/0.25.1680.967@0.25.1680.967" timestamp="1612882201875" />
-    <state width="1602" height="227" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1618850885115" />
-    <state x="523" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1618558672262">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state x="523" y="237" width="670" height="676" key="search.everywhere.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1618558672262" />
+    <state x="559" y="263" width="597" height="490" key="find.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1632540747417" />
   </component>
 </project>
