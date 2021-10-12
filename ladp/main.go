@@ -59,6 +59,10 @@ func addPeople() {
 	sql.Attribute("loginShell", []string{"/bin/bash"})
 	sql.Attribute("uidNumber", []string{"10000"})
 	sql.Attribute("gidNumber", []string{"2000"})
+	//sql.Attribute("displayName", []string{username})
+	//sql.Attribute("mobile", []string{params.Phone})
+	//sql.Attribute("employeeID", []string{params.EmployeeID})
+	//sql.Attribute("mail", []string{params.mail})
 	if err := conn.Add(sql); err != nil {
 		log.Println(err)
 	}
@@ -89,7 +93,7 @@ func searchPeople() {
 		0,
 		0,
 		false,
-		fmt.Sprintf("(uid=%s)",username),
+		fmt.Sprintf("(uid=%s)", username),
 		nil,
 		nil,
 	)
