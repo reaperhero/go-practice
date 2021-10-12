@@ -20,6 +20,7 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-echarts/go-echarts/v2 v2.2.3
+	github.com/go-ldap/ldap/v3 v3.4.1
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-resty/resty/v2 v2.3.0
 	github.com/go-sql-driver/mysql v1.5.0
@@ -35,6 +36,7 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jordan-wright/email v4.0.1-0.20200917010138-e1c00e156980+incompatible
+	github.com/jtblin/go-ldap-client v0.0.0-20170223121919-b73f66626b33 // indirect
 	github.com/labstack/gommon v0.3.0
 	github.com/lestrrat-go/apache-logformat v2.0.4+incompatible // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
@@ -53,7 +55,6 @@ require (
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.7.0
-	github.com/smartystreets/goconvey v1.6.4
 	github.com/speps/go-hashids v2.0.0+incompatible
 	github.com/spf13/afero v1.1.2
 	github.com/spf13/cobra v1.1.1
@@ -70,7 +71,9 @@ require (
 	golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf
 	google.golang.org/grpc v1.33.2 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
+	gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d // indirect
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
+	gopkg.in/ldap.v2 v2.5.1
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
 

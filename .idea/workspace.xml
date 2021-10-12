@@ -4,6 +4,8 @@
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpstat/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpstat/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,19 +46,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/httpstat" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/redis" />
-      <recent name="$PROJECT_DIR$/pkg" />
-      <recent name="$PROJECT_DIR$/docs" />
-      <recent name="$PROJECT_DIR$/pkg/json" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pflag/var" />
       <recent name="$PROJECT_DIR$/cobra/githubcli" />
@@ -64,8 +59,33 @@
       <recent name="$PROJECT_DIR$/pkg" />
       <recent name="$PROJECT_DIR$/go-gorm/curd" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/httpstat" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/redis" />
+      <recent name="$PROJECT_DIR$/pkg" />
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestSnowId in go-example-demo/snowflake">
+  <component name="RunManager" selected="Go Build.go build go-example-demo/ladp">
+    <configuration name="go build go-example-demo/ladp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/ladp/main.go" />
+      <package value="go-example-demo/ladp" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build go-example-demo/sockjs" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/sockjs/main.go" />
+      <package value="go-example-demo/sockjs" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test in go-example-demo/snowflake" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/snowflake" />
@@ -75,17 +95,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTest\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestEncodeHashID in go-example-demo/gohashid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/gohashid" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/gohashid" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestEncodeHashID\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSnowId in go-example-demo/snowflake" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -110,24 +119,13 @@
       <pattern value="^\QTest_CheckPassword\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_GeneratePassword in go-example-demo/password" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/password" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/password" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_GeneratePassword\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-example-demo/ladp" />
+        <item itemvalue="Go Build.go build go-example-demo/sockjs" />
         <item itemvalue="Go Test.TestSnowId in go-example-demo/snowflake" />
         <item itemvalue="Go Test.Test in go-example-demo/snowflake" />
         <item itemvalue="Go Test.Test_CheckPassword in go-example-demo/password" />
-        <item itemvalue="Go Test.Test_GeneratePassword in go-example-demo/password" />
-        <item itemvalue="Go Test.TestEncodeHashID in go-example-demo/gohashid" />
       </list>
     </recent_temporary>
   </component>
@@ -147,25 +145,25 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1602" height="414" key="GridCell.Tab.0.bottom" timestamp="1632547818296">
+    <state width="1602" height="279" key="GridCell.Tab.0.bottom" timestamp="1634052672814">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="414" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818296" />
-    <state width="1602" height="414" key="GridCell.Tab.0.center" timestamp="1632547818295">
+    <state width="1602" height="279" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1634052672814" />
+    <state width="1602" height="279" key="GridCell.Tab.0.center" timestamp="1634052672812">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="414" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818295" />
-    <state width="1602" height="414" key="GridCell.Tab.0.left" timestamp="1632547818295">
+    <state width="1602" height="279" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1634052672812" />
+    <state width="1602" height="279" key="GridCell.Tab.0.left" timestamp="1634052672812">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="414" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818295" />
-    <state width="1602" height="414" key="GridCell.Tab.0.right" timestamp="1632547818296">
+    <state width="1602" height="279" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1634052672812" />
+    <state width="1602" height="279" key="GridCell.Tab.0.right" timestamp="1634052672813">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="414" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1632547818296" />
-    <state x="559" y="263" width="597" height="490" key="find.popup" timestamp="1632540747417">
+    <state width="1602" height="279" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1634052672813" />
+    <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1634051035593">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state x="559" y="263" width="597" height="490" key="find.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1632540747417" />
+    <state x="736" y="250" width="906" height="490" key="find.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1634051035593" />
   </component>
 </project>

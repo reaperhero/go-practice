@@ -27,7 +27,6 @@ import (
 	"github.com/fatih/color"
 )
 
-
 // go run main.go https://example.com/
 
 const (
