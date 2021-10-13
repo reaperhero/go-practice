@@ -15,14 +15,14 @@ type alert struct {
 
 func (a *alert) print() {
 	go func(bb *alert) {
-		//fmt.Println(bb.front.end1)  //不会重复
+		fmt.Println(bb.front.end1) //重复打印
 		fmt.Println(*bb.front.end2) //重复打印
 	}(a)
 }
 
 func TestMapread(t *testing.T) {
 	testMap := make(map[string]alert)
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 50; i++ {
 		testMap[fmt.Sprintf("%d", i)] = alert{
 			front: struct {
 				end1 int
@@ -30,7 +30,7 @@ func TestMapread(t *testing.T) {
 			}{end1: i, end2: &i}}
 	}
 	for _, i := range testMap {
-		i.print()
+		i.print() // i 的内存地址一直没变，值在变，将会导致print时候会打印重复值
 	}
 	time.Sleep(time.Second * 2)
 }
