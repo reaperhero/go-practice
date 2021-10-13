@@ -9,6 +9,8 @@ import (
 // Entry: 包括组，用户
 
 // https://www.cnblogs.com/liu-shuai/articles/12698405.html
+// https://blog.csdn.net/wyansai/article/details/99416987
+
 // ldapsearch -LLL -W -x -D "cn=admin,dc=ygyg,dc=cn" -H ldap://localhost -b "dc=ygyg,dc=cn"
 
 var (

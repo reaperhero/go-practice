@@ -65,7 +65,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go-example-demo/ladp">
+  <component name="RunManager" selected="Go Test.TestMapread in go-example-demo/pkg/maptest">
     <configuration name="go build go-example-demo/ladp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -84,15 +84,26 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test in go-example-demo/snowflake" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMapread in go-example-demo/pkg/maptest" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/snowflake" />
+      <working_directory value="$PROJECT_DIR$/pkg/maptest" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/snowflake" />
+      <package value="go-example-demo/pkg/maptest" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest\E$" />
+      <pattern value="^\QTestMapread\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSlice in go-example-demo/pkg/maptest" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/pkg/maptest" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/maptest" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSlice\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSnowId in go-example-demo/snowflake" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -106,24 +117,13 @@
       <pattern value="^\QTestSnowId\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_CheckPassword in go-example-demo/password" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/password" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/password" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_CheckPassword\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestMapread in go-example-demo/pkg/maptest" />
+        <item itemvalue="Go Test.TestSlice in go-example-demo/pkg/maptest" />
         <item itemvalue="Go Build.go build go-example-demo/ladp" />
         <item itemvalue="Go Build.go build go-example-demo/sockjs" />
         <item itemvalue="Go Test.TestSnowId in go-example-demo/snowflake" />
-        <item itemvalue="Go Test.Test in go-example-demo/snowflake" />
-        <item itemvalue="Go Test.Test_CheckPassword in go-example-demo/password" />
       </list>
     </recent_temporary>
   </component>
@@ -143,22 +143,22 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1602" height="178" key="GridCell.Tab.0.bottom" timestamp="1634052689366">
+    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1634124692047">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="178" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1634052689366" />
-    <state width="1602" height="178" key="GridCell.Tab.0.center" timestamp="1634052689365">
+    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1634124692047" />
+    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1634124692047">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="178" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1634052689365" />
-    <state width="1602" height="178" key="GridCell.Tab.0.left" timestamp="1634052689364">
+    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1634124692047" />
+    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1634124692046">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="178" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1634052689364" />
-    <state width="1602" height="178" key="GridCell.Tab.0.right" timestamp="1634052689365">
+    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1634124692046" />
+    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1634124692047">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="178" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1634052689365" />
+    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1634124692047" />
     <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1634051035593">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
