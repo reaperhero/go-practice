@@ -10,6 +10,7 @@ import (
 func Test_cron_01(t *testing.T) {
 	i := 0
 	c := cron.New()
+	defer c.Stop()
 	//每隔5秒执行一次：*/5 * * * * ?
 	//每隔1分钟执行一次：0 */1 * * * ?
 	//每天23点执行一次：0 0 23 * * ?

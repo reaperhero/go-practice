@@ -6,6 +6,8 @@ import (
 	"testing"
 )
 
+// http://c.biancheng.net/view/5124.html
+
 func Test_regexp_string(t *testing.T) {
 	buf := "abc azc a7c aac 888 a9c  tac"
 	reg1 := regexp.MustCompile(`a.c`)

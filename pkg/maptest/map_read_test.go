@@ -15,7 +15,7 @@ type alert struct {
 
 func (a *alert) print() {
 	go func(bb *alert) {
-		fmt.Println(bb.front.end1) //重复打印
+		fmt.Println(bb.front.end1)  //重复打印
 		fmt.Println(*bb.front.end2) //重复打印
 	}(a)
 }
@@ -48,4 +48,12 @@ func TestSlice(t *testing.T) {
 		}(i)
 	}
 	time.Sleep(time.Second)
+}
+
+func TestM(t *testing.T) {
+	var (
+		a = make(map[int]int)
+	)
+	a[1] = 2
+	fmt.Println(a)
 }

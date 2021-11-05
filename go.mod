@@ -20,10 +20,10 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-echarts/go-echarts/v2 v2.2.3
-	github.com/go-ldap/ldap/v3 v3.4.1
+	github.com/go-ldap/ldap/v3 v3.4.1 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-resty/resty/v2 v2.3.0
-	github.com/go-sql-driver/mysql v1.5.0
+	github.com/go-sql-driver/mysql v1.6.0
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
@@ -66,8 +66,8 @@ require (
 	github.com/xanzy/go-gitlab v0.40.1
 	go.etcd.io/etcd v3.3.25+incompatible
 	go.uber.org/zap v1.16.0 // indirect
-	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
-	golang.org/x/net v0.0.0-20201006153459-a7d1128ccaa0
+	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
+	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
 	golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf
 	google.golang.org/grpc v1.33.2 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
@@ -75,6 +75,7 @@ require (
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	gopkg.in/ldap.v2 v2.5.1
 	sigs.k8s.io/yaml v1.2.0 // indirect
+	xorm.io/xorm v1.2.5
 )
 
 replace google.golang.org/grpc => google.golang.org/grpc v1.26.0

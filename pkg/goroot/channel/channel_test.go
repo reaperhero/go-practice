@@ -100,3 +100,20 @@ func Test_channel_04(t *testing.T) {
 	close(done)
 	time.Sleep(3 * time.Second)
 }
+
+func Test_channel_05(t *testing.T) {
+	ch := make(chan string)
+	go func() {
+		for {
+			v, ok := <-ch
+			if !ok {
+				fmt.Println("read err")
+				return
+			}
+			fmt.Println(v)
+			time.Sleep(time.Second * 10)
+		}
+	}()
+	ch <- "1"
+	ch <- "2" // 不会被处理
+}

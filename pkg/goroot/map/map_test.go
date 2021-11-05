@@ -33,3 +33,9 @@ func Test_map_02(t *testing.T) {
 	m["x"].name = "Jerry" // 直接修改 m["x"] 中的字段
 	fmt.Println(m["x"])   // &{Jerry}
 }
+
+func Test_map_03(t *testing.T) {
+	var a map[string]string
+	a["s"] = "sad"
+	fmt.Println(a)
+}

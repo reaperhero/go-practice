@@ -1,7 +1,9 @@
 package time
 
 import (
+	"encoding/json"
 	"fmt"
+	"strconv"
 	"testing"
 	"time"
 )
@@ -142,4 +144,14 @@ func Test_ticker_timeout_03(t *testing.T) {
 	case <-timer.C:
 		fmt.Println("Timed out")
 	}
+}
+
+func TestJsonTime(t *testing.T) {
+	v := make(map[int]time.Duration)
+	v[1] = time.Minute * 1 / 60 / 1e9
+	b, _ := json.Marshal(v)
+	bs := string(b)
+	fmt.Println(bs)
+	bb, _ := strconv.ParseInt(bs, 10, 64)
+	fmt.Println(bb)
 }
