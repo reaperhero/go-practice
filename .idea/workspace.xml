@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cron/cron_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cron/cron_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/channel/channel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/channel/channel_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/regexp/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/regexp/string_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/slice/copy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/slice/copy_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/time/print_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/time/print_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/maptest/map_read_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/maptest/map_read_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +66,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_channel_05 in go-example-demo/pkg/goroot/channel">
+  <component name="RunManager" selected="Go Build.go build go-example-demo/kingpin">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -83,15 +76,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestDelete in go-example-demo/pkg/goroot/slice" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build go-example-demo/kingpin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/slice" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/slice" />
+      <filePath value="$PROJECT_DIR$/kingpin/main.go" />
+      <package value="go-example-demo/kingpin" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestDelete\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestDelete1 in go-example-demo/pkg/goroot/slice" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -105,15 +96,15 @@
       <pattern value="^\QTestDelete1\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSliceDelete in go-example-demo/pkg/goroot/slice" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPrint01 in go-example-demo/kingpin" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/slice" />
+      <working_directory value="$PROJECT_DIR$/kingpin" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/slice" />
+      <package value="go-example-demo/kingpin" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSliceDelete\E$" />
+      <pattern value="^\QTestPrint01\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_channel_05 in go-example-demo/pkg/goroot/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -150,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-example-demo/kingpin" />
+        <item itemvalue="Go Test.TestPrint01 in go-example-demo/kingpin" />
         <item itemvalue="Go Test.Test_channel_05 in go-example-demo/pkg/goroot/channel" />
         <item itemvalue="Go Test.Test_map_03 in go-example-demo/pkg/goroot/map" />
         <item itemvalue="Go Test.TestDelete1 in go-example-demo/pkg/goroot/slice" />
-        <item itemvalue="Go Test.TestDelete in go-example-demo/pkg/goroot/slice" />
-        <item itemvalue="Go Test.TestSliceDelete in go-example-demo/pkg/goroot/slice" />
       </list>
     </recent_temporary>
   </component>
@@ -174,22 +165,22 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1635993109799">
+    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1636450500327">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1635993109799" />
-    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1635993109799">
+    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1636450500327" />
+    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1636450500327">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1635993109799" />
-    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1635993109799">
+    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1636450500327" />
+    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1636450500326">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1635993109799" />
-    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1635993109799">
+    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1636450500326" />
+    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1636450500327">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1635993109799" />
+    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1636450500327" />
     <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1634051035593">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
