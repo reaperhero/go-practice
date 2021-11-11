@@ -39,3 +39,14 @@ func Test_map_03(t *testing.T) {
 	a["s"] = "sad"
 	fmt.Println(a)
 }
+
+func Test_map_04(t *testing.T) {
+	type a struct {
+		Name string
+		H    map[string]string
+		B    map[string][]struct{}
+	}
+	b := a{B: make(map[string][]struct{})} // []struct不需要做初始化
+	bB := b.B["1"]
+	bB = append(bB, struct{}{})
+}

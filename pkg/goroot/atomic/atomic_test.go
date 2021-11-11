@@ -83,3 +83,18 @@ func Test_atomic_01(T *testing.T) {
 	fmt.Println(x)
 	fmt.Println(end.Sub(start))
 }
+
+// Main function
+func TestAtomic01(t *testing.T) {
+	var (
+		i uint32 = 54325
+	)
+
+	var oldvalue = atomic.SwapUint32(&i, 7687)
+
+	fmt.Println(i, oldvalue) // 7687 54325
+
+	Swap := atomic.CompareAndSwapUint32(&i, 54325, 677876) // no swap
+
+	fmt.Println(Swap, i) // false 7687
+}
