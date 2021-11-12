@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kingpin/kingpin.go" beforeDir="false" afterPath="$PROJECT_DIR$/kingpin/kingpin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/atomic/atomic_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/atomic/atomic_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +63,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestCond in go-example-demo/pkg/goroot/sync">
+  <component name="RunManager" selected="Go Test.TestAntsWithCommon in go-example-demo/ants">
     <configuration name="BenchmarkUnmarshal in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
@@ -89,6 +84,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QBenchmarkUnmarshalWithPool\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAntsWithCommon in go-example-demo/ants" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/ants" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/ants" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestAntsWithCommon\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestCond in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -113,24 +119,13 @@
       <pattern value="^\QTestOnce\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_cond in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/sync" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTest_cond\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAntsWithCommon in go-example-demo/ants" />
         <item itemvalue="Go Test.TestCond in go-example-demo/pkg/goroot/sync" />
         <item itemvalue="Go Test.TestOnce in go-example-demo/pkg/goroot/sync" />
         <item itemvalue="Go Test.BenchmarkUnmarshalWithPool in go-example-demo/pkg/goroot/sync" />
         <item itemvalue="Go Test.BenchmarkUnmarshal in go-example-demo/pkg/goroot/sync" />
-        <item itemvalue="Go Test.Test_cond in go-example-demo/pkg/goroot/sync" />
       </list>
     </recent_temporary>
   </component>
@@ -154,25 +149,25 @@
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
     <state x="442" y="81" key="CommitChangelistDialog2/36.25.1644.1025@36.25.1644.1025" timestamp="1636613510785" />
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1636621298050">
+    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1636628820140">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1636621298050" />
-    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1636621298048">
+    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820140" />
+    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1636628820139">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1636621298048" />
-    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1636621298048">
+    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820139" />
+    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1636628820139">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1636621298048" />
-    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1636621298049">
+    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820139" />
+    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1636628820140">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1636621298049" />
-    <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1634051035593">
+    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820140" />
+    <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1636630336426">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state x="736" y="250" width="906" height="490" key="find.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1634051035593" />
+    <state x="736" y="250" width="906" height="490" key="find.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1636630336426" />
   </component>
 </project>
