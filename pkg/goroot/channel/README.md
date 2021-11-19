@@ -5,5 +5,5 @@
 #### channel
 
 通道的基本发送和接收都阻塞
-![](./标准库/image/channel01.png)
-![](./标准库/image/channel02.png)
+![](./channel01.png)
+![](./channel02.png)

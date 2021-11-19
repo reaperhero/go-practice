@@ -4,7 +4,7 @@
 [参考地址](https://www.bookstack.cn/read/For-learning-Go-Tutorial/src-chapter16-01.0.md)
 [参考地址](https://www.runoob.com/w3cnote/sort-algorithm-summary.html)
 
-![](../标准库/image/849589-20180402133438219-1946132192.png )
+![](./849589-20180402133438219-1946132192.png )
 
 - sort包排序
 
