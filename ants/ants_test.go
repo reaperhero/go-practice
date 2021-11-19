@@ -19,12 +19,11 @@ func TestAntsWithCommon(t *testing.T) {
 
 	// Use the common pool.
 	var wg sync.WaitGroup
-	demoFunc := func() {
-		time.Sleep(10 * time.Millisecond)
-		fmt.Println("Hello World!")
-	}
 	syncCalculateSum := func() {
-		demoFunc()
+		func() {
+			time.Sleep(10 * time.Millisecond)
+			fmt.Println("Hello World!")
+		}()
 		wg.Done()
 	}
 	for i := 0; i < runTimes; i++ {

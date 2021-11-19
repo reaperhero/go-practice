@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ants/ants_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ants/ants_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/slice/copy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/slice/copy_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,29 +65,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestAntsWithCommon in go-example-demo/ants">
-    <configuration name="BenchmarkUnmarshal in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
-      <framework value="gobench" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/sync" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QBenchmarkUnmarshal\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="BenchmarkUnmarshalWithPool in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
-      <framework value="gobench" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/sync" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QBenchmarkUnmarshalWithPool\E$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestUnsafeString in go-example-demo/pkg/goroot/unsafe">
     <configuration name="TestAntsWithCommon in go-example-demo/ants" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/ants" />
@@ -97,18 +77,18 @@
       <pattern value="^\QTestAntsWithCommon\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestCond in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestErrorWap in go-example-demo/pkg/errorswap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
+      <working_directory value="$PROJECT_DIR$/pkg/errorswap" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/sync" />
+      <package value="go-example-demo/pkg/errorswap" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestCond\E$" />
+      <pattern value="^\QTestErrorWap\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestOnce in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSyncMap in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-example-demo" />
       <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
       <framework value="gotest" />
@@ -116,16 +96,38 @@
       <package value="go-example-demo/pkg/goroot/sync" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestOnce\E$" />
+      <pattern value="^\QTestSyncMap\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUnsafe in go-example-demo/pkg/goroot/unsafe" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/unsafe" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/goroot/unsafe" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestUnsafe\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUnsafeString in go-example-demo/pkg/goroot/unsafe" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-example-demo" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/unsafe" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/goroot/unsafe" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestUnsafeString\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestUnsafeString in go-example-demo/pkg/goroot/unsafe" />
+        <item itemvalue="Go Test.TestUnsafe in go-example-demo/pkg/goroot/unsafe" />
+        <item itemvalue="Go Test.TestErrorWap in go-example-demo/pkg/errorswap" />
+        <item itemvalue="Go Test.TestSyncMap in go-example-demo/pkg/goroot/sync" />
         <item itemvalue="Go Test.TestAntsWithCommon in go-example-demo/ants" />
-        <item itemvalue="Go Test.TestCond in go-example-demo/pkg/goroot/sync" />
-        <item itemvalue="Go Test.TestOnce in go-example-demo/pkg/goroot/sync" />
-        <item itemvalue="Go Test.BenchmarkUnmarshalWithPool in go-example-demo/pkg/goroot/sync" />
-        <item itemvalue="Go Test.BenchmarkUnmarshal in go-example-demo/pkg/goroot/sync" />
       </list>
     </recent_temporary>
   </component>
@@ -149,22 +151,38 @@
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
     <state x="442" y="81" key="CommitChangelistDialog2/36.25.1644.1025@36.25.1644.1025" timestamp="1636613510785" />
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1636628820140">
+    <state width="1602" height="318" key="GridCell.Tab.0.bottom" timestamp="1637082697636">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820140" />
-    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1636628820139">
+    <state width="1602" height="318" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697636" />
+    <state width="1602" height="318" key="GridCell.Tab.0.center" timestamp="1637082697635">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820139" />
-    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1636628820139">
+    <state width="1602" height="318" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697635" />
+    <state width="1602" height="318" key="GridCell.Tab.0.left" timestamp="1637082697634">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820139" />
-    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1636628820140">
+    <state width="1602" height="318" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697634" />
+    <state width="1602" height="318" key="GridCell.Tab.0.right" timestamp="1637082697635">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1636628820140" />
+    <state width="1602" height="318" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697635" />
+    <state width="1602" height="318" key="GridCell.Tab.1.bottom" timestamp="1637082697637">
+      <screen x="36" y="25" width="1644" height="1025" />
+    </state>
+    <state width="1602" height="318" key="GridCell.Tab.1.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697637" />
+    <state width="1602" height="318" key="GridCell.Tab.1.center" timestamp="1637082697637">
+      <screen x="36" y="25" width="1644" height="1025" />
+    </state>
+    <state width="1602" height="318" key="GridCell.Tab.1.center/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697637" />
+    <state width="1602" height="318" key="GridCell.Tab.1.left" timestamp="1637082697636">
+      <screen x="36" y="25" width="1644" height="1025" />
+    </state>
+    <state width="1602" height="318" key="GridCell.Tab.1.left/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697636" />
+    <state width="1602" height="318" key="GridCell.Tab.1.right" timestamp="1637082697637">
+      <screen x="36" y="25" width="1644" height="1025" />
+    </state>
+    <state width="1602" height="318" key="GridCell.Tab.1.right/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697637" />
     <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1636630336426">
       <screen x="36" y="25" width="1644" height="1025" />
     </state>
