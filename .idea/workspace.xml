@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eef56ea1-53c6-4731-81e2-2b588d139cf8" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/go-example-demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/冒泡排序/maopao_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/BubbleSort/maopao_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/基数排序/radixSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/RadixSort/radixSort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/堆排序/headSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/HeapSort/headSort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/希尔排序/shellSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/ShellSort/shellSort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/归并排序/merge_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/MergeSort/merge_sort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/快速排序/quicksort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/QuickSort/quicksort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/插入排序/insert_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/InsertionSort/insert_sort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/桶排序/sortInBucket_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/BucketSort/sortInBucket_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/计数排序/countingSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/CountingSort/countingSort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sort/选择排序/select_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/SelectionSort/select_sort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
