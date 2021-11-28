@@ -1,4 +1,4 @@
-package 插入排序
+package InsertionSort
 
 import (
 	"fmt"

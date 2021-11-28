@@ -1,4 +1,4 @@
-package 选择排序
+package SelectionSort
 
 import (
 	"fmt"

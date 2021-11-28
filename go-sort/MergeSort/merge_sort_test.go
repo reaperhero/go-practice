@@ -1,4 +1,4 @@
-package 归并排序
+package MergeSort
 
 import (
 	"fmt"

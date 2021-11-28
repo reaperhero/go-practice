@@ -1,4 +1,4 @@
-package 计数排序
+package CountingSort
 
 import (
 	"fmt"

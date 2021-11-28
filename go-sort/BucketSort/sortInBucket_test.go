@@ -1,4 +1,4 @@
-package 桶排序
+package BucketSort
 
 import (
 	"fmt"
@@ -38,7 +38,7 @@ func getMaxInArr(arr []int) int {
 	return max
 }
 
-//桶排序
+//BucketSort
 func BucketSort(arr []int) []int {
 	//桶数
 	num := len(arr)

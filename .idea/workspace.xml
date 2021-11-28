@@ -4,44 +4,41 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb060e1b-76aa-4dab-9a01-8d6acd1b4a52" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/struct-map/struct_conver_mao_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/struct-map/struct_conver_mao_test.go" afterDir="false" />
+    <list default="true" id="eef56ea1-53c6-4731-81e2-2b588d139cf8" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/go-example-demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/冒泡排序/maopao_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/BubbleSort/maopao_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/基数排序/radixSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/RadixSort/radixSort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/堆排序/headSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/HeapSort/headSort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/希尔排序/shellSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/ShellSort/shellSort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/归并排序/merge_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/MergeSort/merge_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/快速排序/quicksort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/QuickSort/quicksort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/插入排序/insert_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/InsertionSort/insert_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/桶排序/sortInBucket_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/BucketSort/sortInBucket_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/计数排序/countingSort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/CountingSort/countingSort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-sort/选择排序/select_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-sort/SelectionSort/select_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.16" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
-  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="1jmCgVWHfs6ioe75G0IhZDzBcuv" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="21XhX75UnHA56zjPCXoXIZmwdJm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -49,157 +46,32 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pkg/goroot/channel" />
-      <recent name="$PROJECT_DIR$/pflag/var" />
-      <recent name="$PROJECT_DIR$/cobra/githubcli" />
-      <recent name="$PROJECT_DIR$/pkg/goroot" />
-      <recent name="$PROJECT_DIR$/pkg" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/casbin" />
-      <recent name="$PROJECT_DIR$/go-sort" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/httpstat" />
-      <recent name="$PROJECT_DIR$/redis" />
-    </key>
+  <component name="RunManager">
+    <configuration name="go-example-demo/apollo 中的 TestApolloClinet" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/apollo" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/apollo" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestApolloClinet\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 测试.go-example-demo/apollo 中的 TestApolloClinet" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="RunManager" selected="Go 构建.go build go-example-demo/pkg/goroot/goroutine">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build go-example-demo/pkg/goroot/goroutine" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/goroutine" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/pkg/goroot/goroutine/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestErrorWap in go-example-demo/pkg/errorswap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/errorswap" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/errorswap" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestErrorWap\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSyncMap in go-example-demo/pkg/goroot/sync" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/sync" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/sync" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestSyncMap\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestUnsafe in go-example-demo/pkg/goroot/unsafe" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/unsafe" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/unsafe" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestUnsafe\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestUnsafeString in go-example-demo/pkg/goroot/unsafe" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/unsafe" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/unsafe" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestUnsafeString\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="go-example-demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
-  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <environment>
-      <map>
-        <entry key="GOPROXY" value="https://goproxy.cn,direct" />
-      </map>
-    </environment>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="442" y="81" key="CommitChangelistDialog2" timestamp="1636613510785">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state x="442" y="81" key="CommitChangelistDialog2/36.25.1644.1025@36.25.1644.1025" timestamp="1636613510785" />
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom" timestamp="1637843205856">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1637843205856" />
-    <state width="1602" height="291" key="GridCell.Tab.0.center" timestamp="1637843205855">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.center/36.25.1644.1025@36.25.1644.1025" timestamp="1637843205855" />
-    <state width="1602" height="291" key="GridCell.Tab.0.left" timestamp="1637843205855">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.left/36.25.1644.1025@36.25.1644.1025" timestamp="1637843205855" />
-    <state width="1602" height="291" key="GridCell.Tab.0.right" timestamp="1637843205856">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="291" key="GridCell.Tab.0.right/36.25.1644.1025@36.25.1644.1025" timestamp="1637843205856" />
-    <state width="1602" height="318" key="GridCell.Tab.1.bottom" timestamp="1637082697637">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="318" key="GridCell.Tab.1.bottom/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697637" />
-    <state width="1602" height="318" key="GridCell.Tab.1.center" timestamp="1637082697637">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="318" key="GridCell.Tab.1.center/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697637" />
-    <state width="1602" height="318" key="GridCell.Tab.1.left" timestamp="1637082697636">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="318" key="GridCell.Tab.1.left/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697636" />
-    <state width="1602" height="318" key="GridCell.Tab.1.right" timestamp="1637082697637">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state width="1602" height="318" key="GridCell.Tab.1.right/36.25.1644.1025@36.25.1644.1025" timestamp="1637082697637" />
-    <state x="736" y="250" width="906" height="490" key="find.popup" timestamp="1636630336426">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state x="736" y="250" width="906" height="490" key="find.popup/36.25.1644.1025@36.25.1644.1025" timestamp="1636630336426" />
   </component>
 </project>

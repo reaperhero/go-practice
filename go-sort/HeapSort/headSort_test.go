@@ -1,4 +1,4 @@
-package 堆排序
+package HeapSort
 
 import (
 	"fmt"

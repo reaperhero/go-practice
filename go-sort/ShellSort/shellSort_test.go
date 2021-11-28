@@ -1,4 +1,4 @@
-package 希尔排序
+package ShellSort
 
 import (
 	"fmt"

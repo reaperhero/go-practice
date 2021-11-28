@@ -1,4 +1,4 @@
-package 基数排序
+package RadixSort
 
 import (
 	"fmt"
