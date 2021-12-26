@@ -6,30 +6,25 @@ require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/Shopify/sarama v1.27.2
 	github.com/aceld/zinx v0.0.0-20201027092702-5e524639b228
-	github.com/apolloconfig/agollo v1.9.0 // indirect
-	github.com/apolloconfig/agollo/v4 v4.0.9 // indirect
+	github.com/apolloconfig/agollo/v4 v4.0.9
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b
 	github.com/c-bata/go-prompt v0.2.5
-	github.com/coocood/freecache v1.2.0 // indirect
 	github.com/coreos/etcd v3.3.25+incompatible
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf // indirect
 	github.com/creack/pty v1.1.9
 	github.com/dustin/go-humanize v1.0.0
-	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a // indirect
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
 	github.com/fatih/color v1.9.0
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-echarts/go-echarts/v2 v2.2.3
-	github.com/go-ldap/ldap/v3 v3.4.1 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-resty/resty/v2 v2.3.0
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
-	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/uuid v1.1.2
 	github.com/hashicorp/consul/api v1.7.0
 	github.com/hashicorp/golang-lru v0.5.1
@@ -38,9 +33,7 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jordan-wright/email v4.0.1-0.20200917010138-e1c00e156980+incompatible
-	github.com/jtblin/go-ldap-client v0.0.0-20170223121919-b73f66626b33 // indirect
 	github.com/labstack/gommon v0.3.0
-	github.com/lestrrat-go/apache-logformat v2.0.4+incompatible // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.3 // indirect
 	github.com/matcornic/hermes/v2 v2.1.0

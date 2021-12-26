@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f777aaa-13b7-4ca8-bc6b-74c530059465" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +21,15 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go1.16" />
+  <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pkg/other/huo_test.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21xZsPrD7FbInAzuu37ebU27gO4" />
   <component name="ProjectLevelVcsManager">
@@ -31,7 +42,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -45,15 +63,8 @@
     <integration-enabled>true</integration-enabled>
     <environment>
       <map>
-        <entry key="GOPRIVATE" value="git.mudu.tv" />
-        <entry key="GOPROXY" value="https://goproxy.cn,direct" />
+        <entry key="GOPRIVATE" value="gitlab.prod.dtstack.cn,GOPROXY=https://goproxy.cn,direct" />
       </map>
     </environment>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="657" y="438" key="#GOROOT" timestamp="1638884936551">
-      <screen x="36" y="25" width="1644" height="1025" />
-    </state>
-    <state x="657" y="438" key="#GOROOT/36.25.1644.1025@36.25.1644.1025" timestamp="1638884936551" />
   </component>
 </project>
