@@ -1,7 +1,8 @@
 package other
 
 import (
-
+"testing"
+"fmt"
 )
 
 
@@ -17,3 +18,10 @@ import (
 //1	1	1	1	0
 //1	0	0	1	1
 
+func TestHu(t *testing.T)  {
+	str := ""
+	for i:=0;i<13;i++ {
+		str += "../"
+	}
+	fmt.Println(str)
+}

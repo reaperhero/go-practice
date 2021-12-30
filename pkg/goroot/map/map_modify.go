@@ -13,7 +13,7 @@ type data struct {
 	name string
 }
 
-func Test_map_01(t *testing.T) {
+func TestMap_01(t *testing.T) {
 	m := map[string]data{
 		"x": {"Tom"},
 	}
@@ -25,7 +25,7 @@ func Test_map_01(t *testing.T) {
 
 // 方法二：使用指向元素的 map 指针
 // 使用指向元素的 map 指针
-func Test_map_02(t *testing.T) {
+func TestMap_02(t *testing.T) {
 	m := map[string]*data{
 		"x": {"Tom"},
 	}
@@ -34,13 +34,13 @@ func Test_map_02(t *testing.T) {
 	fmt.Println(m["x"])   // &{Jerry}
 }
 
-func Test_map_03(t *testing.T) {
+func TestMap_03(t *testing.T) {
 	var a map[string]string
 	a["s"] = "sad"
 	fmt.Println(a)
 }
 
-func Test_map_04(t *testing.T) {
+func TestMap04(t *testing.T) {
 	type a struct {
 		Name string
 		H    map[string]string
