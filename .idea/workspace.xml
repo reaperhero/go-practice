@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35f6099b-cd4c-422a-b252-68e711adff40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pkg/goroot/map/concurrent_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/map/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/map/map_modify.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/md5/md_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/md5/md_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/other/huo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/other/huo_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/os/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/os/file.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/goroot/main" />
       <recent name="$PROJECT_DIR$/pkg/rsa" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go-example-demo/pkg/rsa">
+  <component name="RunManager" selected="Go Build.go build go-practice/pkg/goroot/main">
     <configuration name="go build go-example-demo/pkg/rsa" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
       <working_directory value="$PROJECT_DIR$" />
@@ -70,6 +67,27 @@
       <package value="go-example-demo/pkg/rsa" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/pkg/rsa/ras.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build go-practice/pkg/goroot/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/goroot/main" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/pkg/goroot/main/map_main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDirCheck in go-example-demo/pkg/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/file" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/file" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestDirCheck\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRas in go-example-demo/pkg/rsa" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -82,18 +100,6 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestRas\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSyncMap in go-example-demo/pkg/goroot/map" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/map" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/map" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestSyncMap\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSyncMap02 in go-example-demo/pkg/goroot/map" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -110,10 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-practice/pkg/goroot/main" />
+        <item itemvalue="Go Test.TestDirCheck in go-example-demo/pkg/file" />
         <item itemvalue="Go Build.go build go-example-demo/pkg/rsa" />
         <item itemvalue="Go Test.TestRas in go-example-demo/pkg/rsa" />
         <item itemvalue="Go Test.TestSyncMap02 in go-example-demo/pkg/goroot/map" />
-        <item itemvalue="Go Test.TestSyncMap in go-example-demo/pkg/goroot/map" />
       </list>
     </recent_temporary>
   </component>
