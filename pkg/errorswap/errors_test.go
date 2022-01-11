@@ -1,6 +1,7 @@
 package errorswap
 
 import (
+	"encoding/json"
 	"errors"
 	"fmt"
 	"testing"
@@ -14,6 +15,21 @@ import (
 func TestErrorWap(t *testing.T) {
 	o := errors.New("original error")
 	n := fmt.Errorf("%w wrapped error", o)
+	fmt.Println(n)
 	fmt.Printf("n is o: %t\n", errors.Is(n, o)) // n error container 0 error
-	errors.Unwrap(n) // 包装剔除一层,return "original error"
+	errors.Unwrap(n)                            // 包装剔除一层,return "original error"
+}
+
+func TestErrorS(t *testing.T) {
+	o := errors.New("")
+	for i := 0; i < 10; i++ {
+		n := errors.New(fmt.Sprintf("%d", i))
+		o = fmt.Errorf(fmt.Sprintf(o.Error())+" %w", n)
+	}
+	fmt.Println(o.Error())
+
+	errMap := make(map[int]string)
+	errMap[1] = "aaa"
+	b, _ := json.Marshal(errMap)
+	fmt.Println(string(b))
 }

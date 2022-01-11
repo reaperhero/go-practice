@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="35f6099b-cd4c-422a-b252-68e711adff40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/os/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/os/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/errorswap/errors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/errorswap/errors_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/other/huo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/other/huo_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +60,7 @@
       <recent name="$PROJECT_DIR$/pkg/rsa" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go-practice/pkg/goroot/main">
-    <configuration name="go build go-example-demo/pkg/rsa" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/rsa" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/pkg/rsa/ras.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestRegxIp in go-example-demo/pkg/goroot/regexp">
     <configuration name="go build go-practice/pkg/goroot/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="go-practice" />
       <working_directory value="$PROJECT_DIR$" />
@@ -78,49 +70,61 @@
       <filePath value="$PROJECT_DIR$/pkg/goroot/main/map_main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestDirCheck in go-example-demo/pkg/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestErrorS in go-example-demo/pkg/errorswap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/file" />
+      <working_directory value="$PROJECT_DIR$/pkg/errorswap" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/file" />
+      <package value="go-example-demo/pkg/errorswap" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestDirCheck\E$" />
+      <pattern value="^\QTestErrorS\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRas in go-example-demo/pkg/rsa" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestErrorWap in go-example-demo/pkg/errorswap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/rsa" />
+      <working_directory value="$PROJECT_DIR$/pkg/errorswap" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/rsa" />
+      <package value="go-example-demo/pkg/errorswap" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestRas\E$" />
+      <pattern value="^\QTestErrorWap\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSyncMap02 in go-example-demo/pkg/goroot/map" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRegxIp in go-example-demo/pkg/goroot/regexp" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/map" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/regexp" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/map" />
+      <package value="go-example-demo/pkg/goroot/regexp" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSyncMap02\E$" />
+      <pattern value="^\QTestRegxIp\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSearchAlerts in go-example-demo/pkg/other" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/other" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/other" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSearchAlerts\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestRegxIp in go-example-demo/pkg/goroot/regexp" />
+        <item itemvalue="Go Test.TestSearchAlerts in go-example-demo/pkg/other" />
+        <item itemvalue="Go Test.TestErrorS in go-example-demo/pkg/errorswap" />
+        <item itemvalue="Go Test.TestErrorWap in go-example-demo/pkg/errorswap" />
         <item itemvalue="Go Build.go build go-practice/pkg/goroot/main" />
-        <item itemvalue="Go Test.TestDirCheck in go-example-demo/pkg/file" />
-        <item itemvalue="Go Build.go build go-example-demo/pkg/rsa" />
-        <item itemvalue="Go Test.TestRas in go-example-demo/pkg/rsa" />
-        <item itemvalue="Go Test.TestSyncMap02 in go-example-demo/pkg/goroot/map" />
       </list>
     </recent_temporary>
   </component>
