@@ -49,7 +49,6 @@ require (
 	github.com/robfig/cron v1.2.0
 	github.com/russross/blackfriday v1.6.0
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
-	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.7.0
 	github.com/speps/go-hashids v2.0.0+incompatible
 	github.com/spf13/afero v1.6.0
@@ -57,6 +56,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/streadway/amqp v1.0.0
 	github.com/tebeka/strftime v0.1.5 // indirect
+	github.com/tjfoc/gmsm v1.4.1
 	github.com/unknwon/com v1.0.1
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	github.com/xanzy/go-gitlab v0.40.1

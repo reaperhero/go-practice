@@ -2,12 +2,13 @@ package file
 
 import (
 	"fmt"
+	"path/filepath"
 	"strings"
 	"testing"
 )
 
 func TestDirCheck(t *testing.T) {
-	bo := strings.ContainsAny("/data/easymanager/", " #$%^&*()_+}{\":?><\"⌘")
-
-	fmt.Println(bo)
+	strings.ContainsAny("/data/easymanager/", " #$%^&*()_+}{\":?><\"⌘")
+	fmt.Println(filepath.IsAbs("data/easymanager/"))
 }
+
