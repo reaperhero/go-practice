@@ -1,4 +1,4 @@
-package main
+package maintest
 
 import (
 	"context"
@@ -6,10 +6,11 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestSingal(t *testing.T) {
 	signals := make(chan os.Signal, 1)
 	signal.Notify(signals, syscall.SIGINT, syscall.SIGTERM, syscall.SIGHUP)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)

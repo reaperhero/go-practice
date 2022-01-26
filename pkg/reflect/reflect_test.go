@@ -2,20 +2,17 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"reflect"
+	"strings"
 	"testing"
 )
 
-// 反射是指在程序运行期对程序本身进行访问和修改的能力
-
 // 反射获取interface类型信息
-func reflect_type(a interface{}) {
+func TestGetType_01(tt *testing.T) {
+	a := "3.2"
 	t := reflect.TypeOf(a) //反射获取interface类型信息
-	fmt.Println("类型是：", t)
-	// kind()可以获取具体类型
-	k := t.Kind()
-	fmt.Println(k)
-	switch k {
+	switch t.Kind() {
 	case reflect.Float64:
 		fmt.Printf("a is float64\n")
 	case reflect.String:
@@ -23,31 +20,11 @@ func reflect_type(a interface{}) {
 	}
 }
 
-func Test_getType_01(t *testing.T) {
+// 反射修改值
+func Test_updateValue_01(t *testing.T) {
 	var x float64 = 3.4
-	reflect_type(x)
-}
-
-// 反射获取interface值信息
-func reflect_value(a interface{}) {
-	v := reflect.ValueOf(a)
-	fmt.Println(v)
-	k := v.Kind()
-	fmt.Println(k)
-	switch k {
-	case reflect.Float64:
-		fmt.Println("a是：", v.Float())
-	}
-}
-
-func Test_getValue_01(t *testing.T) {
-	var x float64 = 3.4
-	reflect_value(x)
-}
-
-//反射修改值
-func reflect_set_value(a interface{}) {
-	v := reflect.ValueOf(a)
+	// 反射认为下面是指针类型，不是float类型
+	v := reflect.ValueOf(&x)
 	k := v.Kind()
 	switch k {
 	case reflect.Float64:
@@ -61,56 +38,51 @@ func reflect_set_value(a interface{}) {
 		// 地址
 		fmt.Println(v.Pointer())
 	}
-}
-
-func Test_updateValue_01(t *testing.T) {
-	var x float64 = 3.4
-	// 反射认为下面是指针类型，不是float类型
-	reflect_set_value(&x)
 	fmt.Println("main:", x)
 }
 
-//type User struct {
-//	Id   int
-//	Name string
-//	Age  int
-//}
-
-// 绑方法
-func (u User) Hello() {
-	fmt.Println("Hello")
-}
-
-// 传入interface{}
-func Poni(o interface{}) {
-	t := reflect.TypeOf(o)
-	fmt.Println("类型：", t)
-	fmt.Println("字符串类型：", t.Name())
-	// 获取值
-	v := reflect.ValueOf(o)
-	fmt.Println(v)
-	// 可以获取所有属性
-	// 获取结构体字段个数：t.NumField()
-	for i := 0; i < t.NumField(); i++ {
-		// 取每个字段
-		f := t.Field(i)
-		fmt.Printf("%s : %v", f.Name, f.Type)
-		// 获取字段的值信息
-		// Interface()：获取字段对应的值
-		val := v.Field(i).Interface()
-		fmt.Println("val :", val)
+// 环境变量tag
+func TestReflectsEnv(t *testing.T) {
+	type Config struct {
+		Name    string `env:"server-name"` // CONFIG_SERVER_NAME
+		IP      string `env:"server-ip"`   // CONFIG_SERVER_IP
+		URL     string `env:"server-url"`  // CONFIG_SERVER_URL
+		Timeout string `env:"timeout"`     // CONFIG_TIMEOUT
 	}
-	fmt.Println("=================方法====================")
-	for i := 0; i < t.NumMethod(); i++ {
-		m := t.Method(i)
-		fmt.Println(m.Name)
-		fmt.Println(m.Type)
+	os.Setenv("CONFIG_SERVER_NAME", "global_server")
+	os.Setenv("CONFIG_SERVER_IP", "10.0.0.1")
+	os.Setenv("CONFIG_SERVER_URL", "geektutu.com")
+
+	// read from xxx.json，省略
+	config := Config{}
+	typ := reflect.TypeOf(config)
+	value := reflect.Indirect(reflect.ValueOf(&config))
+	for i := 0; i < typ.NumField(); i++ {
+		f := typ.Field(i)
+		if v, ok := f.Tag.Lookup("env"); ok {
+			key := fmt.Sprintf("CONFIG_%s", strings.ReplaceAll(strings.ToUpper(v), "-", "_"))
+			if env, exist := os.LookupEnv(key); exist {
+				value.FieldByName(f.Name).Set(reflect.ValueOf(env))
+			}
+		}
 	}
 
+	fmt.Printf("%+v", config)
 }
 
-// 结构体与反射
-func Test_struct_01(t *testing.T) {
-	u := User{1, "zs", 20}
-	Poni(u)
+// mapindex
+func TestRefecttGetValue(tt *testing.T) {
+	data := map[string]interface{}{"First": "firstValue"}
+	cdata := reflect.ValueOf(data).MapIndex(reflect.ValueOf("First"))
+
+	fmt.Printf("Value:%+v \n", cdata.Interface())
+	fmt.Printf("Kind:%+v \n", cdata.Kind())
+
+	type Test struct {
+		Data string
+	}
+
+	d := map[string]Test{"Geeks": Test{Data: "data test"}}
+	mydata := reflect.ValueOf(d).MapIndex(reflect.ValueOf("Geeks"))
+	fmt.Println(reflect.ValueOf(mydata.Interface()))
 }
