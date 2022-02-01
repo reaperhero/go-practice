@@ -8,6 +8,7 @@ require (
 	github.com/aceld/zinx v0.0.0-20201027092702-5e524639b228
 	github.com/apolloconfig/agollo/v4 v4.0.9
 	github.com/bitly/go-simplejson v0.5.0
+	github.com/bluele/gcache v0.0.2
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b
 	github.com/c-bata/go-prompt v0.2.5
@@ -59,6 +60,7 @@ require (
 	github.com/tjfoc/gmsm v1.4.1
 	github.com/unknwon/com v1.0.1
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
+	github.com/wuYin/timewheel v0.0.0-20190326041048-6015c91b972f
 	github.com/xanzy/go-gitlab v0.40.1
 	go.etcd.io/etcd v3.3.25+incompatible
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
