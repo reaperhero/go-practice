@@ -8,6 +8,7 @@ import (
 )
 
 //Discards the least recently used items first.
+
 func TestLruWithExpire(t *testing.T) {
 	gc := gcache.New(20).
 		LRU().
