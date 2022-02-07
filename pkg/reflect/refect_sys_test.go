@@ -12,8 +12,9 @@ type SysConfig struct {
 }
 
 type Platform struct {
-	LoginEncrypt  string `sys:"login_encrypt"`
-	LogoutEncrypt string `sys:"logout_encrypt"`
+	LoginEncrypt     string   `sys:"login_encrypt"`
+	LogoutEncrypt    int      `sys:"logout_encrypt"`
+	LogSliceEncrypt  []string `sys:"loglice_encrypt"`
 }
 
 type searchKey struct {
@@ -45,12 +46,13 @@ func main() {
 		config      = SysConfig{
 			Platform: &Platform{
 				LoginEncrypt:  "11",
-				LogoutEncrypt: "11",
+				LogoutEncrypt: 11,
 			},
 		}
 		data = map[string]string{
-			"platformsecurity.login_encrypt":  "22",
-			"platformsecurity.logout_encrypt": "22",
+			"platformsecurity.login_encrypt":    "22",
+			"platformsecurity.logout_encrypt":   "22",
+			"platformsecurity.loglice_encrypt":  "1,2,3",
 		}
 	)
 
@@ -82,10 +84,17 @@ func main() {
 						if v, err := strconv.Atoi(v); err == nil {
 							field.Set(reflect.ValueOf(v))
 						}
+					case reflect.Slice:
+						v := strings.Split(v, ",")
+						if len(v) > 0 {
+							field.Set(reflect.ValueOf(v))
+						}
 					}
 				}
 			}
-			combination.delTail()
+			if k != "" {
+				combination.delTail()
+			}
 		}
 	}
 	traverse(&config)
