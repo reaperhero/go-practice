@@ -86,3 +86,5 @@ func TestRefecttGetValue(tt *testing.T) {
 	mydata := reflect.ValueOf(d).MapIndex(reflect.ValueOf("Geeks"))
 	fmt.Println(reflect.ValueOf(mydata.Interface()))
 }
+
+

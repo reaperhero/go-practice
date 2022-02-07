@@ -3,11 +3,28 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="ALL" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f777aaa-13b7-4ca8-bc6b-74c530059465" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcache/lru_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gcache/lru_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/goroot/main/signal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/main/signal_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/reflect/reflect_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/reflect/reflect_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,40 +85,7 @@
       <recent name="$PROJECT_DIR$/pkg/rsa" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestPerson in go-example-demo/pkg/goroot/main">
-    <configuration name="TestLfu in go-example-demo/gcache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/gcache" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/gcache" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestLfu\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestLruWithExpire in go-example-demo/gcache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/gcache" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/gcache" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestLruWithExpire\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestNewAVLTreeRoot in go-example-demo/go-datastruct/avl" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/go-datastruct/avl" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/go-datastruct/avl" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNewAVLTreeRoot\E$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestRefect in go-example-demo/pkg/reflect">
     <configuration name="TestPerson in go-example-demo/pkg/goroot/main" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
       <working_directory value="$PROJECT_DIR$/pkg/goroot/main" />
@@ -113,24 +97,57 @@
       <pattern value="^\QTestPerson\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskWheel in go-example-demo/timewheel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRefect in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/timewheel" />
+      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/timewheel" />
+      <package value="go-example-demo/pkg/reflect" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestTaskWheel\E$" />
+      <pattern value="^\QTestRefect\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRefectConfigSys in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/reflect" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRefectConfigSys\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRefectConfigSys1 in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/reflect" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRefectConfigSys1\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReflectsEnv in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/reflect" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestReflectsEnv\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestRefect in go-example-demo/pkg/reflect" />
+        <item itemvalue="Go Test.TestRefectConfigSys in go-example-demo/pkg/reflect" />
+        <item itemvalue="Go Test.TestReflectsEnv in go-example-demo/pkg/reflect" />
+        <item itemvalue="Go Test.TestRefectConfigSys1 in go-example-demo/pkg/reflect" />
         <item itemvalue="Go Test.TestPerson in go-example-demo/pkg/goroot/main" />
-        <item itemvalue="Go Test.TestLfu in go-example-demo/gcache" />
-        <item itemvalue="Go Test.TestLruWithExpire in go-example-demo/gcache" />
-        <item itemvalue="Go Test.TestNewAVLTreeRoot in go-example-demo/go-datastruct/avl" />
-        <item itemvalue="Go Test.TestTaskWheel in go-example-demo/timewheel" />
       </list>
     </recent_temporary>
   </component>
@@ -158,26 +175,46 @@
       <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state x="784" y="482" key="#GOROOT/48.25.1872.1055@48.25.1872.1055" timestamp="1641877094439" />
-    <state width="1590" height="223" key="GridCell.Tab.0.bottom" timestamp="1643807871622">
+    <state width="1590" height="231" key="GridCell.Tab.0.bottom" timestamp="1644244675358">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
-    <state width="1590" height="223" key="GridCell.Tab.0.bottom/48.25.1632.1025@48.25.1632.1025" timestamp="1643807871622" />
-    <state width="1830" height="304" key="GridCell.Tab.0.bottom/48.25.1872.1055@48.25.1872.1055" timestamp="1643279769314" />
-    <state width="1590" height="223" key="GridCell.Tab.0.center" timestamp="1643807871622">
+    <state width="1590" height="231" key="GridCell.Tab.0.bottom/48.25.1632.1025@48.25.1632.1025" timestamp="1644244675358" />
+    <state width="1830" height="231" key="GridCell.Tab.0.bottom/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360578" />
+    <state width="1590" height="231" key="GridCell.Tab.0.center" timestamp="1644244675358">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
-    <state width="1590" height="223" key="GridCell.Tab.0.center/48.25.1632.1025@48.25.1632.1025" timestamp="1643807871622" />
-    <state width="1830" height="304" key="GridCell.Tab.0.center/48.25.1872.1055@48.25.1872.1055" timestamp="1643279769313" />
-    <state width="1590" height="223" key="GridCell.Tab.0.left" timestamp="1643807871621">
+    <state width="1590" height="231" key="GridCell.Tab.0.center/48.25.1632.1025@48.25.1632.1025" timestamp="1644244675358" />
+    <state width="1830" height="231" key="GridCell.Tab.0.center/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360577" />
+    <state width="1590" height="231" key="GridCell.Tab.0.left" timestamp="1644244675357">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
-    <state width="1590" height="223" key="GridCell.Tab.0.left/48.25.1632.1025@48.25.1632.1025" timestamp="1643807871621" />
-    <state width="1830" height="304" key="GridCell.Tab.0.left/48.25.1872.1055@48.25.1872.1055" timestamp="1643279769312" />
-    <state width="1590" height="223" key="GridCell.Tab.0.right" timestamp="1643807871622">
+    <state width="1590" height="231" key="GridCell.Tab.0.left/48.25.1632.1025@48.25.1632.1025" timestamp="1644244675357" />
+    <state width="1830" height="231" key="GridCell.Tab.0.left/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360576" />
+    <state width="1590" height="231" key="GridCell.Tab.0.right" timestamp="1644244675358">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
-    <state width="1590" height="223" key="GridCell.Tab.0.right/48.25.1632.1025@48.25.1632.1025" timestamp="1643807871622" />
-    <state width="1830" height="304" key="GridCell.Tab.0.right/48.25.1872.1055@48.25.1872.1055" timestamp="1643279769314" />
+    <state width="1590" height="231" key="GridCell.Tab.0.right/48.25.1632.1025@48.25.1632.1025" timestamp="1644244675358" />
+    <state width="1830" height="231" key="GridCell.Tab.0.right/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360578" />
+    <state width="1830" height="348" key="GridCell.Tab.1.bottom" timestamp="1644203006822">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state width="1830" height="348" key="GridCell.Tab.1.bottom/48.25.1872.1055@48.25.1872.1055" timestamp="1644203006822" />
+    <state width="1830" height="348" key="GridCell.Tab.1.center" timestamp="1644203006821">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state width="1830" height="348" key="GridCell.Tab.1.center/48.25.1872.1055@48.25.1872.1055" timestamp="1644203006821" />
+    <state width="1830" height="348" key="GridCell.Tab.1.left" timestamp="1644203006821">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state width="1830" height="348" key="GridCell.Tab.1.left/48.25.1872.1055@48.25.1872.1055" timestamp="1644203006821" />
+    <state width="1830" height="348" key="GridCell.Tab.1.right" timestamp="1644203006822">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state width="1830" height="348" key="GridCell.Tab.1.right/48.25.1872.1055@48.25.1872.1055" timestamp="1644203006822" />
+    <state width="537" height="445" key="SwitcherDM" timestamp="1644218200726">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state width="537" height="445" key="SwitcherDM/48.25.1872.1055@48.25.1872.1055" timestamp="1644218200726" />
     <state x="572" y="252" width="670" height="657" key="search.everywhere.popup" timestamp="1643718748326">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
