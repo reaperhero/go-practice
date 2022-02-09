@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"reflect"
-	"strconv"
 	"strings"
+	"testing"
 )
 
 type SysConfig struct {
@@ -12,9 +12,9 @@ type SysConfig struct {
 }
 
 type Platform struct {
-	LoginEncrypt     string   `sys:"login_encrypt"`
-	LogoutEncrypt    int      `sys:"logout_encrypt"`
-	LogSliceEncrypt  []string `sys:"loglice_encrypt"`
+	LoginEncrypt    string `sys:"login_encrypt"`
+	LogoutEncrypt   int    `sys:"logout_encrypt"`
+	LogSliceEncrypt []int  `sys:"loglice_encrypt"`
 }
 
 type searchKey struct {
@@ -38,7 +38,7 @@ func (s *searchKey) delTail() {
 	s.key = strings.Join(arr[0:len(arr)-1], ".")
 }
 
-func main() {
+func TestSys(ttt *testing.T) {
 	var (
 		splitKey    = "sys"
 		traverse    func(target interface{})
@@ -49,10 +49,10 @@ func main() {
 				LogoutEncrypt: 11,
 			},
 		}
-		data = map[string]string{
-			"platformsecurity.login_encrypt":    "22",
-			"platformsecurity.logout_encrypt":   "22",
-			"platformsecurity.loglice_encrypt":  "1,2,3",
+		data = map[string]interface{}{
+			"platformsecurity.login_encrypt":   "22",
+			"platformsecurity.logout_encrypt":  "22",
+			"platformsecurity.loglice_encrypt": []int{1, 2, 3},
 		}
 	)
 
@@ -79,15 +79,24 @@ func main() {
 				if field.IsValid() && ok {
 					switch field.Type().Kind() {
 					case reflect.String:
-						sVal.Field(i).Set(reflect.ValueOf(v))
+						if v, ok := v.(string); ok {
+							sVal.Field(i).Set(reflect.ValueOf(v))
+						}
 					case reflect.Int:
-						if v, err := strconv.Atoi(v); err == nil {
+						if v, ok := v.(int); ok {
 							field.Set(reflect.ValueOf(v))
 						}
 					case reflect.Slice:
-						v := strings.Split(v, ",")
-						if len(v) > 0 {
-							field.Set(reflect.ValueOf(v))
+						if field.Type().Elem().Kind() == reflect.Int {
+							if op, ok := v.([]int); ok {
+								field.Set(reflect.ValueOf(op))
+							}
+
+						}
+						if field.Type().Elem().Kind() == reflect.String {
+							if op, ok := v.([]string); ok {
+								field.Set(reflect.ValueOf(op))
+							}
 						}
 					}
 				}
@@ -98,5 +107,5 @@ func main() {
 		}
 	}
 	traverse(&config)
-	fmt.Printf("%s", config)
+	fmt.Printf("%v", config.Platform)
 }

@@ -68,6 +68,7 @@ func Test_print01(t *testing.T) {
 	//指针
 	fmt.Printf("%p", &site)  //十六进制表示，前缀 0x  0x4f57f0
 	fmt.Printf("%#p", &site) //十六进制表示，不带0x的指针  4f57f0
+	fmt.Println(fmt.Sprint([]string{"1", "2"}))
 
 }
 

@@ -46,6 +46,7 @@ require (
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.3 // indirect
 	github.com/panjf2000/ants/v2 v2.4.6
+	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/term v1.1.0
 	github.com/robfig/cron v1.2.0
 	github.com/russross/blackfriday v1.6.0

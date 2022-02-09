@@ -24,7 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5f777aaa-13b7-4ca8-bc6b-74c530059465" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/fmt/fmt_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/fmt/fmt_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/reflect/refect_sys_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/reflect/refect_sys_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/reflect/reflect_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/reflect/reflect_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlx/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlx/insert_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx/insert_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,19 +91,8 @@
       <recent name="$PROJECT_DIR$/pkg/rsa" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestRefect in go-example-demo/pkg/reflect">
-    <configuration name="TestPerson in go-example-demo/pkg/goroot/main" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/main" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/main" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestPerson\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestRefect in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestSm2 in go-example-demo/pkg/sm2">
+    <configuration name="TestI in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
       <working_directory value="$PROJECT_DIR$/pkg/reflect" />
       <framework value="gotest" />
@@ -105,10 +100,32 @@
       <package value="go-example-demo/pkg/reflect" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestRefect\E$" />
+      <pattern value="^\QTestI\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRefectConfigSys in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestInsterTypevalue in go-example-demo/sqlx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/sqlx" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/sqlx" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestInsterTypevalue\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSm2 in go-example-demo/pkg/sm2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/sm2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/sm2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSm2\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSys in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
       <working_directory value="$PROJECT_DIR$/pkg/reflect" />
       <framework value="gotest" />
@@ -116,38 +133,27 @@
       <package value="go-example-demo/pkg/reflect" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestRefectConfigSys\E$" />
+      <pattern value="^\QTestSys\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRefectConfigSys1 in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_print01 in go-example-demo/pkg/goroot/fmt" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/fmt" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/reflect" />
+      <package value="go-example-demo/pkg/goroot/fmt" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestRefectConfigSys1\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestReflectsEnv in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/reflect" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestReflectsEnv\E$" />
+      <pattern value="^\QTest_print01\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestRefect in go-example-demo/pkg/reflect" />
-        <item itemvalue="Go Test.TestRefectConfigSys in go-example-demo/pkg/reflect" />
-        <item itemvalue="Go Test.TestReflectsEnv in go-example-demo/pkg/reflect" />
-        <item itemvalue="Go Test.TestRefectConfigSys1 in go-example-demo/pkg/reflect" />
-        <item itemvalue="Go Test.TestPerson in go-example-demo/pkg/goroot/main" />
+        <item itemvalue="Go Test.TestSm2 in go-example-demo/pkg/sm2" />
+        <item itemvalue="Go Test.TestInsterTypevalue in go-example-demo/sqlx" />
+        <item itemvalue="Go Test.Test_print01 in go-example-demo/pkg/goroot/fmt" />
+        <item itemvalue="Go Test.TestI in go-example-demo/pkg/reflect" />
+        <item itemvalue="Go Test.TestSys in go-example-demo/pkg/reflect" />
       </list>
     </recent_temporary>
   </component>
@@ -175,26 +181,30 @@
       <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state x="784" y="482" key="#GOROOT/48.25.1872.1055@48.25.1872.1055" timestamp="1641877094439" />
-    <state width="1830" height="348" key="GridCell.Tab.0.bottom" timestamp="1644246531803">
-      <screen x="48" y="25" width="1632" height="1025" />
+    <state x="235" y="365" key="#SQL_Dialects" timestamp="1644308031246">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state x="235" y="365" key="#SQL_Dialects/48.25.1872.1055@48.25.1872.1055" timestamp="1644308031246" />
+    <state width="1590" height="231" key="GridCell.Tab.0.bottom" timestamp="1644385142845">
+      <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state width="1830" height="348" key="GridCell.Tab.0.bottom/48.25.1632.1025@48.25.1632.1025" timestamp="1644246531803" />
-    <state width="1830" height="231" key="GridCell.Tab.0.bottom/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360578" />
-    <state width="1830" height="348" key="GridCell.Tab.0.center" timestamp="1644246531803">
-      <screen x="48" y="25" width="1632" height="1025" />
+    <state width="1590" height="231" key="GridCell.Tab.0.bottom/48.25.1872.1055@48.25.1872.1055" timestamp="1644385142845" />
+    <state width="1590" height="231" key="GridCell.Tab.0.center" timestamp="1644385142844">
+      <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state width="1830" height="348" key="GridCell.Tab.0.center/48.25.1632.1025@48.25.1632.1025" timestamp="1644246531803" />
-    <state width="1830" height="231" key="GridCell.Tab.0.center/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360577" />
-    <state width="1830" height="348" key="GridCell.Tab.0.left" timestamp="1644246531802">
-      <screen x="48" y="25" width="1632" height="1025" />
+    <state width="1590" height="231" key="GridCell.Tab.0.center/48.25.1872.1055@48.25.1872.1055" timestamp="1644385142844" />
+    <state width="1590" height="231" key="GridCell.Tab.0.left" timestamp="1644385142844">
+      <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state width="1830" height="348" key="GridCell.Tab.0.left/48.25.1632.1025@48.25.1632.1025" timestamp="1644246531802" />
-    <state width="1830" height="231" key="GridCell.Tab.0.left/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360576" />
-    <state width="1830" height="348" key="GridCell.Tab.0.right" timestamp="1644246531803">
-      <screen x="48" y="25" width="1632" height="1025" />
+    <state width="1590" height="231" key="GridCell.Tab.0.left/48.25.1872.1055@48.25.1872.1055" timestamp="1644385142844" />
+    <state width="1590" height="231" key="GridCell.Tab.0.right" timestamp="1644385142844">
+      <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state width="1830" height="348" key="GridCell.Tab.0.right/48.25.1632.1025@48.25.1632.1025" timestamp="1644246531803" />
-    <state width="1830" height="231" key="GridCell.Tab.0.right/48.25.1872.1055@48.25.1872.1055" timestamp="1644229360578" />
+    <state width="1590" height="231" key="GridCell.Tab.0.right/48.25.1872.1055@48.25.1872.1055" timestamp="1644385142844" />
     <state width="1830" height="348" key="GridCell.Tab.1.bottom" timestamp="1644246531804">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
@@ -215,11 +225,15 @@
     </state>
     <state width="1830" height="348" key="GridCell.Tab.1.right/48.25.1632.1025@48.25.1632.1025" timestamp="1644246531804" />
     <state width="1830" height="348" key="GridCell.Tab.1.right/48.25.1872.1055@48.25.1872.1055" timestamp="1644203006822" />
-    <state width="500" height="433" key="SwitcherDM" timestamp="1644246566592">
-      <screen x="48" y="25" width="1632" height="1025" />
+    <state width="537" height="445" key="SwitcherDM" timestamp="1644308269918">
+      <screen x="48" y="25" width="1872" height="1055" />
     </state>
     <state width="500" height="433" key="SwitcherDM/48.25.1632.1025@48.25.1632.1025" timestamp="1644246566592" />
-    <state width="537" height="445" key="SwitcherDM/48.25.1872.1055@48.25.1872.1055" timestamp="1644218200726" />
+    <state width="537" height="445" key="SwitcherDM/48.25.1872.1055@48.25.1872.1055" timestamp="1644308269918" />
+    <state x="564" y="276" width="600" height="522" key="find.popup" timestamp="1644302140771">
+      <screen x="48" y="25" width="1872" height="1055" />
+    </state>
+    <state x="564" y="276" width="600" height="522" key="find.popup/48.25.1872.1055@48.25.1872.1055" timestamp="1644302140771" />
     <state x="572" y="252" width="670" height="657" key="search.everywhere.popup" timestamp="1643718748326">
       <screen x="48" y="25" width="1632" height="1025" />
     </state>
