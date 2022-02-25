@@ -55,8 +55,8 @@ func Test_print01(t *testing.T) {
 	fmt.Printf("%d", 0x12)   // 十进制表示   18
 	fmt.Printf("%d", 10)     // 八进制表示   12
 	fmt.Printf("%q", 0x4E2D) // 单引号围绕的字符字面值，由Go语法安全地转义  '中'
-	fmt.Printf("%x", 13)     //  十六进制表示，字母形式为小写 a-f       d
-	fmt.Printf("%x", 13)     // 十六进制表示，字母形式为大写 A-F         D
+	fmt.Printf("%x", 13)     // 十六进制表示，字母形式为小写 a-f       d
+	fmt.Printf("%X", 13)     // 十六进制表示，字母形式为大写 A-F         D
 	fmt.Printf("%U", 0x4E2D) // Unicode格式：U+1234，等同于 "U+%04X"        U+4E2D
 
 	// 字符串与字节切片

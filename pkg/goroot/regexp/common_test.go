@@ -16,5 +16,4 @@ func TestRegxIp(t *testing.T) {
 	} else {
 		fmt.Printf("%s is not a legal ipv4 address\n", str)
 	}
-
 }

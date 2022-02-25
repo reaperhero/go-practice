@@ -155,3 +155,8 @@ func TestJsonTime(t *testing.T) {
 	bb, _ := strconv.ParseInt(bs, 10, 64)
 	fmt.Println(bb)
 }
+
+func TestDuration(t *testing.T) {
+	s := time.Second*20
+	fmt.Println(s.String())
+}

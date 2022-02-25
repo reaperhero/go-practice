@@ -47,14 +47,14 @@ func TestReflectsEnv(t *testing.T) {
 		Name    string `env:"server-name"` // CONFIG_SERVER_NAME
 		IP      string `env:"server-ip"`   // CONFIG_SERVER_IP
 		URL     string `env:"server-url"`  // CONFIG_SERVER_URL
-		Timeout string `env:"timeout"`     // CONFIG_TIMEOUT
+		Timeout int `env:"timeout"`     // CONFIG_TIMEOUT
 	}
 	os.Setenv("CONFIG_SERVER_NAME", "global_server")
 	os.Setenv("CONFIG_SERVER_IP", "10.0.0.1")
 	os.Setenv("CONFIG_SERVER_URL", "geektutu.com")
 
 	// read from xxx.json，省略
-	config := Config{}
+	config := Config{Timeout: 1}
 	typ := reflect.TypeOf(config)
 	value := reflect.Indirect(reflect.ValueOf(&config))
 	for i := 0; i < typ.NumField(); i++ {
@@ -64,6 +64,8 @@ func TestReflectsEnv(t *testing.T) {
 			if env, exist := os.LookupEnv(key); exist {
 				value.FieldByName(f.Name).Set(reflect.ValueOf(env))
 			}
+			val := fmt.Sprintf("%v",value.Field(i).Interface())
+			fmt.Println(val)
 		}
 	}
 
