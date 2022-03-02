@@ -50,3 +50,12 @@ func Test_regexp_html(t *testing.T) {
 	//过滤<></>
 	fmt.Println(result)
 }
+
+func TestArgs(t *testing.T) {
+	arg := "${args}"
+	reg1 := regexp.MustCompile(`\${\w+}`)
+	reg2 := regexp.MustCompile(`\w+`)
+	vaule := reg1.FindString(arg)
+	k := reg2.FindString(vaule)
+	fmt.Println(k)
+}

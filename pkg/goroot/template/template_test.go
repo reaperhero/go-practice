@@ -40,3 +40,13 @@ func TestTemplate(t *testing.T) {
 	}
 	fmt.Println(buf.String())
 }
+
+func TestString(t *testing.T) {
+	var v interface{} = &VisualConfig{
+		Default: "48",
+		Desc:    "sads",
+		Type:    "dsada",
+		Value:   "90",
+	}
+	fmt.Printf("%s",v)
+}
