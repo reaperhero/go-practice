@@ -10,7 +10,7 @@ import (
 	"testing"
 )
 
-func copyDir(src string, file string) {
+func windowsCopyDir(src string, file string) {
 	var (
 		dest = "C:/Users/chenqiangjun/Desktop/doc/" + file
 	)
@@ -47,7 +47,7 @@ func getSuffixFile(path string, f os.FileInfo, err error) error {
 	ok := strings.HasSuffix(path, ".pdf")
 	if ok {
 		fileName := strings.Split(path, "\\")
-		copyDir(path, fileName[len(fileName)-1])
+		windowsCopyDir(path, fileName[len(fileName)-1])
 	}
 	return nil
 }
