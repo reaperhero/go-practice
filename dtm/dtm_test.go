@@ -20,7 +20,7 @@ var qsBusi = fmt.Sprintf("http://localhost:%d%s", qsBusiPort, qsBusiAPI)
 
 func TestDtm(t *testing.T) {
 	QsStartSvr()
-	gid := QsFireRequest()
+	gid := SagaDtm()
 	log.Printf("transaction: %s submitted", gid)
 	select {}
 }
@@ -50,21 +50,48 @@ func QsStartSvr() {
 	time.Sleep(100 * time.Millisecond)
 }
 
-// 下面运行一个类似跨行转账的示例，包括两个事务分支：资金转出（TransOut)、资金转入（TransIn)。
-// DTM保证TransIn和TransOut要么全部成功，要么全部回滚，保证最终金额的正确性。
-func QsFireRequest() string {
+func SagaDtm() string {
 	req := &gin.H{"amount": 30} // 微服务的载荷
-	// DtmServer为DTM服务的地址
+	//整个SAGA事务的逻辑是：
+	//执行转出成功=>执行转入成功=>全局事务完成
+	//如果在中间发生错误，例如转入B发生错误，则会调用已执行分支的补偿操作，即：
+	//执行转出成功=>执行转入失败=>执行转入补偿成功=>执行转出补偿成功=>全局事务回滚完成
 	saga := dtmcli.NewSaga(dtmServer, dtmcli.MustGenGid(dtmServer)).
 		// 添加一个TransOut的子事务，正向操作为url: qsBusi+"/TransOut"， 逆向操作为url: qsBusi+"/TransOutCompensate"
 		Add(qsBusi+"/TransOut", qsBusi+"/TransOutCompensate", req).
 		// 添加一个TransIn的子事务，正向操作为url: qsBusi+"/TransOut"， 逆向操作为url: qsBusi+"/TransInCompensate"
 		Add(qsBusi+"/TransIn", qsBusi+"/TransInCompensate", req)
-	// 提交saga事务，dtm会完成所有的子事务/回滚所有的子事务
-	err := saga.Submit()
+	saga.TimeoutToFail = 1800
+
+	// 个事务中的操作分为可回滚的操作，以及不可回滚的操作。那么把可回滚的操作放到前面，把不可回滚的操作放在后面执行，
+	//saga := dtmcli.NewSaga(DtmServer, dtmcli.MustGenGid(DtmServer)).
+	//	Add(Busi+"/CanRollback1", Busi+"/CanRollback1Revert", req).
+	//	Add(Busi+"/CanRollback2", Busi+"/CanRollback2Revert", req).
+	//	Add(Busi+"/UnRollback1", "", req).
+	//	Add(Busi+"/UnRollback2", "", req).
+	//	EnableConcurrent().
+	//	AddBranchOrder(2, []int{0, 1}). // 指定step 2，需要在0，1完成后执行
+	//	AddBranchOrder(3, []int{0, 1}) // 指定step 3，需要在0，1完成后执行
+
+	err := saga.Submit() // 提交saga事务，dtm会完成所有的子事务/回滚所有的子事务
 
 	if err != nil {
 		panic(err)
 	}
 	return saga.Gid
+}
+
+// msg的提交是按照两个阶段发起的
+// 第一阶段调用Prepare，
+// 第二阶段调用Commit，DTM收到Prepare调用后，不会调用分支事务，而是等待后续的Submit。只有收到了Submit，开始分支调用，最终完成全局事务。
+func TwoSubmlitDtm() string {
+	return ""
+}
+
+func TccDtm() string {
+	return ""
+}
+
+func XaDtm() string {
+	return ""
 }
