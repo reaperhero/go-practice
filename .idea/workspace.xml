@@ -24,6 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5f777aaa-13b7-4ca8-bc6b-74c530059465" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/template/template_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/template/template_string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/goroot/template/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/goroot/template/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +94,7 @@
       <recent name="$PROJECT_DIR$/pkg/rsa" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go-example-demo/yaag">
+  <component name="RunManager" selected="Go Test.TestStructTtmpalte in go-example-demo/pkg/goroot/template">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-practice" />
       <working_directory value="$PROJECT_DIR$" />
@@ -109,26 +113,16 @@
       <filePath value="$PROJECT_DIR$/yaag/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestArgs in go-example-demo/pkg/goroot/regexp" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDtm in go-example-demo/dtm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/goroot/regexp" />
+      <working_directory value="$PROJECT_DIR$/dtm" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/goroot/regexp" />
+      <package value="go-example-demo/dtm" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestArgs\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestRefectString in go-example-demo/pkg/reflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-practice" />
-      <working_directory value="$PROJECT_DIR$/pkg/reflect" />
-      <kind value="PACKAGE" />
-      <package value="go-example-demo/pkg/reflect" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestRefectString\E$" />
+      <pattern value="^\QTestDtm\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestString in go-example-demo/pkg/goroot/template" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -140,6 +134,18 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestString\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStructTtmpalte in go-example-demo/pkg/goroot/template" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-practice" />
+      <working_directory value="$PROJECT_DIR$/pkg/goroot/template" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="go-example-demo/pkg/goroot/template" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestStructTtmpalte\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestTemplate in go-example-demo/pkg/goroot/template" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -165,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStructTtmpalte in go-example-demo/pkg/goroot/template" />
+        <item itemvalue="Go Test.TestTemplate in go-example-demo/pkg/goroot/template" />
+        <item itemvalue="Go Test.TestDtm in go-example-demo/dtm" />
         <item itemvalue="Go Build.go build go-example-demo/yaag" />
         <item itemvalue="Go Test.TestString in go-example-demo/pkg/goroot/template" />
-        <item itemvalue="Go Test.TestArgs in go-example-demo/pkg/goroot/regexp" />
-        <item itemvalue="Go Test.TestTemplate in go-example-demo/pkg/goroot/template" />
-        <item itemvalue="Go Test.TestRefectString in go-example-demo/pkg/reflect" />
       </list>
     </recent_temporary>
   </component>

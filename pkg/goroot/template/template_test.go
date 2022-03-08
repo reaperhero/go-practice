@@ -1,52 +1,66 @@
 package template
 
 import (
-	"bytes"
-	"fmt"
+	"html/template"
+	"os"
 	"testing"
-	"text/template"
 )
 
-type VisualConfig struct {
-	// must sort by field!!!
-	Default interface{} `config:"default"`
-	Desc    string      `config:"desc" validate:"required"`
-	Type    string      `config:"type" validate:"required"`
-	Value   interface{} `config:",ignore"`
-}
+// 有两个常用的传入参数的类型。
+//
+// 1、一个是struct，在模板内可以读取该struct域的内容来进行渲染。
+// type Article struct {
+//    ArticleId int
+//    ArticleContent string
+//}
+//<p>{{.ArticleContent}}<span>{{.ArticleId}}</span></p>
+//
+// 2、一个是map[string]interface{}，在模板内可以使用key来进行渲染。
 
-func (v *VisualConfig) String() string {
-	return v.Value.(string)
-}
+// 变量
+// {{$article := "hello"}}            定义一个article变量，将其初始化为”hello”，
+// {{$article := .ArticleContent}}    传入值的内容赋值给article
+// {{$article}} 					  使用变量
 
-func TestTemplate(t *testing.T) {
-	tpl, err := template.ParseFiles("./test.html")
-	if err != nil {
-		return
+// 函数
+// {{funcname .arg1 .arg2}}
+// {{add 1 2}}                        传递func add(left int, right int) int
+
+// 判断
+// {{if .condition1}}
+// {{else if .contition2}}
+// {{end}}
+
+func TestStructTtmpalte(t *testing.T) {
+	type person struct {
+		Id      int
+		Name    string
+		Country string
+	}
+	tmpl := template.New("tmpl")
+	tmpl.Parse("Hello {{.Name}} Welcome to go programming...\n")
+	tmpl.Execute(os.Stdout, person{Id: 1001, Name: "liumiaocn", Country: "China"})
+
+	// 定义struct模版参数
+	type User struct {
+		Name string
 	}
 
-	v := VisualConfig{
-		Default: "48",
-		Desc:    "sads",
-		Type:    "dsada",
-		Value:   "90",
+	type Order struct {
+		Id       int
+		Title    string
+		Customer User //嵌套字段
 	}
-	buf := &bytes.Buffer{}
-	m := map[string]interface{}{
-		"Name": &v,
-	}
-	if err = tpl.Option("missingkey=error").Execute(buf, m); err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(buf.String())
-}
 
-func TestString(t *testing.T) {
-	var v interface{} = &VisualConfig{
-		Default: "48",
-		Desc:    "sads",
-		Type:    "dsada",
-		Value:   "90",
+	// 初始化模版参数
+	food := Order{
+		Id:    10,
+		Title: "柠檬",
+		Customer: User{
+			Name: "李大春",
+		},
 	}
-	fmt.Printf("%s",v)
+	tmpl = template.New("tmpl")
+	tmpl.Parse("商品名: {{.Title}}用户名: {{.Customer.Name}}\n")
+	tmpl.Execute(os.Stdout, food)
 }
