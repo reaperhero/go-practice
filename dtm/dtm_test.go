@@ -88,6 +88,10 @@ func TwoSubmlitDtm() string {
 	return ""
 }
 
+// TCC分为3个阶段
+// Try 阶段：尝试执行，完成所有业务检查（一致性）, 预留必须业务资源（准隔离性）
+// Confirm 阶段：如果所有分支的Try都成功了，则走到Confirm阶段。Confirm真正执行业务，不作任何业务检查，只使用 Try 阶段预留的业务资源
+// Cancel 阶段：如果所有分支的Try有一个失败了，则走到Cancel阶段。Cancel释放 Try 阶段预留的业务资源。
 func TccDtm() string {
 	return ""
 }
