@@ -2,8 +2,6 @@ module github.com/reaperhero/go-practice
 
 go 1.17
 
-replace google.golang.org/grpc => google.golang.org/grpc v1.29.0
-
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/Shopify/sarama v1.32.0
@@ -22,6 +20,7 @@ require (
 	github.com/fsnotify/fsnotify v1.5.1
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-echarts/go-echarts/v2 v2.2.4
+	github.com/go-ini/ini v1.66.4
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-resty/resty/v2 v2.7.0
 	github.com/go-sql-driver/mysql v1.6.0
@@ -31,6 +30,8 @@ require (
 	github.com/hashicorp/consul/api v1.12.0
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/igm/sockjs-go/v3 v3.0.2
+	github.com/jessevdk/go-flags v1.5.0
+	github.com/jinzhu/copier v0.3.5
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.3.4
 	github.com/jordan-wright/email v4.0.1-0.20210109023952-943e75fe5223+incompatible
@@ -38,6 +39,7 @@ require (
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/matcornic/hermes/v2 v2.1.0
 	github.com/mattn/go-runewidth v0.0.13
+	github.com/mingrammer/commonregex v1.0.1
 	github.com/nats-io/nats.go v1.13.0
 	github.com/nsqio/go-nsq v1.1.0
 	github.com/olivere/elastic/v7 v7.0.31
@@ -47,24 +49,29 @@ require (
 	github.com/robfig/cron v1.2.0
 	github.com/russross/blackfriday v1.6.0
 	github.com/samuel/go-zookeeper v0.0.0-20201211165307-7117e9ea2414
+	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/sirupsen/logrus v1.8.1
 	github.com/speps/go-hashids v2.0.0+incompatible
 	github.com/spf13/afero v1.8.2
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
+	github.com/spf13/viper v1.7.1
 	github.com/streadway/amqp v1.0.0
+	github.com/tidwall/buntdb v1.2.9
 	github.com/tjfoc/gmsm v1.4.1
 	github.com/unknwon/com v1.0.1
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	github.com/wuYin/timewheel v0.0.0-20190326041048-6015c91b972f
 	github.com/xanzy/go-gitlab v0.59.0
 	go.etcd.io/etcd v3.3.27+incompatible
+	go.uber.org/dig v1.14.0
 	golang.org/x/crypto v0.0.0-20220313003712-b769efc7c000
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
 	google.golang.org/protobuf v1.27.1
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
+	gopkg.in/ini.v1 v1.51.0
 	gopkg.in/ldap.v2 v2.5.1
 	xorm.io/xorm v1.2.5
 )
@@ -89,6 +96,7 @@ require (
 	github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
+	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator/v10 v10.4.1 // indirect
@@ -146,10 +154,18 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/spf13/cast v1.3.0 // indirect
 	github.com/spf13/jwalterweatherman v1.0.0 // indirect
-	github.com/spf13/viper v1.7.1 // indirect
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect
+	github.com/tidwall/btree v1.1.0 // indirect
+	github.com/tidwall/gjson v1.12.1 // indirect
+	github.com/tidwall/grect v0.1.4 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
+	github.com/tidwall/rtred v0.1.2 // indirect
+	github.com/tidwall/tinyqueue v0.1.1 // indirect
+	github.com/tklauser/go-sysconf v0.3.10 // indirect
+	github.com/tklauser/numcpus v0.4.0 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.1 // indirect
@@ -159,13 +175,14 @@ require (
 	github.com/xdg-go/scram v1.1.0 // indirect
 	github.com/xdg-go/stringprep v1.0.2 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
+	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.mongodb.org/mongo-driver v1.8.3 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/oauth2 v0.0.0-20210218202405-ba52d332ba99 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
+	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
@@ -173,7 +190,8 @@ require (
 	google.golang.org/grpc v1.35.0 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d // indirect
-	gopkg.in/ini.v1 v1.51.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	xorm.io/builder v0.3.9 // indirect
 )
+
+replace google.golang.org/grpc => google.golang.org/grpc v1.29.0

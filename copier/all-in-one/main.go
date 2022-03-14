@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/jinzhu/copier"
 )
 
@@ -37,13 +36,12 @@ func main() {
 		employees = []Employee{}
 	)
 
-	copier.Copy(&employee, &user)
+	copier.Copy(&employee, &user) // 将user对象中的字段赋值到employee的同名字段中。如果目标对象中没有同名的字段，则该字段被忽略。
+
 	fmt.Printf("%#v\n", employee)
 
 	copier.Copy(&employees, &user)
 	fmt.Printf("%#v\n", employees)
-
-	// employees = []Employee{}
 
 	copier.Copy(&employees, &users)
 	fmt.Printf("%#v\n", employees)
