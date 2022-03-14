@@ -1,6 +1,7 @@
 package fmt
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"testing"
@@ -68,8 +69,12 @@ func Test_print01(t *testing.T) {
 	//指针
 	fmt.Printf("%p", &site)  //十六进制表示，前缀 0x  0x4f57f0
 	fmt.Printf("%#p", &site) //十六进制表示，不带0x的指针  4f57f0
-	fmt.Println(fmt.Sprint([]string{"1", "2"}))
 
+	//%w指令来嵌套一个错误的使用场景主要有以下两类：
+	//给一个错误添加更多的上下文信息时，同时需要保留原始错误类型
+	fmt.Errorf("when %s access resource %s:%w", "user", "table", errors.New("permission deny"))
+	//将一个错误转换成一个标准的错误类型，同时也需要保留原始错误类型
+	// erros.IS
 }
 
 // Scanln
