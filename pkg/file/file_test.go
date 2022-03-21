@@ -55,7 +55,6 @@ func TestFileCopy01(t *testing.T) {
 }
 
 /*文件的拷贝*/
-
 func TestFileCopy02(t *testing.T) {
 	srcFile, err := os.Open("srcFileName.txt")
 	if err != nil {
