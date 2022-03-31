@@ -15,6 +15,7 @@ require (
 	github.com/creack/pty v1.1.17
 	github.com/dtm-labs/dtmcli v1.12.1
 	github.com/dustin/go-humanize v1.0.0
+	github.com/elastic/go-ucfg v0.8.4
 	github.com/fatih/color v1.13.0
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.5.1
@@ -27,6 +28,7 @@ require (
 	github.com/gocolly/colly/v2 v2.1.0
 	github.com/golang/glog v1.0.0
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+	github.com/google/gopacket v1.1.19
 	github.com/google/uuid v1.3.0
 	github.com/gookit/goutil v0.4.4
 	github.com/hashicorp/consul/api v1.12.0
@@ -100,7 +102,6 @@ require (
 	github.com/eapache/go-resiliency v1.2.0 // indirect
 	github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
-	github.com/elastic/go-ucfg v0.8.4 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-playground/locales v0.13.0 // indirect
