@@ -3,9 +3,12 @@ package hex
 import (
 	"encoding/hex"
 	"fmt"
-	"strconv"
+	"os"
 	"testing"
 )
+
+
+// hex(16进制)：0、1、2、3、4、5、6、7、8、9、A、B、C、D、E、F。其中A-F分别表示十进制数字10-15
 
 func TestHex(t *testing.T) {
 	str := "ff68b4ff"
@@ -26,19 +29,17 @@ func TestName(t *testing.T) {
 }
 
 
-// 16进制的字符串手动转换成字节数组
-func Hextob(str string)([]byte) {
-	slen := len(str)
-	bHex := make([]byte, len(str)/2)
-	ii := 0
-	for i := 0; i < len(str); i = i + 2 {
-		if slen != 1 {
-			ss := string(str[i]) + string(str[i+1])
-			bt, _ := strconv.ParseInt(ss, 16, 32)
-			bHex[ii] = byte(bt)
-			ii = ii + 1;
-			slen = slen - 2;
-		}
+
+
+func TestName1(t *testing.T) {
+	str :="abcdefijklmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789"
+
+	b, err := hex.DecodeString(str)
+
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
 	}
-	return bHex
+
+	fmt.Printf("Decoded bytes %v	", b)
 }

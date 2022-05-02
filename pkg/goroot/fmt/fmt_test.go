@@ -22,17 +22,6 @@ func Test_fmt_01(t *testing.T) {
 	fmt.Fprintf(fileObj, "往文件中写如信息：%s", name)
 }
 
-// Sprint
-// Sprint系列函数会把传入的数据生成并返回一个字符串。
-func Test_Sprint_01(t *testing.T) {
-	s1 := fmt.Sprint("枯藤")
-	name := "枯藤"
-	age := 18
-	s2 := fmt.Sprintf("name:%s,age:%d", name, age)
-	s3 := fmt.Sprintln("枯藤")
-	fmt.Println(s1, s2, s3)
-}
-
 type Website struct {
 	Name string
 }
@@ -75,6 +64,9 @@ func Test_print01(t *testing.T) {
 	fmt.Errorf("when %s access resource %s:%w", "user", "table", errors.New("permission deny"))
 	//将一个错误转换成一个标准的错误类型，同时也需要保留原始错误类型
 	// erros.IS
+
+	//打印浮点数 .2f保留小数点后2位
+	fmt.Printf("%.2f\n", 18.1) //18.10
 }
 
 // Scanln

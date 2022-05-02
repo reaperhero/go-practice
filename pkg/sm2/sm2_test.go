@@ -11,6 +11,8 @@ import (
 
 func TestSm2(t *testing.T) {
 	priv, err := sm2.GenerateKey(rand.Reader) // 生成密钥对
+	fmt.Printf("[sm2 PubliKey]: 04%x%x\n", priv.PublicKey.X, priv.PublicKey.Y)
+	fmt.Printf("[sm2 PrivateKey]: %x\n", priv.D)
 	if err != nil {
 		log.Fatal(err)
 	}

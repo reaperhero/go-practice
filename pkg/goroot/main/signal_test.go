@@ -1,4 +1,5 @@
-package maintest
+package main
+
 
 import (
 	"context"

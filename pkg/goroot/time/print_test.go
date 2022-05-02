@@ -158,5 +158,7 @@ func TestJsonTime(t *testing.T) {
 
 func TestDuration(t *testing.T) {
 	s := time.Second*20
-	fmt.Println(s.String())
+	fmt.Println(s.String()) // 20s
+	id := int(time.Now().UnixNano())
+	fmt.Println(id)
 }
