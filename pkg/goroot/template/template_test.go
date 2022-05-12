@@ -2,6 +2,7 @@ package template
 
 import (
 	"html/template"
+	"log"
 	"os"
 	"testing"
 )
@@ -30,6 +31,9 @@ import (
 // {{if .condition1}}
 // {{else if .contition2}}
 // {{end}}
+
+
+
 
 func TestStructTtmpalte(t *testing.T) {
 	type person struct {
@@ -64,3 +68,34 @@ func TestStructTtmpalte(t *testing.T) {
 	tmpl.Parse("商品名: {{.Title}}用户名: {{.Customer.Name}}\n")
 	tmpl.Execute(os.Stdout, food)
 }
+
+
+
+
+func TestDefineFun(t *testing.T) {
+	type Recipient struct {
+		Name        string
+		Friends     []interface{}
+	}
+
+	var (
+		templateText = `
+    Nrd   Friend : {{last .Friends}}
+`
+		recipient = Recipient{
+			Name:    "",
+			Friends: []interface{}{"1","3"},
+		}
+	)
+
+	templateFunc := map[string]interface{} {
+		"last": func(s []interface{}) interface{} { return s[len(s)-1] },
+	}
+
+	r := template.Must(template.New("").Funcs(template.FuncMap(templateFunc)).Parse(templateText))
+	err := r.Execute(os.Stdout, recipient)
+	if err != nil {
+		log.Println("Executing template:", err)
+	}
+}
+

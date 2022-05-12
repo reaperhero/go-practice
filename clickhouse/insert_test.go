@@ -31,11 +31,3 @@ func TestCreateTable(t *testing.T) {
 	}
 }
 
-
-func TestManager(t *testing.T)  {
-	conn := initClickHouse()
-	var (
-		ctx = context.Background()
-	)
-	conn.
-}

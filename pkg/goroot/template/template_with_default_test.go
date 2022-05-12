@@ -20,10 +20,25 @@ func (v *VisualConfig) String() string {
 }
 
 func TestTemplate(t *testing.T) {
-	tpl, err := template.ParseFiles("./test.html")
-	if err != nil {
-		return
+	var templateFunc = map[string]interface{}{
+		"add": func()int {
+			return 1 +2
+		},
 	}
+	tpl := template.Must(template.New("").Funcs(template.FuncMap(templateFunc)).Parse(`
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Go Web</title>
+</head>
+{{add}}
+<body>
+{{ .Name }}
+</body>
+</html>
+`))
+
 	v := VisualConfig{
 		Default: "48",
 		Desc:    "sads",
@@ -34,8 +49,15 @@ func TestTemplate(t *testing.T) {
 	m := map[string]interface{}{
 		"Name": &v,
 	}
-	if err = tpl.Option("missingkey=error").Execute(buf, m); err != nil { // 会调用String方法
+	if err := tpl.Option("missingkey=error").Execute(buf, m); err != nil { // 会调用String方法
 		fmt.Println(err)
 	}
 	fmt.Println(buf.String())
 }
+
+
+
+
+
+
+
