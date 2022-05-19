@@ -43,6 +43,7 @@ func TestDelete(t *testing.T) {
 	fmt.Println(a)
 }
 
+
 func TestModifySlice1(t *testing.T) {
 	var s []int
 	modify1 := func(slice []int) {
@@ -57,4 +58,15 @@ func TestModifySlice2(t *testing.T) {
 		*slice = append(*slice, 1)
 	}
 	modify1(&s) // 会对s进行修改
+}
+
+
+
+func TestModifySlice3(t *testing.T) {
+	var s = make([]int,2)
+	modify1 := func(slice []int) {
+		slice[0] = 1
+	}
+	modify1(s) // 不会对s进行修改，因为已经slice扩容，底层数组改变
+	fmt.Println(s)
 }
