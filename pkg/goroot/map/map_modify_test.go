@@ -3,6 +3,7 @@ package _map
 import (
 	"fmt"
 	"testing"
+	"time"
 )
 
 //更新 map 中 struct 元素的字段值，有 2 个方法
@@ -49,4 +50,20 @@ func TestMap04(t *testing.T) {
 	b := a{B: make(map[string][]struct{})} // []struct不需要做初始化
 	bB := b.B["1"]
 	bB = append(bB, struct{}{})
+}
+
+func TestMap05(t *testing.T) {
+	res := make(map[int]int)
+	for i := 0; i < 100; i++ {
+		i := i
+		go func() {
+			time.Sleep(time.Millisecond*time.Duration(i))
+			res[i] = i
+		}()
+	}
+	for i := range res {
+		fmt.Println(i)
+	}
+	fmt.Println(111)
+
 }

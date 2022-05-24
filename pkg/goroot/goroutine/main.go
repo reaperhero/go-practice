@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"time"
 )
 
@@ -13,7 +12,10 @@ func hold2() string {
 	return "sdsa"
 }
 
-func main() {
-	go hold1(hold2()) // 会阻塞
-	fmt.Println("exec next")
-}
+//func main() {
+//	go hold1(hold2()) // 会阻塞
+//	fmt.Println("exec next")
+//}
+
+
+

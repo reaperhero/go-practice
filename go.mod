@@ -44,6 +44,7 @@ require (
 	github.com/kevwan/mapreduce v1.1.1
 	github.com/labstack/gommon v0.3.1
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
+	github.com/looplab/fsm v0.3.0
 	github.com/matcornic/hermes/v2 v2.1.0
 	github.com/mattn/go-runewidth v0.0.13
 	github.com/mingrammer/commonregex v1.0.1
@@ -59,6 +60,7 @@ require (
 	github.com/samuel/go-zookeeper v0.0.0-20201211165307-7117e9ea2414
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/sirupsen/logrus v1.8.1
+	github.com/spacemonkeygo/openssl v0.0.0-20181017203307-c2dcc5cca94a
 	github.com/speps/go-hashids v2.0.0+incompatible
 	github.com/spf13/afero v1.8.2
 	github.com/spf13/cobra v1.4.0
@@ -183,6 +185,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
+	github.com/spacemonkeygo/spacelog v0.0.0-20180420211403-2296661a0572 // indirect
 	github.com/spf13/cast v1.3.0 // indirect
 	github.com/spf13/jwalterweatherman v1.0.0 // indirect
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect

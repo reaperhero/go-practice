@@ -34,6 +34,13 @@ type Recipient struct {
     {{$key}} = {{ $val }}
 {{ end -}}
 
+{ {range .Items}}
+  <div class="item">
+    <h3 class="name">{ {.Name}}</h3>
+    <span class="price">${ {.Price}}</span>
+  </div>
+{ {end}}
+
 {{if .Attended}}     // bool
 It was a pleasure to see you at the wedding.
 {{- else}}
