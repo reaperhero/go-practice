@@ -10,7 +10,7 @@ import (
 )
 
 func TestReadByOs(t *testing.T) {
-	file, err := os.Open("./1.jpg")
+	file, err := os.Open("./dir_test.go")
 	if err != nil {
 		fmt.Println("open file err", err)
 	}
