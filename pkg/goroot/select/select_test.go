@@ -26,6 +26,8 @@ func breakSelect() {
 
 }
 
+
+
 func closeChan() error {
 	errChan := make(chan error)
 	exitChan := make(chan struct{})
@@ -99,3 +101,28 @@ func TestSelectWait(t *testing.T) {
 		fmt.Println("WaitGroup timed out..")
 	}
 }
+
+
+
+
+func TestName(t *testing.T)  {
+	//tk := time.After(time.Second*10)
+	//
+	//go func() {
+	//	no:
+	//	for  {
+	//		select {
+	//		case <-tk:
+	//			fmt.Println(2)
+	//			return
+	//		case <-time.After(time.Second*2):
+	//			fmt.Println(1)
+	//			goto no
+	//		}
+	//		fmt.Println(3)
+	//	}
+	//}()
+	//time.Sleep(time.Second*30)
+}
+
+
