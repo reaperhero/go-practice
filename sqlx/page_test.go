@@ -18,7 +18,7 @@ func TestMysqlPageSize(t *testing.T) {
 	param := NewPaginatorParam().DefaultPage(0).DefaultLimit(10)
 	var (
 		selectQuery = `select * from user where id >= 10000 order by id asc limit ? offset ?`
-		countQuery  = "select count(*) from user where id > = 10000"
+		countQuery  = "select count(*) from user where id >= 10000"
 		Count       = 0
 		result      []string
 	)
