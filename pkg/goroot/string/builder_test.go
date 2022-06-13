@@ -2,6 +2,7 @@ package string
 
 import (
 	"fmt"
+	"net/url"
 	"strings"
 	"testing"
 )
@@ -18,4 +19,10 @@ func TestStrings(t *testing.T) {
 	fmt.Println(strings.Contains("oasdsadk", "ok"))    // 需要连续的ok字符串
 	fmt.Println(strings.ContainsAny("oasdsadk", "ok")) // 不需要连续的ok字符串
 	fmt.Println(strings.Compare("okk", "ok"))          // 比较大小 if a==b, -1 if a < b, and +1 if a > b
+}
+
+func TestSplit(t *testing.T) {
+	u,_ := url.Parse( "http://172.16.82.74:20080/DTStream_1654767287483332156/html")
+	u.Path = "aaa.zip"
+	fmt.Println(u.String())
 }
