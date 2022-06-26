@@ -42,12 +42,44 @@ func handlePaginate(item interface{}, page, size int) (int, error) {
 			list = list[offset : offset+size]
 		}
 		reflect.ValueOf(item).Elem().Set(reflect.ValueOf(list))
+	case reflect.Interface:
+		var list []interface{}
+		for i := 0; i < count; i++ {
+			list = append(list, v.Index(i).Interface())
+		}
+		if count < offset {
+			return count, nil
+		}
+		if count-offset <= size {
+			list = list[offset:count]
+		}
+		if count-offset > size {
+			list = list[offset : offset+size]
+		}
+		reflect.ValueOf(item).Elem().Set(reflect.ValueOf(list))
+	case reflect.Int:
+		var list []int
+		for i := 0; i < count; i++ {
+			list = append(list, v.Index(i).Interface().(int))
+		}
+		if count < offset {
+			return count, nil
+		}
+		if count-offset <= size {
+			list = list[offset:count]
+		}
+		if count-offset > size {
+			list = list[offset : offset+size]
+		}
+		reflect.ValueOf(item).Elem().Set(reflect.ValueOf(list))
+
 	}
+
 	return count, nil
 }
 
 func TestSlicePage(t *testing.T) {
-	list := []string{"1", "2", "3"}
-	count, err := handlePaginate(&list, 0, 1)
+	list := []int{1,2,3}
+	count, err := handlePaginate(&list, 0, 2)
 	fmt.Println(list, count, err)
 }
