@@ -11,3 +11,4 @@ func TestLdapCon(t *testing.T)  {
 	fmt.Println("--------")
 	l.ListGroup()
 }
+
