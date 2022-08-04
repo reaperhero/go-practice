@@ -80,20 +80,18 @@ func Test_WithTimeout(t *testing.T) {
 
 // WithValue
 func Test_WithValue(t *testing.T) {
-	type favContextKey string
+	ctx := context.Background()
+	process(ctx)
 
-	f := func(ctx context.Context, k favContextKey) {
-		if v := ctx.Value(k); v != nil {
-			fmt.Println("found value:", v)
-			return
-		}
-		fmt.Println("key not found:", k)
+	ctx = context.WithValue(ctx, "traceId", "qcrao-2019")
+	process(ctx)
+}
+
+func process(ctx context.Context) {
+	traceId, ok := ctx.Value("traceId").(string)
+	if ok {
+		fmt.Printf("process over. trace_id=%s\n", traceId)
+	} else {
+		fmt.Printf("process over. no trace_id\n")
 	}
-
-	k := favContextKey("language")
-	ctx := context.WithValue(context.Background(), k, "Go") // 键值对
-
-	f(ctx, k)                      // found value: Go
-	f(ctx, favContextKey("color")) // key not found: color
-
 }

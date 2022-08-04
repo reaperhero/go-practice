@@ -16,13 +16,16 @@ type VisualConfig struct {
 }
 
 func (v *VisualConfig) String() string {
-	return v.Value.(string)
+	if v.Value.(string) != "" {
+		return v.Value.(string)
+	}
+	return v.Default.(string)
 }
 
 func TestTemplate(t *testing.T) {
 	var templateFunc = map[string]interface{}{
-		"add": func()int {
-			return 1 +2
+		"add": func() int {
+			return 1 + 2
 		},
 	}
 	tpl := template.Must(template.New("").Funcs(template.FuncMap(templateFunc)).Parse(`
@@ -43,7 +46,7 @@ func TestTemplate(t *testing.T) {
 		Default: "48",
 		Desc:    "sads",
 		Type:    "dsada",
-		Value:   "90",
+		Value:   "",
 	}
 	buf := &bytes.Buffer{}
 	m := map[string]interface{}{
@@ -54,10 +57,3 @@ func TestTemplate(t *testing.T) {
 	}
 	fmt.Println(buf.String())
 }
-
-
-
-
-
-
-

@@ -58,3 +58,22 @@ func TestUnsafeString(t *testing.T) {
 	fmt.Println(b2s([]byte("dsads")))
 	fmt.Println(s2b(("dsads")))
 }
+
+
+func TestModify(t *testing.T)  {
+	type Programmer struct {
+		name string
+		age int
+		language string
+	}
+
+	p := Programmer{"stefno", 18, "go"}
+	fmt.Println(p)
+
+	lang := (*string)(unsafe.Pointer(uintptr(unsafe.Pointer(&p)) + unsafe.Sizeof(int(0)) + unsafe.Sizeof(string(""))))
+	*lang = "Golang"
+
+	fmt.Println(p)
+}
+
+
