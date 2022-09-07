@@ -17,7 +17,11 @@ func Test_simplejson_01(t *testing.T) {
 		"bool": true
 	}
 }`)
-	js, _ := simplejson.NewJson(bytes)
+	js, err := simplejson.NewJson(bytes)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 	arr, _ := js.Get("test").Get("array").Array()
 	i, _ := js.Get("test").Get("int").Int()
 	ms := js.Get("test").Get("string").MustString()
