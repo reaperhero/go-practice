@@ -95,3 +95,26 @@ func TestName(t *testing.T) {
 	close(ch)
 	tick.Stop()
 }
+
+func TestNam1e(t *testing.T)  {
+	 dChan := make(chan int)
+	 var ids []int
+	 go func() {
+		 for i := 0; i < 10; i++ {
+			 dChan<-i
+			 time.Sleep(time.Second)
+		 }
+		 close(dChan)
+	 }()
+	for {
+		select {
+		case v,ok := <-dChan:
+			ids = append(ids, v)
+			if !ok {
+				fmt.Println(ids)
+				return
+			}
+		}
+		fmt.Println(ids)
+	}
+}

@@ -1,6 +1,6 @@
 module github.com/reaperhero/go-practice
 
-go 1.17
+go 1.18
 
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
@@ -215,6 +215,7 @@ require (
 	github.com/tidwall/tinyqueue v0.1.1 // indirect
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/tklauser/numcpus v0.4.0 // indirect
+	github.com/txn2/txeh v1.3.0 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	github.com/urfave/cli v1.22.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
