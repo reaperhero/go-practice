@@ -12,6 +12,7 @@ func TestName(t *testing.T) {
 	if err != nil {
 		logrus.Panic(err)
 	}
+	fmt.Println(hosts.HostAddressLookup("easymatrix-matrix"))
 	//
 	//hosts.AddHost("127.100.100.100", "test")
 	//hosts.AddHost("127.100.100.101", "logstash")

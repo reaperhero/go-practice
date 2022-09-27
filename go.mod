@@ -26,6 +26,7 @@ require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-echarts/go-echarts/v2 v2.2.4
 	github.com/go-ini/ini v1.66.4
+	github.com/go-ping/ping v1.1.0
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-resty/resty/v2 v2.7.0
 	github.com/go-sql-driver/mysql v1.6.0
@@ -76,6 +77,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	github.com/tidwall/buntdb v1.2.9
 	github.com/tjfoc/gmsm v1.4.1
+	github.com/txn2/txeh v1.3.0
 	github.com/unknwon/com v1.0.1
 	github.com/urfave/cli/v2 v2.3.0
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
@@ -85,6 +87,7 @@ require (
 	go.uber.org/dig v1.14.0
 	golang.org/x/crypto v0.0.0-20220313003712-b769efc7c000
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f
+	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
 	google.golang.org/grpc v1.38.0
 	google.golang.org/protobuf v1.27.1
@@ -215,7 +218,6 @@ require (
 	github.com/tidwall/tinyqueue v0.1.1 // indirect
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/tklauser/numcpus v0.4.0 // indirect
-	github.com/txn2/txeh v1.3.0 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	github.com/urfave/cli v1.22.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
@@ -235,7 +237,6 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/oauth2 v0.0.0-20210218202405-ba52d332ba99 // indirect
-	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20201208040808-7e3f01d25324 // indirect

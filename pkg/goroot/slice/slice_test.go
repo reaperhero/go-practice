@@ -25,11 +25,18 @@ func TestSliceCopy01(t *testing.T) {
 }
 
 func TestSliceDelete(t *testing.T) {
-	seq := []string{"a", "b", "c", "d", "e", "f", "g"}
-	index := 6
-	fmt.Println(seq[:index], seq[index+1:])     // [a b c] [e f g]
-	seq = append(seq[:index], seq[index+1:]...) // [a b c e f g]
-	fmt.Println(seq)
+	{
+		// 删除第一个
+		seq := []string{"a", "b", "c", "d", "e", "f", "g"}
+		index := 0
+		fmt.Println(seq[:index], seq[index+1:]) // [] [b c d e f g]
+	}
+	{
+		// 删除最后一个
+		seq := []string{"a", "b", "c", "d", "e", "f", "g"}
+		index := 6
+		fmt.Println(seq[:index], seq[index+1:]) // [a b c d e f] []
+	}
 }
 
 func TestDelete(t *testing.T) {
@@ -42,7 +49,6 @@ func TestDelete(t *testing.T) {
 	}
 	fmt.Println(a)
 }
-
 
 func TestModifySlice1(t *testing.T) {
 	var s []int
@@ -60,14 +66,11 @@ func TestModifySlice2(t *testing.T) {
 	modify1(&s) // 会对s进行修改
 }
 
-
-
 func TestModifySlice3(t *testing.T) {
-	var s = make([]int,2)
+	var s = make([]int, 2)
 	modify1 := func(slice []int) {
 		slice[0] = 1
 	}
 	modify1(s) // 不会对s进行修改，因为已经slice扩容，底层数组改变
 	fmt.Println(s)
 }
-
