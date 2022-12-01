@@ -16,3 +16,13 @@ func Test_bufio_01(t *testing.T) {
 	text = strings.TrimSpace(text)
 	fmt.Printf("%#v\n", text)
 }
+
+
+func TestName(t *testing.T)  {
+	fmt.Printf("%-15s %s\n", "192.168.101.101", "node01")
+	fmt.Printf("%-15s %s\n", "192.168.11.101", "node01")
+	fmt.Printf("%-15s %s\n", "192.168.101.1", "node01")
+	fmt.Printf("%-15s %s\n", "192.168.101.101", "node01")
+}
+
+

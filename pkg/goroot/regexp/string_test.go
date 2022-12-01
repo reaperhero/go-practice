@@ -59,3 +59,22 @@ func TestArgs(t *testing.T) {
 	k := reg2.FindString(vaule)
 	fmt.Println(k)
 }
+
+func TestRexReplace(t *testing.T)  {
+	var ts = []string{
+		"AA && \\ 		\n",
+		"AA && aa \n",
+		"AA && a ",
+		" && a ",
+		"&& a ",
+	}
+	re3, _ := regexp.Compile(`&&[ ]+\\[ ]+`)
+
+	for _, s := range ts {
+		a := re3.ReplaceAllString(s ,`&& \`)
+		fmt.Println(a)
+
+	}
+
+}
+

@@ -3,6 +3,7 @@ package file
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 	"testing"
 )
@@ -23,4 +24,27 @@ func TestWriteBybufio(t *testing.T) {
 	}
 	/*因为writer是带缓存的，需要通过flush到磁盘*/
 	writer.Flush()
+}
+
+
+func TestDeleteBlankFile(t *testing.T) {
+	srcFile, _ := os.OpenFile("1.txt", os.O_WRONLY, 0666)
+
+	defer srcFile.Close()
+
+	srcReader := bufio.NewReader(srcFile)
+	content := []string{}
+	for {
+		str, err := srcReader.ReadString('\n')
+
+		if err == io.EOF {
+			fmt.Println(content)
+		}
+
+		if 0 == len(str) || str == "\r\n" {
+			continue
+		}
+		content = append(content, str)
+	}
+
 }
