@@ -3,6 +3,8 @@
 
 模板语法
 
+内置函数：[hdr-Functions](https://pkg.go.dev/text/template#hdr-Functions)
+
 参考地址：[gotpl](https://blog.gmem.cc/gotpl)
 
 ```
@@ -36,8 +38,8 @@ type Recipient struct {
 
 { {range .Items}}
   <div class="item">
-    <h3 class="name">{ {.Name}}</h3>
-    <span class="price">${ {.Price}}</span>
+    <h3 class="name">{{.Name}}</h3>
+    <span class="price">${{.Price}}</span>
   </div>
 { {end}}
 

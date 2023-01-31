@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/url"
 	"strings"
+	"syscall"
 	"testing"
 )
 
@@ -22,7 +23,12 @@ func TestStrings(t *testing.T) {
 }
 
 func TestSplit(t *testing.T) {
-	u,_ := url.Parse( "http://172.16.82.74:20080/DTStream_1654767287483332156/html")
+	u, _ := url.Parse("http://172.16.82.74:20080/DTStream_1654767287483332156/html")
 	u.Path = "aaa.zip"
 	fmt.Println(u.String())
+}
+
+func TestName(t *testing.T) {
+
+	fmt.Println(syscall.SIGKILL)
 }

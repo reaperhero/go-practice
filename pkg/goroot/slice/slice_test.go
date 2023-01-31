@@ -2,6 +2,7 @@ package slice
 
 import (
 	"fmt"
+	"regexp"
 	"testing"
 )
 
@@ -66,11 +67,7 @@ func TestModifySlice2(t *testing.T) {
 	modify1(&s) // 会对s进行修改
 }
 
-func TestModifySlice3(t *testing.T) {
-	var s = make([]int, 2)
-	modify1 := func(slice []int) {
-		slice[0] = 1
-	}
-	modify1(s) // 不会对s进行修改，因为已经slice扩容，底层数组改变
-	fmt.Println(s)
+
+func TestName(t *testing.T)  {
+	fmt.Println(regexp.MustCompile(`(?i).*password.*|^sensitive_`).MatchString("sensitive_password"))
 }
