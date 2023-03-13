@@ -7,6 +7,10 @@ import (
 )
 
 func init() {
+	// 显示行号
+	log.SetReportCaller(true)
+
+
 	// 日志格式化为JSON而不是默认的ASCII
 	log.SetFormatter(&log.JSONFormatter{})
 
