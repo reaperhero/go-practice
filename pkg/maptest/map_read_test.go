@@ -1,6 +1,7 @@
 package maptest
 
 import (
+	"encoding/json"
 	"fmt"
 	"testing"
 	"time"
@@ -57,3 +58,24 @@ func TestM(t *testing.T) {
 	a[1] = 2
 	fmt.Println(a)
 }
+
+
+
+func TestName(t *testing.T) {
+	j := make(map[string]string)
+	j["sada"]="sad"
+	go func() {
+		for i := 0; i < 100; i++ {
+			_,ok:=j["sada"]
+			if ok{
+			}
+			json.Marshal(j)
+		}
+	}()
+	for i := 0; i < 100; i++ {
+		json.Marshal(j)
+	}
+
+}
+
+

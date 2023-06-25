@@ -3,6 +3,7 @@ package third
 import (
 	"fmt"
 	"github.com/bitly/go-simplejson"
+	"os"
 	"testing"
 )
 
@@ -26,4 +27,17 @@ func Test_simplejson_01(t *testing.T) {
 	i, _ := js.Get("test").Get("int").Int()
 	ms := js.Get("test").Get("string").MustString()
 	fmt.Println(arr, i, ms) // [1 2 3] 10 simplejson
+}
+
+
+func TestName(t *testing.T)  {
+f := "/Users/chenqiangjun/gitlab/easymatrix/addons/alertchannel/old_alert_channel.json"
+	file, err := os.Open(f)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	j,_ :=simplejson.NewFromReader(file)
+	s,err := simplejson.NewJson([]byte(j.Get("Settings").MustString()))
+	fmt.Println(s,err)
 }

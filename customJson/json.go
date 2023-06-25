@@ -13,6 +13,27 @@ type Json struct {
 	data interface{}
 }
 
+// NewJson New Json from string
+func NewJson(body []byte) (*Json, error) {
+	j := new(Json)
+	err := j.UnmarshalJSON(body)
+	if err != nil {
+		return nil, err
+	}
+	return j, nil
+}
+// New returns a pointer to a new, empty `Json` object
+func New() *Json {
+	return &Json{
+		data: make(map[string]interface{}),
+	}
+}
+
+// NewFromAny returns a pointer to a new `Json` object with provided data.
+func NewFromAny(data interface{}) *Json {
+	return &Json{data: data}
+}
+
 func (j *Json) FromDB(data []byte) error {
 	j.data = make(map[string]interface{})
 
@@ -29,34 +50,12 @@ func (j *Json) ToDB() ([]byte, error) {
 	return j.Encode()
 }
 
-// NewJson returns a pointer to a new `Json` object
-// after unmarshaling `body` bytes
-func NewJson(body []byte) (*Json, error) {
-	j := new(Json)
-	err := j.UnmarshalJSON(body)
-	if err != nil {
-		return nil, err
-	}
-	return j, nil
-}
-
 func (j *Json) UnmarshalJSON(p []byte) error {
 	dec := json.NewDecoder(bytes.NewBuffer(p))
 	dec.UseNumber()
 	return dec.Decode(&j.data)
 }
 
-// New returns a pointer to a new, empty `Json` object
-func New() *Json {
-	return &Json{
-		data: make(map[string]interface{}),
-	}
-}
-
-// NewFromAny returns a pointer to a new `Json` object with provided data.
-func NewFromAny(data interface{}) *Json {
-	return &Json{data: data}
-}
 
 // Interface returns the underlying data
 func (j *Json) Interface() interface{} {

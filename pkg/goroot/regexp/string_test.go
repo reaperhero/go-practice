@@ -48,7 +48,9 @@ func Test_regexp_html(t *testing.T) {
 	//提取关键信息
 	result := reg.FindAllStringSubmatch(buf, -1)
 	//过滤<></>
-	fmt.Println(result)
+	for _, strings := range result {
+		fmt.Println(strings[1])
+	}
 }
 
 func TestArgs(t *testing.T) {
