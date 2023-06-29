@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"strconv"
 	"testing"
 	"time"
 )
@@ -109,10 +108,3 @@ func TestNtpClient(t *testing.T) {
 	fmt.Printf("%v\n", time.Unix(int64(secs), nanos))
 }
 
-
-
-func TestName(t *testing.T) {
-	var i interface{} = "3"
-	b,ok:= strconv.Atoi(fmt.Sprintf("%v",i))
-	fmt.Println(b,ok)
-}
