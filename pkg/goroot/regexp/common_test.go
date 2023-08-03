@@ -27,4 +27,9 @@ func TestExpr(t *testing.T)  {
 	}
 	list := g.FindStringSubmatch(expr)
 	fmt.Println(list[1])
+
+
+	childReg := regexp.MustCompile("yarn.scheduler.capacity.root.(.*?).queues")
+	submatch := childReg.FindStringSubmatch("yarn.scheduler.capacity.root.asd.sdaa.queues")
+	fmt.Println(len(submatch),submatch)
 }

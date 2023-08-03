@@ -1,12 +1,12 @@
 package xml
 
 import (
+	"bytes"
 	"encoding/xml"
 	"fmt"
 	"os"
 	"testing"
 )
-
 
 //XMLName 字段，因为前面提到的原因，会被忽略
 //带有 “-” 标签的字段会被忽略
@@ -18,8 +18,6 @@ import (
 //带有 ”,comment” 标签的字段无需进行任何封装， 它会直接输出为 XML 注释。 这个字段内部不能包含 “–” 字符串。
 //如果字段的标签中包含 “omitempty” 选项， 那么在字段的值为空时， 这个字段将被忽略。 空值指的是 false ， 0 ，为 nil 的指针、接口值、数组、切片、map ，以及长度为 0 的字符串。
 //匿名结构字段会被看作是外层结构的其中一部分来处理。
-
-
 
 type Website struct {
 	Name   string `xml:"name,attr"`
@@ -39,4 +37,62 @@ func TestXml(t *testing.T) {
 		return
 	} else {
 	}
+}
+
+func TestXmlPretty(t *testing.T) {
+	var data = `<configuration>
+   <property>
+     <name>yarn.scheduler.capacity.maximum-applications</name>
+     <value>10000</value>
+     <description>
+      Maximum number of applications that can be pending and running.
+     </description>
+   </property>
+   <property>
+     <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+     <value>1</value>
+     <description>
+      Maximum percent of resources in the cluster which can be used to run
+      application masters i.e. controls number of concurrent running
+      applications.
+     </description>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.maximum-applications</name>
+     <value>10000</value>
+	 <description>
+       Name or email of the tester.
+     </description>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+    <value>1</value>
+     <description>
+      Maximum percent of resources in the cluster which can be used to run
+      application masters i.e. controls number of concurrent running
+      applications.
+     </description>
+  </property>
+ </configuration>`
+
+	type Property struct {
+		Name        string `xml:"name"`
+		Value       string `xml:"value"`
+		Description string `xml:"description"`
+	}
+
+	type Configuration struct {
+		XMLName    xml.Name   `xml:"configuration"`
+		Properties []Property `xml:"property"`
+	}
+	var aaa Configuration
+	xml.Unmarshal([]byte(data), &aaa)
+	indent, err := xml.MarshalIndent(aaa, " ", "  ")
+	if err != nil {
+		return
+	}
+	indent = bytes.ReplaceAll(indent, []byte("&#xA;"), []byte("\n"))
+	fmt.Println(string(indent))
 }

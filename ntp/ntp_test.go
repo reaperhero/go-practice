@@ -10,6 +10,9 @@ import (
 	"time"
 )
 
+// https://studygolang.com/articles/35223
+
+
 const ntpEpochOffset = 2208988800
 
 // NTP packet format (v3 with optional v4 fields removed)

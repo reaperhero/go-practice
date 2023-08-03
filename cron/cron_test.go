@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/robfig/cron"
 	"log"
+	"strings"
 	"testing"
 )
 
@@ -18,7 +19,7 @@ func Test_cron_01(t *testing.T) {
 	//每月1号凌晨1点执行一次：0 0 1 1 * ?
 	//在26分、29分、33分执行一次：0 26,29,33 * * * ?
 	//每天的0点、13点、18点、21点都执行一次：0 0 0,13,18,21 * * ?
-	spec := "*/5 * * * * ?"
+	spec := "0 0 23 * * ?"
 	err := c.AddFunc(spec, func() {
 		i++
 		log.Println("cron running:", i)
@@ -28,3 +29,13 @@ func Test_cron_01(t *testing.T) {
 
 	select {}
 }
+
+
+func TestName(t *testing.T)  {
+	repositoriesName := strings.TrimPrefix("dtstack-dev/aaassets", "dtstack-dev/")
+	fmt.Println(repositoriesName)
+	repositoriesEncodeUrl := strings.ReplaceAll(repositoriesName, "/", "%2F")
+
+	fmt.Println(repositoriesEncodeUrl)
+}
+
