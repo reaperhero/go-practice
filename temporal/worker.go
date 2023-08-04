@@ -1,30 +1,33 @@
 package main
 
 import (
-	"log"
-	helloworld "temporlservice/service"
-
 	"go.temporal.io/sdk/client"
 	"go.temporal.io/sdk/worker"
+	"log"
+	"temporlservice/app"
 )
 
 func main() {
-	// The client and worker are heavyweight objects that should be created once per process.
+	// Create the client object just once per process
 	c, err := client.Dial(client.Options{
 		HostPort: "172.16.94.221:7233",
 	})
 	if err != nil {
-		log.Fatalln("Unable to create client", err)
+		log.Fatalln("unable to create Temporal client", err)
 	}
 	defer c.Close()
 
-	w := worker.New(c, "hello-world", worker.Options{})
+	w := worker.New(c, app.MoneyTransferTaskQueueName, worker.Options{})
 
-	w.RegisterWorkflow(helloworld.Workflow)
-	w.RegisterActivity(helloworld.Activity)
+	// This worker hosts both Workflow and Activity functions.
+	w.RegisterWorkflow(app.MoneyTransfer)
+	w.RegisterActivity(app.Withdraw)
+	w.RegisterActivity(app.Deposit)
+	w.RegisterActivity(app.Refund)
 
+	// Start listening to the Task Queue.
 	err = w.Run(worker.InterruptCh())
 	if err != nil {
-		log.Fatalln("Unable to start worker", err)
+		log.Fatalln("unable to start Worker", err)
 	}
 }

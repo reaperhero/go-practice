@@ -21,16 +21,18 @@ Activity一定是在worker里面的，因为逻辑的具体执行者一定是wor
 2) Run the following command to start the worker
 ```
 > go run worker.go
-2023/08/03 17:38:12 INFO  No logger configured for temporal client. Created default one.
-2023/08/03 17:38:12 INFO  Started Worker Namespace default TaskQueue hello-world WorkerID 12661@chenqiangjundeMacBook-Pro-2.local@
-2023/08/03 17:38:18 INFO  Activity Namespace default TaskQueue hello-world WorkerID 12661@chenqiangjundeMacBook-Pro-2.local@ ActivityID 5 ActivityType Activity Attempt 4 WorkflowType Workflow WorkflowID hello_world_workflowID RunID 5e5d5e9a-9394-445c-a4a1-aa171e02a5b4 name Temporal
-2023/08/03 17:38:18 INFO  Activity complete after timeout. Namespace default TaskQueue hello-world WorkerID 12661@chenqiangjundeMacBook-Pro-2.local@ WorkflowID hello_world_workflowID RunID 5e5d5e9a-9394-445c-a4a1-aa171e02a5b4 ActivityType Activity Attempt 4 Result &Payloads{Payloads:[]*Payload{&Payload{Metadata:map[string][]byte{encoding: [106 115 111 110 47 112 108 97 105 110],},Data:[34 72 101 108 108 111 32 84 101 109 112 111 114 97 108 33 34],},},} Error <nil>
+2023/08/04 18:04:46 INFO  No logger configured for temporal client. Created default one.
+2023/08/04 18:04:46 INFO  Started Worker Namespace default TaskQueue TRANSFER_MONEY_TASK_QUEUE WorkerID 1476@node13@
+2023/08/04 18:05:16 Withdrawing $250 from account 85-150.
 
+2023/08/04 18:05:16 DEBUG ExecuteActivity Namespace default TaskQueue TRANSFER_MONEY_TASK_QUEUE WorkerID 1476@node13@ WorkflowType MoneyTransfer WorkflowID pay-invoice-701 RunID b0b950aa-b8c7-4784-8fbc-6b383a80cd42 Attempt 1 ActivityID 11 ActivityType Deposit
+2023/08/04 18:05:16 Depositing $250 into account 43-812.
 ```
 3) Run the following command to start the example
 ```
 > go run starter.go
-2023/08/03 17:38:47 INFO  No logger configured for temporal client. Created default one.
-2023/08/03 17:38:47 Started workflow WorkflowID hello_world_workflowID RunID 5e5d5e9a-9394-445c-a4a1-aa171e02a5b4
-
+2023/08/04 18:04:54 INFO  No logger configured for temporal client. Created default one.
+2023/08/04 18:04:54 Starting transfer from account 85-150 to account 43-812 for 250
+2023/08/04 18:04:54 WorkflowID: pay-invoice-701 RunID: b0b950aa-b8c7-4784-8fbc-6b383a80cd42
+2023/08/04 18:05:16 Transfer complete (transaction IDs: W1779185060, D4129841576)
 ```
