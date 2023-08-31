@@ -67,7 +67,6 @@ func TestModifySlice2(t *testing.T) {
 	modify1(&s) // 会对s进行修改
 }
 
-
-func TestName(t *testing.T)  {
+func TestName(t *testing.T) {
 	fmt.Println(regexp.MustCompile(`(?i).*password.*|^sensitive_`).MatchString("sensitive_password"))
 }

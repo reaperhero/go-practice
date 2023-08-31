@@ -28,4 +28,5 @@ func init() {
 		return
 	}
 	Db = database
+
 }

@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func TestTaskWheel(t *testing.T)  {
+func TestTaskWheel(t *testing.T) {
 	tw := timewheel.NewTimeWheel(100*time.Millisecond, 600) // 周期为一分钟
 
 	// 执行定时任务
@@ -17,7 +17,7 @@ func TestTaskWheel(t *testing.T)  {
 	})
 
 	// 执行指定次数的重复任务
-	_, allDone := tw.Repeat(1*time.Second, 3, func() interface {}{
+	_, allDone := tw.Repeat(1*time.Second, 3, func() interface{} {
 		fmt.Println("per 1 second, task2 executed")
 		return nil
 	})
