@@ -34,6 +34,7 @@ func TestUrlString(t *testing.T) {
 		RawQuery: "x=1&y=2",
 		Fragment: "anchor",
 	}
+	u.RequestURI()
 	fmt.Println(u.User.Username()) //me
 	password, b := u.User.Password()
 	if b == false {

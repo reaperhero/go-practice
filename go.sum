@@ -1164,6 +1164,8 @@ github.com/vanng822/go-premailer v0.0.0-20191214114701-be27abe028fe h1:9YnI5plmy
 github.com/vanng822/go-premailer v0.0.0-20191214114701-be27abe028fe/go.mod h1:JTFJA/t820uFDoyPpErFQ3rb3amdZoPtxcKervG0OE4=
 github.com/vmihailenco/msgpack v4.0.4+incompatible h1:dSLoQfGFAo3F6OoNhwUmLwVgaUXK79GlxNBwueZn0xI=
 github.com/vmihailenco/msgpack v4.0.4+incompatible/go.mod h1:fy3FlTQTDXWkZ7Bh6AcGMlsjHatGryHQYUTf1ShIgkk=
+github.com/vulcand/oxy v1.4.2 h1:KibUVdKrwy7eXR3uHS2pYoZ9dCzKVcgDNHD2jkPZmxU=
+github.com/vulcand/oxy v1.4.2/go.mod h1:Yq8OBb0XWU/7nPSglwUH5LS2Pcp4yvad8SVayobZbSo=
 github.com/wuYin/timewheel v0.0.0-20190326041048-6015c91b972f h1:tZMdzOTGMg+g+hw6+GCxdEiG1nwgiDscMJ0Mc9kgzuc=
 github.com/wuYin/timewheel v0.0.0-20190326041048-6015c91b972f/go.mod h1:VSVuj5isCfFYDY5jxLUFDZ0o2DyABk/S2jOKSW5Ttlk=
 github.com/xanzy/go-gitlab v0.59.0 h1:fAr6rT/YIdfmBavYgI42+Op7yAAex2Y4xOfvbjN9hxQ=
