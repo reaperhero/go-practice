@@ -2,6 +2,7 @@ package time
 
 import (
 	"fmt"
+	"math/rand"
 	"testing"
 	"time"
 )
@@ -68,6 +69,7 @@ func timestampDemo2(timestamp int64) {
 	minute := timeObj.Minute() //分钟
 	second := timeObj.Second() //秒
 	fmt.Printf("%d-%02d-%02d %02d:%02d:%02d\n", year, month, day, hour, minute, second)
+
 }
 
 // 时间操作
@@ -144,3 +146,16 @@ func Test_ticker_timeout_03(t *testing.T) {
 	}
 }
 
+func TestName(t *testing.T) {
+	fmt.Printf("%.0f", 12.3456)
+}
+
+func suff(slice []string) {
+	r := rand.New(rand.NewSource(time.Now().Unix()))
+	for len(slice) > 0 {
+		n := len(slice)
+		randIndex := r.Intn(n)
+		slice[n-1], slice[randIndex] = slice[randIndex], slice[n-1]
+		slice = slice[:n-1]
+	}
+}

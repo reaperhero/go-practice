@@ -81,4 +81,5 @@ func Test_scan_01(t *testing.T) {
 	//$ ./scan_demo
 	//枯藤 18 false
 	//扫描结果 name:枯藤 age:18 married:false
+
 }
