@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"regexp"
 	"testing"
-	"time"
 )
 
 func TestEmail(t *testing.T) {
@@ -13,7 +12,6 @@ func TestEmail(t *testing.T) {
 	match := compile.FindString(text)
 	fmt.Println(match)
 }
-
 
 func TestImage(t *testing.T) {
 	text := `- /bin/sh
@@ -42,9 +40,9 @@ func TestImage(t *testing.T) {
 	}
 }
 
-func TestName(t *testing.T)  {
-	old,_:=time.Parse("2006-01-02 15:04:05","2019-04-01 13:00:00")
-	sub := time.Now().Sub(old)
-	fmt.Println(sub.Hours()/24/365)
+func TestName(t *testing.T) {
+	data := "      uic_server_name: ${tengine.uic_server_name} # config_type: availability; comment: 用户; explain: 配置秒数详细信息"
+	configTypeReg := regexp.MustCompile("config_type:(?s:(.*?));")
+	submatch := configTypeReg.FindStringSubmatch(data)
+	fmt.Println(submatch[1])
 }
-

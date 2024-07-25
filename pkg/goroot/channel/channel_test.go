@@ -96,19 +96,19 @@ func TestName(t *testing.T) {
 	tick.Stop()
 }
 
-func TestNam1e(t *testing.T)  {
-	 dChan := make(chan int)
-	 var ids []int
-	 go func() {
-		 for i := 0; i < 10; i++ {
-			 dChan<-i
-			 time.Sleep(time.Second)
-		 }
-		 close(dChan)
-	 }()
+func TestNam1e(t *testing.T) {
+	dChan := make(chan int)
+	var ids []int
+	go func() {
+		for i := 0; i < 10; i++ {
+			dChan <- i
+			time.Sleep(time.Second)
+		}
+		close(dChan)
+	}()
 	for {
 		select {
-		case v,ok := <-dChan:
+		case v, ok := <-dChan:
 			ids = append(ids, v)
 			if !ok {
 				fmt.Println(ids)
@@ -116,5 +116,27 @@ func TestNam1e(t *testing.T)  {
 			}
 		}
 		fmt.Println(ids)
+	}
+}
+
+func TestNam2e(t *testing.T) {
+	var cc = make(chan struct{}, 1)
+	go func() {
+		close(cc)
+	}()
+	time.Sleep(time.Second * 1)
+
+	select {
+	case <-cc:
+		fmt.Println(1) // 被执行
+	case <-time.After(time.Second * 3):
+		fmt.Println(2)
+	}
+	cc = nil
+	select {
+	case <-cc: // 不会选中
+		fmt.Println(1)
+	case <-time.After(time.Second * 3):
+		fmt.Println(2) // 被执行
 	}
 }

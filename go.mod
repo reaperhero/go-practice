@@ -18,7 +18,8 @@ require (
 	github.com/bradfitz/gomemcache v0.0.0-20220106215444-fb4bf637b56d
 	github.com/c-bata/go-prompt v0.2.6
 	github.com/cep21/circuit/v3 v3.2.2
-	github.com/clbanning/mxj v1.8.4
+	github.com/clbanning/mxj v1.8.5-0.20200714211355-ff02cfb8ea28
+	github.com/colinmarc/hdfs v1.1.3
 	github.com/coreos/etcd v3.3.27+incompatible
 	github.com/creack/pty v1.1.18
 	github.com/dtm-labs/dtmcli v1.12.1
@@ -35,6 +36,7 @@ require (
 	github.com/go-resty/resty/v2 v2.8.0
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/gocolly/colly/v2 v2.1.0
+	github.com/gogf/gf v1.16.9
 	github.com/golang-module/carbon/v2 v2.1.6
 	github.com/golang/glog v1.0.0
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
@@ -47,12 +49,14 @@ require (
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/iawia002/lux v0.15.0
 	github.com/igm/sockjs-go/v3 v3.0.2
+	github.com/jakecoffman/cron v0.0.0-20190106200828-7e2009c226a5
 	github.com/jessevdk/go-flags v1.5.0
 	github.com/jinzhu/copier v0.3.5
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/jordan-wright/email v4.0.1-0.20210109023952-943e75fe5223+incompatible
 	github.com/kevwan/mapreduce v1.1.1
+	github.com/kyokomi/emoji/v2 v2.2.13
 	github.com/labstack/gommon v0.3.1
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/looplab/fsm v0.3.0
@@ -64,6 +68,7 @@ require (
 	github.com/olivere/elastic/v7 v7.0.31
 	github.com/opentrx/seata-golang/v2 v2.0.7
 	github.com/openzipkin/zipkin-go v0.2.2
+	github.com/orandin/lumberjackrus v1.0.1
 	github.com/panjf2000/ants/v2 v2.4.8
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/sftp v1.13.1
@@ -287,6 +292,7 @@ require (
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
+	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/utils v0.0.0-20230406110748-d93618cff8a2 // indirect

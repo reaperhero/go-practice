@@ -1,44 +1,6 @@
 package sqlx
 
-import (
-	"fmt"
-	"testing"
-)
-
-func Test_sqlx_tx_01(t *testing.T) {
-	conn, err := Db.Begin()
-	if err != nil {
-		fmt.Println("begin failed :", err)
-		return
-	}
-
-	r, err := conn.Exec("insert into person(username, sex, email)values(?, ?, ?)", "stu001", "man", "stu01@qq.com")
-	if err != nil {
-		fmt.Println("exec failed, ", err)
-		conn.Rollback()
-		return
-	}
-	id, err := r.LastInsertId()
-	if err != nil {
-		fmt.Println("exec failed, ", err)
-		conn.Rollback()
-		return
-	}
-	fmt.Println("insert succ:", id)
-
-	r, err = conn.Exec("insert into person(username, sex, email)values(?, ?, ?)", "stu001", "man", "stu01@qq.com")
-	if err != nil {
-		fmt.Println("exec failed, ", err)
-		conn.Rollback()
-		return
-	}
-	id, err = r.LastInsertId()
-	if err != nil {
-		fmt.Println("exec failed, ", err)
-		conn.Rollback()
-		return
-	}
-	fmt.Println("insert succ:", id)
-
-	conn.Commit()
-}
+// 涉及锁的维度看条件语句的扫描范围，不带索引的那么锁的就是全表
+// sqlx两个事务，涉及到查询同一条数据，当两条都使用for update指令，会阻塞宁外一条
+// sqlx只开启一个事务，当事务使用for update指令，会阻塞宁外一条不带事务的for update
+// sqlx只开启一个事务，当事务使用for update指令，不会阻塞宁外一条（不带事务、不带for update）的语句

@@ -30,12 +30,8 @@ func Test_cron_01(t *testing.T) {
 	select {}
 }
 
-
-func TestName(t *testing.T)  {
-	repositoriesName := strings.TrimPrefix("dtstack-dev/aaassets", "dtstack-dev/")
+func TestName(t *testing.T) {
+	repositoriesName := strings.TrimPrefix("root.default.def2", "root.default.")
 	fmt.Println(repositoriesName)
-	repositoriesEncodeUrl := strings.ReplaceAll(repositoriesName, "/", "%2F")
 
-	fmt.Println(repositoriesEncodeUrl)
 }
-

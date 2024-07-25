@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"reflect"
+	"strings"
 	"testing"
 )
 
@@ -18,7 +20,11 @@ func allElem(v reflect.Value) reflect.Value {
 	return v
 }
 
+func ArrayToString(source []int64, delim string) string {
+
+	return strings.Trim(strings.Replace(fmt.Sprint(source), " ", delim, -1), "[]")
+
+}
 func TestRefectString(t *testing.T) {
-
-
+	fmt.Println(ArrayToString([]int64{1, 3, 5}, ","))
 }
