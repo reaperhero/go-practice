@@ -6,7 +6,6 @@ import (
 	"github.com/fsnotify/fsnotify"
 )
 
-
 // When a file or directory is created, modified or removed,
 // the Operating System can inform any applications that wish to know. This can come in handy in many situations:
 
@@ -25,6 +24,7 @@ func main() {
 				if !ok {
 					return
 				}
+
 				log.Println("event:", event)
 				if event.Op&fsnotify.Write == fsnotify.Write {
 					log.Println("modified file:", event.Name)
@@ -38,9 +38,6 @@ func main() {
 		}
 	}()
 
-	err = watcher.Add("/tmp/foo")
-	if err != nil {
-		log.Fatal(err)
-	}
+	watcher.Add("/tmp/foo")
 	<-done
 }
