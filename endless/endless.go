@@ -77,7 +77,7 @@ func web() {
 		return c.String(http.StatusOK, fmt.Sprintf("%d", curPid))
 	})
 	e.GET("/api/version", func(c echo.Context) error {
-		return c.String(http.StatusOK, "web4")
+		return c.String(http.StatusOK, "web2")
 	})
 	e.Logger.Fatal(e.Start(":1323"))
 }

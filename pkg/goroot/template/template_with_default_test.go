@@ -3,6 +3,7 @@ package template
 import (
 	"bytes"
 	"fmt"
+	"os"
 	"testing"
 	"text/template"
 )
@@ -56,4 +57,29 @@ func TestTemplate(t *testing.T) {
 		fmt.Println(err)
 	}
 	fmt.Println(buf.String())
+}
+
+func TestRange(tt *testing.T) {
+
+	type Data struct {
+		Items []string
+	}
+
+	const templ = `{{range $index, $element := .Items}}{{if $index}}分隔符{{end}}{{$element}}{{end}}`
+
+	data := Data{
+		Items: []string{"apple"},
+	}
+	t, err := template.New("test").Funcs(template.FuncMap{
+		"sub": func(a, b int) int {
+			return a - b
+		},
+	}).Parse(templ)
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = t.Execute(os.Stdout, data)
+	if err != nil {
+		fmt.Println(err)
+	}
 }

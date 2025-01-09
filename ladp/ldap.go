@@ -19,7 +19,7 @@ import (
 // ldapsearch -LLL -W -x -D "cn=admin,dc=ygyg,dc=cn" -H ldap://localhost -b "dc=ygyg,dc=cn"
 
 var (
-	ldapServer = "172.16.82.66:389"
+	ldapServer = "172.16.115.208:389"
 	baseDC     = "dc=faysongg,dc=com"                                 // 根dc
 	userDC     = "cn=users,cn=accounts"                               // 管理员账号
 	groupDC    = "cn=groups,cn=accounts"                              // 管理员账号
